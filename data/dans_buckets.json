@@ -1,0 +1,1249 @@
+[
+  {
+    "player": "Nikola Jokic",
+    "bucket": "1",
+    "rank": 1,
+    "flags": [],
+    "player_id": "jokicni01"
+  },
+  {
+    "player": "Victor Wembanyama",
+    "bucket": "2",
+    "rank": 2,
+    "flags": [],
+    "player_id": "wembavi01"
+  },
+  {
+    "player": "Shai Gilgeous-Alexander",
+    "bucket": "2",
+    "rank": 3,
+    "flags": [],
+    "player_id": "gilgesh01"
+  },
+  {
+    "player": "Luka Doncic",
+    "bucket": "3",
+    "rank": 4,
+    "flags": [],
+    "player_id": "doncilu01"
+  },
+  {
+    "player": "Giannis Antetokounmpo",
+    "bucket": "3",
+    "rank": 5,
+    "flags": [
+      "FT"
+    ],
+    "player_id": "antetgi01"
+  },
+  {
+    "player": "Anthony Davis",
+    "bucket": "4",
+    "rank": 6,
+    "flags": [
+      "Health"
+    ],
+    "player_id": "davisan02"
+  },
+  {
+    "player": "Anthony Edwards",
+    "bucket": "4",
+    "rank": 7,
+    "flags": [],
+    "player_id": "edwaran01"
+  },
+  {
+    "player": "James Harden",
+    "bucket": "4",
+    "rank": 8,
+    "flags": [
+      "TO"
+    ],
+    "player_id": "hardeja01"
+  },
+  {
+    "player": "Cade Cunningham",
+    "bucket": "4",
+    "rank": 9,
+    "flags": [
+      "TO"
+    ],
+    "player_id": "cunnica01"
+  },
+  {
+    "player": "Devin Booker",
+    "bucket": "5",
+    "rank": 10,
+    "flags": [],
+    "player_id": "bookede01"
+  },
+  {
+    "player": "Steph Curry",
+    "bucket": "5",
+    "rank": 11,
+    "flags": [],
+    "player_id": "curryst01"
+  },
+  {
+    "player": "Kevin Durant",
+    "bucket": "5",
+    "rank": 12,
+    "flags": [],
+    "player_id": "duranke01"
+  },
+  {
+    "player": "Karl-Anthony Towns",
+    "bucket": "6",
+    "rank": 13,
+    "flags": [],
+    "player_id": "townska01"
+  },
+  {
+    "player": "Trae Young",
+    "bucket": "6",
+    "rank": 14,
+    "flags": [
+      "TO"
+    ],
+    "player_id": "youngtr01"
+  },
+  {
+    "player": "Domantas Sabonis",
+    "bucket": "6",
+    "rank": 15,
+    "flags": [],
+    "player_id": "sabondo01"
+  },
+  {
+    "player": "Tyrese Maxey",
+    "bucket": "7",
+    "rank": 16,
+    "flags": [],
+    "player_id": "maxeyty01"
+  },
+  {
+    "player": "Donovan Mitchell",
+    "bucket": "8",
+    "rank": 17,
+    "flags": [],
+    "player_id": "mitchdo01"
+  },
+  {
+    "player": "Evan Mobley",
+    "bucket": "8",
+    "rank": 18,
+    "flags": [],
+    "player_id": "mobleev01"
+  },
+  {
+    "player": "Amen Thompson",
+    "bucket": "8",
+    "rank": 19,
+    "flags": [],
+    "player_id": "thompam01"
+  },
+  {
+    "player": "Jalen Johnson",
+    "bucket": "8",
+    "rank": 20,
+    "flags": [],
+    "player_id": "johnsja05"
+  },
+  {
+    "player": "Josh Giddey",
+    "bucket": "9",
+    "rank": 21,
+    "flags": [],
+    "player_id": "giddejo01"
+  },
+  {
+    "player": "Zion Williamson",
+    "bucket": "9",
+    "rank": 22,
+    "flags": [
+      "FT"
+    ],
+    "player_id": "willizi01"
+  },
+  {
+    "player": "Jalen Williams",
+    "bucket": "9",
+    "rank": 23,
+    "flags": [],
+    "player_id": "willija06"
+  },
+  {
+    "player": "Jamal Murray",
+    "bucket": "10",
+    "rank": 24,
+    "flags": [],
+    "player_id": "murraja01"
+  },
+  {
+    "player": "Derrick White",
+    "bucket": "10",
+    "rank": 25,
+    "flags": [],
+    "player_id": "whitede01"
+  },
+  {
+    "player": "Chet Holmgren",
+    "bucket": "10",
+    "rank": 26,
+    "flags": [],
+    "player_id": "holmgch01"
+  },
+  {
+    "player": "Pascal Siakam",
+    "bucket": "11",
+    "rank": 27,
+    "flags": [],
+    "player_id": "siakapa01"
+  },
+  {
+    "player": "Bam Adebayo",
+    "bucket": "11",
+    "rank": 28,
+    "flags": [],
+    "player_id": "adebaba01"
+  },
+  {
+    "player": "Austin Reaves",
+    "bucket": "11",
+    "rank": 29,
+    "flags": [],
+    "player_id": "reaveau01"
+  },
+  {
+    "player": "Scottie Barnes",
+    "bucket": "11",
+    "rank": 30,
+    "flags": [],
+    "player_id": "barnesc01"
+  },
+  {
+    "player": "LaMelo Ball",
+    "bucket": "12",
+    "rank": 31,
+    "flags": [
+      "Health"
+    ],
+    "player_id": "ballla01"
+  },
+  {
+    "player": "Trey Murphy III",
+    "bucket": "12",
+    "rank": 32,
+    "flags": [],
+    "player_id": "murphtr02"
+  },
+  {
+    "player": "Kawhi Leonard",
+    "bucket": "12",
+    "rank": 33,
+    "flags": [
+      "Rest"
+    ],
+    "player_id": "leonaka01"
+  },
+  {
+    "player": "Jaren Jackson Jr",
+    "bucket": "12",
+    "rank": 34,
+    "flags": [],
+    "player_id": "jacksja02"
+  },
+  {
+    "player": "LeBron James",
+    "bucket": "12",
+    "rank": 35,
+    "flags": [
+      "IL"
+    ],
+    "player_id": "jamesle01"
+  },
+  {
+    "player": "Deni Avdija",
+    "bucket": "12",
+    "rank": 36,
+    "flags": [],
+    "player_id": "avdijde01"
+  },
+  {
+    "player": "De'Aaron Fox",
+    "bucket": "13",
+    "rank": 37,
+    "flags": [
+      "IL"
+    ],
+    "player_id": "foxde01"
+  },
+  {
+    "player": "Alperen Sengun",
+    "bucket": "13",
+    "rank": 38,
+    "flags": [
+      "FT"
+    ],
+    "player_id": "sengual01"
+  },
+  {
+    "player": "Jalen Brunson",
+    "bucket": "13",
+    "rank": 39,
+    "flags": [],
+    "player_id": "brunsja01"
+  },
+  {
+    "player": "Franz Wagner",
+    "bucket": "13",
+    "rank": 40,
+    "flags": [],
+    "player_id": "wagnefr01"
+  },
+  {
+    "player": "Myles Turner",
+    "bucket": "13",
+    "rank": 41,
+    "flags": [],
+    "player_id": "turnemy01"
+  },
+  {
+    "player": "Ivica Zubac",
+    "bucket": "13",
+    "rank": 42,
+    "flags": [],
+    "player_id": "zubaciv01"
+  },
+  {
+    "player": "Cooper Flagg",
+    "bucket": "13",
+    "rank": 43,
+    "flags": [],
+    "player_id": "ROOK_cooper_flagg"
+  },
+  {
+    "player": "Desmond Bane",
+    "bucket": "14",
+    "rank": 44,
+    "flags": [],
+    "player_id": "banede01"
+  },
+  {
+    "player": "Jaylen Brown",
+    "bucket": "14",
+    "rank": 45,
+    "flags": [],
+    "player_id": "brownja02"
+  },
+  {
+    "player": "Dyson Daniels",
+    "bucket": "14",
+    "rank": 46,
+    "flags": [],
+    "player_id": "daniedy01"
+  },
+  {
+    "player": "Jimmy Butler",
+    "bucket": "14",
+    "rank": 47,
+    "flags": [],
+    "player_id": "butleji01"
+  },
+  {
+    "player": "Jalen Duren",
+    "bucket": "15",
+    "rank": 48,
+    "flags": [],
+    "player_id": "durenja01"
+  },
+  {
+    "player": "Coby White",
+    "bucket": "15",
+    "rank": 49,
+    "flags": [],
+    "player_id": "whiteco01"
+  },
+  {
+    "player": "Ja Morant",
+    "bucket": "15",
+    "rank": 50,
+    "flags": [
+      "TO"
+    ],
+    "player_id": "moranja01"
+  },
+  {
+    "player": "Kristaps Porzingis",
+    "bucket": "16",
+    "rank": 51,
+    "flags": [
+      "Health"
+    ],
+    "player_id": "porzikr01"
+  },
+  {
+    "player": "Brandon Miller",
+    "bucket": "16",
+    "rank": 52,
+    "flags": [],
+    "player_id": "millebr02"
+  },
+  {
+    "player": "Zach LaVine",
+    "bucket": "16",
+    "rank": 53,
+    "flags": [],
+    "player_id": "lavinza01"
+  },
+  {
+    "player": "Joel Embiid",
+    "bucket": "16",
+    "rank": 54,
+    "flags": [
+      "Health"
+    ],
+    "player_id": "embiijo01"
+  },
+  {
+    "player": "Jarrett Allen",
+    "bucket": "16",
+    "rank": 55,
+    "flags": [],
+    "player_id": "allenja01"
+  },
+  {
+    "player": "Deandre Ayton",
+    "bucket": "17",
+    "rank": 56,
+    "flags": [],
+    "player_id": "aytonde01"
+  },
+  {
+    "player": "OG Anunoby",
+    "bucket": "17",
+    "rank": 57,
+    "flags": [],
+    "player_id": "anunoog01"
+  },
+  {
+    "player": "Payton Pritchard",
+    "bucket": "18",
+    "rank": 58,
+    "flags": [],
+    "player_id": "pritcpa01"
+  },
+  {
+    "player": "Rudy Gobert",
+    "bucket": "18",
+    "rank": 59,
+    "flags": [],
+    "player_id": "goberru01"
+  },
+  {
+    "player": "Darius Garland",
+    "bucket": "18",
+    "rank": 60,
+    "flags": [
+      "IL"
+    ],
+    "player_id": "garlada01"
+  },
+  {
+    "player": "Nikola Vucevic",
+    "bucket": "19",
+    "rank": 61,
+    "flags": [],
+    "player_id": "vucevni01"
+  },
+  {
+    "player": "Walker Kessler",
+    "bucket": "19",
+    "rank": 62,
+    "flags": [
+      "Tank"
+    ],
+    "player_id": "kesslwa01"
+  },
+  {
+    "player": "Jakob Poeltl",
+    "bucket": "19",
+    "rank": 63,
+    "flags": [],
+    "player_id": "poeltja01"
+  },
+  {
+    "player": "Cam Johnson",
+    "bucket": "19",
+    "rank": 64,
+    "flags": [],
+    "player_id": "johnsca02"
+  },
+  {
+    "player": "DeMar DeRozan",
+    "bucket": "19",
+    "rank": 65,
+    "flags": [],
+    "player_id": "derozde01"
+  },
+  {
+    "player": "Paolo Banchero",
+    "bucket": "20",
+    "rank": 66,
+    "flags": [
+      "TO",
+      "FT"
+    ],
+    "player_id": "banchpa01"
+  },
+  {
+    "player": "Brandon Ingram",
+    "bucket": "20",
+    "rank": 67,
+    "flags": [],
+    "player_id": "ingrabr01"
+  },
+  {
+    "player": "Lauri Markkanen",
+    "bucket": "20",
+    "rank": 68,
+    "flags": [],
+    "player_id": "markkla01"
+  },
+  {
+    "player": "Donovan Clingan",
+    "bucket": "20",
+    "rank": 69,
+    "flags": [],
+    "player_id": "clingdo01"
+  },
+  {
+    "player": "Ausar Thompson",
+    "bucket": "20",
+    "rank": 70,
+    "flags": [],
+    "player_id": "thompau01"
+  },
+  {
+    "player": "Onyeka Okongwu",
+    "bucket": "20",
+    "rank": 71,
+    "flags": [],
+    "player_id": "okongon01"
+  },
+  {
+    "player": "Toumani Camara",
+    "bucket": "20",
+    "rank": 72,
+    "flags": [],
+    "player_id": "camarto01"
+  },
+  {
+    "player": "Miles Bridges",
+    "bucket": "20",
+    "rank": 73,
+    "flags": [],
+    "player_id": "bridgmi02"
+  },
+  {
+    "player": "Josh Hart",
+    "bucket": "20",
+    "rank": 74,
+    "flags": [],
+    "player_id": "hartjo01"
+  },
+  {
+    "player": "Isaiah Hartenstein",
+    "bucket": "21",
+    "rank": 75,
+    "flags": [],
+    "player_id": "harteis01"
+  },
+  {
+    "player": "Christian Braun",
+    "bucket": "21",
+    "rank": 76,
+    "flags": [],
+    "player_id": "braunch01"
+  },
+  {
+    "player": "Andrew Nembhard",
+    "bucket": "21",
+    "rank": 77,
+    "flags": [],
+    "player_id": "nembhan01"
+  },
+  {
+    "player": "Draymond Green",
+    "bucket": "21",
+    "rank": 78,
+    "flags": [
+      "Points"
+    ],
+    "player_id": "greendr01"
+  },
+  {
+    "player": "John Collins",
+    "bucket": "21",
+    "rank": 79,
+    "flags": [],
+    "player_id": "collijo01"
+  },
+  {
+    "player": "Cam Thomas",
+    "bucket": "21",
+    "rank": 80,
+    "flags": [
+      "FG"
+    ],
+    "player_id": "thomaca02"
+  },
+  {
+    "player": "Donte DiVincenzo",
+    "bucket": "21",
+    "rank": 81,
+    "flags": [],
+    "player_id": "divindo01"
+  },
+  {
+    "player": "Bobby Portis",
+    "bucket": "21",
+    "rank": 82,
+    "flags": [],
+    "player_id": "portibo01"
+  },
+  {
+    "player": "Dereck Lively II",
+    "bucket": "21",
+    "rank": 83,
+    "flags": [],
+    "player_id": "livelde01"
+  },
+  {
+    "player": "Mark Williams",
+    "bucket": "21",
+    "rank": 84,
+    "flags": [],
+    "player_id": "willima07"
+  },
+  {
+    "player": "Immanuel Quickley",
+    "bucket": "22",
+    "rank": 85,
+    "flags": [],
+    "player_id": "quickim01"
+  },
+  {
+    "player": "Jordan Poole",
+    "bucket": "22",
+    "rank": 86,
+    "flags": [],
+    "player_id": "poolejo01"
+  },
+  {
+    "player": "Tyler Herro",
+    "bucket": "22",
+    "rank": 87,
+    "flags": [
+      "IL"
+    ],
+    "player_id": "herroty01"
+  },
+  {
+    "player": "Michael Porter Jr",
+    "bucket": "22",
+    "rank": 88,
+    "flags": [
+      "Tank"
+    ],
+    "player_id": "portemi01"
+  },
+  {
+    "player": "Anfernee Simons",
+    "bucket": "22",
+    "rank": 89,
+    "flags": [
+      "FG"
+    ],
+    "player_id": "simonan01"
+  },
+  {
+    "player": "Nic Claxton",
+    "bucket": "22",
+    "rank": 90,
+    "flags": [
+      "FT",
+      "Tank"
+    ],
+    "player_id": "claxtni01"
+  },
+  {
+    "player": "Keegan Murray",
+    "bucket": "22",
+    "rank": 91,
+    "flags": [
+      "IL"
+    ],
+    "player_id": "murrake02"
+  },
+  {
+    "player": "Herb Jones",
+    "bucket": "22",
+    "rank": 92,
+    "flags": [],
+    "player_id": "joneshe01"
+  },
+  {
+    "player": "Brandin Podziemski",
+    "bucket": "22",
+    "rank": 93,
+    "flags": [],
+    "player_id": "podzibr01"
+  },
+  {
+    "player": "Jalen Suggs",
+    "bucket": "22",
+    "rank": 94,
+    "flags": [],
+    "player_id": "suggsja01"
+  },
+  {
+    "player": "Bradley Beal",
+    "bucket": "22",
+    "rank": 95,
+    "flags": [],
+    "player_id": "bealbr01"
+  },
+  {
+    "player": "Zach Edey",
+    "bucket": "22",
+    "rank": 96,
+    "flags": [
+      "IL"
+    ],
+    "player_id": "edeyza01"
+  },
+  {
+    "player": "Jalen Green",
+    "bucket": "22",
+    "rank": 97,
+    "flags": [
+      "FG",
+      "IL"
+    ],
+    "player_id": "greenja05"
+  },
+  {
+    "player": "Paul George",
+    "bucket": "23",
+    "rank": 98,
+    "flags": [
+      "Health"
+    ],
+    "player_id": "georgpa01"
+  },
+  {
+    "player": "Julius Randle",
+    "bucket": "23",
+    "rank": 99,
+    "flags": [],
+    "player_id": "randlju01"
+  },
+  {
+    "player": "Norman Powell",
+    "bucket": "23",
+    "rank": 100,
+    "flags": [
+      "Burger"
+    ],
+    "player_id": "powelno01"
+  },
+  {
+    "player": "Matas Buzelis",
+    "bucket": "23",
+    "rank": 101,
+    "flags": [],
+    "player_id": "buzelma01"
+  },
+  {
+    "player": "Mikal Bridges",
+    "bucket": "23",
+    "rank": 102,
+    "flags": [],
+    "player_id": "bridgmi01"
+  },
+  {
+    "player": "Andrew Wiggins",
+    "bucket": "23",
+    "rank": 103,
+    "flags": [],
+    "player_id": "wiggian01"
+  },
+  {
+    "player": "Jrue Holiday",
+    "bucket": "23",
+    "rank": 104,
+    "flags": [],
+    "player_id": "holidjr01"
+  },
+  {
+    "player": "Bennedict Mathurin",
+    "bucket": "24",
+    "rank": 105,
+    "flags": [],
+    "player_id": "mathube01"
+  },
+  {
+    "player": "Kel'el Ware",
+    "bucket": "24",
+    "rank": 106,
+    "flags": [],
+    "player_id": "wareke01"
+  },
+  {
+    "player": "Tari Eason",
+    "bucket": "24",
+    "rank": 107,
+    "flags": [],
+    "player_id": "easonta01"
+  },
+  {
+    "player": "Devin Vassell",
+    "bucket": "24",
+    "rank": 108,
+    "flags": [],
+    "player_id": "vassede01"
+  },
+  {
+    "player": "Naz Reid",
+    "bucket": "24",
+    "rank": 109,
+    "flags": [],
+    "player_id": "reidna01"
+  },
+  {
+    "player": "Santi Aldama",
+    "bucket": "24",
+    "rank": 110,
+    "flags": [],
+    "player_id": "aldamsa01"
+  },
+  {
+    "player": "Jaden McDaniels",
+    "bucket": "25",
+    "rank": 111,
+    "flags": [],
+    "player_id": "mcdanja02"
+  },
+  {
+    "player": "Alex Sarr",
+    "bucket": "25",
+    "rank": 112,
+    "flags": [],
+    "player_id": "sarral01"
+  },
+  {
+    "player": "D'Angelo Russell",
+    "bucket": "25",
+    "rank": 113,
+    "flags": [
+      "Half"
+    ],
+    "player_id": "russeda01"
+  },
+  {
+    "player": "Tobias Harris",
+    "bucket": "25",
+    "rank": 114,
+    "flags": [],
+    "player_id": "harrito02"
+  },
+  {
+    "player": "Reed Sheppard",
+    "bucket": "Flier 2",
+    "rank": 115,
+    "flags": [],
+    "player_id": "sheppre01"
+  },
+  {
+    "player": "Cason Wallace",
+    "bucket": "Flier 2",
+    "rank": 116,
+    "flags": [],
+    "player_id": "wallaca01"
+  },
+  {
+    "player": "Cam Whitmore",
+    "bucket": "Flier 2",
+    "rank": 117,
+    "flags": [],
+    "player_id": "whitmca01"
+  },
+  {
+    "player": "Neemias Queta",
+    "bucket": "Flier 2",
+    "rank": 118,
+    "flags": [],
+    "player_id": "quetane01"
+  },
+  {
+    "player": "Isaiah Jackson",
+    "bucket": "Flier 2",
+    "rank": 119,
+    "flags": [],
+    "player_id": "jacksis01"
+  },
+  {
+    "player": "Aaron Nesmith",
+    "bucket": "Flier 2",
+    "rank": 120,
+    "flags": [],
+    "player_id": "nesmiaa01"
+  },
+  {
+    "player": "Kevin Porter Jr",
+    "bucket": "Flier 2",
+    "rank": 121,
+    "flags": [],
+    "player_id": "porteke02"
+  },
+  {
+    "player": "Sam Hauser",
+    "bucket": "Flier 3",
+    "rank": 122,
+    "flags": [],
+    "player_id": "hausesa01"
+  },
+  {
+    "player": "Al Horford",
+    "bucket": "Flier 3",
+    "rank": 123,
+    "flags": [
+      "Rest"
+    ],
+    "player_id": "horfoal01"
+  },
+  {
+    "player": "Adem Bona",
+    "bucket": "Flier 3",
+    "rank": 124,
+    "flags": [
+      "Burger"
+    ],
+    "player_id": "bonaad01"
+  },
+  {
+    "player": "Nikola Jovic",
+    "bucket": "Flier 3",
+    "rank": 125,
+    "flags": [],
+    "player_id": "jovicni01"
+  },
+  {
+    "player": "Davion Mitchell",
+    "bucket": "Flier 3",
+    "rank": 126,
+    "flags": [],
+    "player_id": "mitchda01"
+  },
+  {
+    "player": "Quentin Grimes",
+    "bucket": "Flier 3",
+    "rank": 127,
+    "flags": [],
+    "player_id": "grimequ01"
+  },
+  {
+    "player": "Kyshawn George",
+    "bucket": "Flier 3",
+    "rank": 128,
+    "flags": [],
+    "player_id": "georgky01"
+  },
+  {
+    "player": "Taylor Hendricks",
+    "bucket": "Flier 3",
+    "rank": 129,
+    "flags": [],
+    "player_id": "hendrta01"
+  },
+  {
+    "player": "Daniel Gafford",
+    "bucket": "Flier 4",
+    "rank": 130,
+    "flags": [],
+    "player_id": "gaffoda01"
+  },
+  {
+    "player": "PJ Washington",
+    "bucket": "Flier 4",
+    "rank": 131,
+    "flags": [],
+    "player_id": "washipj01"
+  },
+  {
+    "player": "Kyle Filipowski",
+    "bucket": "Flier 4",
+    "rank": 132,
+    "flags": [],
+    "player_id": "filipky01"
+  },
+  {
+    "player": "Isaiah Collier",
+    "bucket": "Flier 4",
+    "rank": 133,
+    "flags": [],
+    "player_id": "colliis01"
+  },
+  {
+    "player": "Jay Huff",
+    "bucket": "Flier 4",
+    "rank": 134,
+    "flags": [],
+    "player_id": "huffja01"
+  },
+  {
+    "player": "Alex Caruso",
+    "bucket": "Flier 4",
+    "rank": 135,
+    "flags": [],
+    "player_id": "carusal01"
+  },
+  {
+    "player": "Kelly Oubre Jr",
+    "bucket": "Flier 4",
+    "rank": 136,
+    "flags": [],
+    "player_id": "oubreke01"
+  },
+  {
+    "player": "Jaylen Wells",
+    "bucket": "Flier 4",
+    "rank": 137,
+    "flags": [],
+    "player_id": "wellsja01"
+  },
+  {
+    "player": "Lonzo Ball",
+    "bucket": "Flier 4",
+    "rank": 138,
+    "flags": [],
+    "player_id": "balllo01"
+  },
+  {
+    "player": "Aaron Gordon",
+    "bucket": "Flier 4",
+    "rank": 139,
+    "flags": [],
+    "player_id": "gordoaa01"
+  },
+  {
+    "player": "Klay Thompson",
+    "bucket": "Flier 4",
+    "rank": 140,
+    "flags": [],
+    "player_id": "thompkl01"
+  },
+  {
+    "player": "Malik Monk",
+    "bucket": "Flier 4",
+    "rank": 141,
+    "flags": [],
+    "player_id": "monkma01"
+  },
+  {
+    "player": "Jonathan Kuminga",
+    "bucket": "Flier 4",
+    "rank": 142,
+    "flags": [],
+    "player_id": "kuminjo01"
+  },
+  {
+    "player": "Stephon Castle",
+    "bucket": "Flier 4",
+    "rank": 143,
+    "flags": [],
+    "player_id": "castlst01"
+  },
+  {
+    "player": "Wendell Carter Jr",
+    "bucket": "Flier 4",
+    "rank": 144,
+    "flags": [],
+    "player_id": "cartewe01"
+  },
+  {
+    "player": "Scotty Pippen Jr",
+    "bucket": "Flier 4",
+    "rank": 145,
+    "flags": [
+      "Burger"
+    ],
+    "player_id": "pippesc02"
+  },
+  {
+    "player": "RJ Barrett",
+    "bucket": "Spillage",
+    "rank": 146,
+    "flags": [
+      "FT"
+    ],
+    "player_id": "barrerj01"
+  },
+  {
+    "player": "Chris Paul",
+    "bucket": "Spillage",
+    "rank": 147,
+    "flags": [],
+    "player_id": "paulch01"
+  },
+  {
+    "player": "Shaedon Sharpe",
+    "bucket": "Spillage",
+    "rank": 148,
+    "flags": [],
+    "player_id": "sharpsh01"
+  },
+  {
+    "player": "Jeremy Sochan",
+    "bucket": "Spillage",
+    "rank": 149,
+    "flags": [],
+    "player_id": "sochaje01"
+  },
+  {
+    "player": "CJ McCollum",
+    "bucket": "Spillage",
+    "rank": 150,
+    "flags": [],
+    "player_id": "mccolcj01"
+  },
+  {
+    "player": "Jabari Smith Jr",
+    "bucket": "Spillage",
+    "rank": 151,
+    "flags": [],
+    "player_id": "smithja05"
+  },
+  {
+    "player": "Jaden Ivey",
+    "bucket": "Spillage",
+    "rank": 152,
+    "flags": [],
+    "player_id": "iveyja01"
+  },
+  {
+    "player": "Yves Missi",
+    "bucket": "Spillage",
+    "rank": 153,
+    "flags": [],
+    "player_id": "missiyv01"
+  },
+  {
+    "player": "Nickeil Alexander-Walker",
+    "bucket": "Spillage",
+    "rank": 154,
+    "flags": [],
+    "player_id": "alexani01"
+  },
+  {
+    "player": "Kyle Kuzma",
+    "bucket": "Spillage",
+    "rank": 155,
+    "flags": [],
+    "player_id": "kuzmaky01"
+  },
+  {
+    "player": "Dennis Schroder",
+    "bucket": "Spillage",
+    "rank": 156,
+    "flags": [],
+    "player_id": "schrode01"
+  },
+  {
+    "player": "Brook Lopez",
+    "bucket": "Spillage",
+    "rank": 157,
+    "flags": [],
+    "player_id": "lopezbr01"
+  },
+  {
+    "player": "Keyonte George",
+    "bucket": "Spillage",
+    "rank": 158,
+    "flags": [],
+    "player_id": "georgke01"
+  },
+  {
+    "player": "Zaccharie Risacher",
+    "bucket": "Spillage",
+    "rank": 159,
+    "flags": [],
+    "player_id": "risacza01"
+  },
+  {
+    "player": "Scoot Henderson",
+    "bucket": "Spillage",
+    "rank": 160,
+    "flags": [],
+    "player_id": "hendesc01"
+  },
+  {
+    "player": "Ace Bailey",
+    "bucket": "Spillage",
+    "rank": 161,
+    "flags": [],
+    "player_id": null
+  },
+  {
+    "player": "VJ Edgecombe",
+    "bucket": "Spillage",
+    "rank": 162,
+    "flags": [],
+    "player_id": null
+  },
+  {
+    "player": "Jerami Grant",
+    "bucket": "Spillage",
+    "rank": 163,
+    "flags": [],
+    "player_id": "grantje01"
+  },
+  {
+    "player": "Dylan Harper",
+    "bucket": "Spillage",
+    "rank": 164,
+    "flags": [],
+    "player_id": null
+  },
+  {
+    "player": "Collin Sexton",
+    "bucket": "Spillage",
+    "rank": 165,
+    "flags": [],
+    "player_id": "sextoco01"
+  },
+  {
+    "player": "De'Andre Hunter",
+    "bucket": "Spillage",
+    "rank": 166,
+    "flags": [],
+    "player_id": "huntede01"
+  },
+  {
+    "player": "TJ McConnell",
+    "bucket": "Spillage",
+    "rank": 167,
+    "flags": [
+      "IL"
+    ],
+    "player_id": "mccontj01"
+  },
+  {
+    "player": "Ty Jerome",
+    "bucket": "Spillage",
+    "rank": 168,
+    "flags": [],
+    "player_id": "jeromty01"
+  }
+]

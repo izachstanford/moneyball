@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moneyball - Roto Analytics</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">Moneyball</h1>
+        <nav class="nav">
+            <button class="nav-item active" data-page="draft-board">Draft Board</button>
+            <button class="nav-item" data-page="trends">Trends</button>
+            <button class="nav-item" data-page="breakouts">Breakouts</button>
+            <button class="nav-item" data-page="insights">Insights</button>
+        </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Draft Board Page -->
+            <div id="trends" class="page">
+                <div class="page-header">
+                    <h2>Trends</h2>
+                    <div class="controls">
+                        <div class="player-search" style="position: relative; flex: 1; max-width: 400px;">
+                            <input type="text" id="historical-search-input" placeholder="Search and select players..." />
+                            <div id="historical-search-results" class="search-results"></div>
+                        </div>
+                        <select id="historical-position-filter">
+                            <option value="">All Positions</option>
+                            <option value="PG">PG</option>
+                            <option value="SG">SG</option>
+                            <option value="SF">SF</option>
+                            <option value="PF">PF</option>
+                            <option value="C">C</option>
+                        </select>
+                        <select id="historical-category-filter">
+                            <option value="">All Categories</option>
+                            <option value="elite-consistent">Elite & Consistent</option>
+                            <option value="rising-stars">Rising Stars</option>
+                            <option value="breakout-candidates">Breakout Candidates</option>
+                            <option value="reliable-producers">Reliable Producers</option>
+                            <option value="declining">Declining</option>
+                            <option value="volatile">Volatile</option>
+                        </select>
+                        <input type="number" id="historical-min-games" placeholder="Min GP/Season" min="0" max="82" value="20" />
+                        <div class="toggle-group">
+                            <button class="toggle active" data-rank-type="per_game">Per Game</button>
+                            <button class="toggle" data-rank-type="total">Total</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="historical-selected-players" class="selected-players"></div>
+                <div id="historical-content" class="historical-content"></div>
+            </div>
+
+            <!-- Trends & Breakouts Page -->
+            <div id="breakouts" class="page">
+                <div class="page-header">
+                    <h2>Breakouts</h2>
+                    <div class="controls">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="breakouts">Breakouts</button>
+                        <button class="filter-btn" data-filter="undervalued">Undervalued</button>
+                        <button class="filter-btn" data-filter="declining">Declining</button>
+                    </div>
+                </div>
+                <div id="breakouts-content" class="trends-content"></div>
+            </div>
+
+            <div id="draft-board" class="page active">
+                <div class="page-header">
+                    <h2>Draft Board</h2>
+                    <div class="controls">
+                        <select id="draft-position-filter">
+                            <option value="">All Positions</option>
+                            <option value="PG">PG</option>
+                            <option value="SG">SG</option>
+                            <option value="SF">SF</option>
+                            <option value="PF">PF</option>
+                            <option value="C">C</option>
+                        </select>
+                        <label class="checkbox">
+                            <input type="checkbox" id="hide-drafted" />
+                            Hide Drafted
+                        </label>
+                    </div>
+                </div>
+                
+                <div id="my-team-section" class="my-team-section">
+                    <h3>My Team</h3>
+                    <div id="my-team-content" class="my-team-content">
+                        <!-- Team composition will appear here -->
+                    </div>
+                </div>
+                
+                <div id="draft-table" class="draft-table"></div>
+            </div>
+
+            <!-- Insights Page -->
+            <div id="insights" class="page">
+                <div class="page-header">
+                    <h2>Insights</h2>
+                    <p class="page-description">Visual analytics to identify draft steals, compare player trajectories, and assess risk vs reward</p>
+                </div>
+
+                <!-- Chart 1: Value Scatter Plot -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <h3>💎 Draft Value Finder</h3>
+                        <p class="chart-description">Projected Rank vs ADP - Find undervalued steals (top-left) and overvalued busts (bottom-right)</p>
+                    </div>
+                    <div class="chart-controls">
+                        <select id="value-position-filter">
+                            <option value="">All Positions</option>
+                            <option value="PG">PG</option>
+                            <option value="SG">SG</option>
+                            <option value="SG">SF</option>
+                            <option value="PF">PF</option>
+                            <option value="C">C</option>
+                        </select>
+                        <label class="checkbox">
+                            <input type="checkbox" id="value-show-names" checked />
+                            Show Player Names
+                        </label>
+                    </div>
+                    <div id="value-scatter-chart" class="chart-container"></div>
+                </div>
+
+                <!-- Chart 2: Multi-Player Trends -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <h3>📈 Rank Trajectory Comparison</h3>
+                        <p class="chart-description">Compare historical rank progression for multiple players across seasons</p>
+                    </div>
+                    <div class="chart-controls">
+                        <div class="player-search" style="position: relative; flex: 1; max-width: 400px;">
+                            <input type="text" id="trends-search-input" placeholder="Search and add players to compare..." />
+                            <div id="trends-search-results" class="search-results"></div>
+                        </div>
+                    </div>
+                    <div id="trends-selected-players" class="selected-players"></div>
+                    <div id="trends-chart" class="chart-container"></div>
+                </div>
+
+                <!-- Chart 3: Consistency vs Performance Scatter -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <h3>⚖️ Risk vs Reward Matrix</h3>
+                        <p class="chart-description">Consistency Score vs Average Rank - Identify safe picks (top-right) and risky high-upside plays (top-left)</p>
+                    </div>
+                    <div class="chart-controls">
+                        <select id="consistency-position-filter">
+                            <option value="">All Positions</option>
+                            <option value="PG">PG</option>
+                            <option value="SG">SG</option>
+                            <option value="SF">SF</option>
+                            <option value="PF">PF</option>
+                            <option value="C">C</option>
+                        </select>
+                        <label class="checkbox">
+                            <input type="checkbox" id="consistency-show-names" checked />
+                            Show Player Names
+                        </label>
+                    </div>
+                    <div id="consistency-scatter-chart" class="chart-container"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

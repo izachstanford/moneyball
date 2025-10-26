@@ -1,0 +1,5965 @@
+{
+  "meta": {
+    "last_updated": "2025-10-19T03:27:07.210Z",
+    "total_players": 638,
+    "description": "Master player registry consolidating data from roto dashboard, ADP, and bucket rankings"
+  },
+  "players": {
+    "gilgesh01": {
+      "player_id": "gilgesh01",
+      "name": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "positions": [
+        "PG"
+      ],
+      "adp": 3.9,
+      "rookie": false,
+      "bucket": "2",
+      "bucket_rank": 3,
+      "flags": []
+    },
+    "edwaran01": {
+      "player_id": "edwaran01",
+      "name": "Anthony Edwards",
+      "team": "MIN",
+      "positions": [
+        "SG"
+      ],
+      "adp": 7.9,
+      "rookie": false,
+      "bucket": "4",
+      "bucket_rank": 7,
+      "flags": []
+    },
+    "jokicni01": {
+      "player_id": "jokicni01",
+      "name": "Nikola Jokić",
+      "team": "DEN",
+      "positions": [
+        "C"
+      ],
+      "adp": 1.6,
+      "rookie": false,
+      "bucket": "1",
+      "bucket_rank": 1,
+      "flags": []
+    },
+    "antetgi01": {
+      "player_id": "antetgi01",
+      "name": "Giannis Antetokounmpo",
+      "team": "MIL",
+      "positions": [
+        "PF"
+      ],
+      "adp": 5.1,
+      "rookie": false,
+      "bucket": "3",
+      "bucket_rank": 5,
+      "flags": [
+        "FT"
+      ]
+    },
+    "tatumja01": {
+      "player_id": "tatumja01",
+      "name": "Jayson Tatum",
+      "team": "BOS",
+      "positions": [
+        "PF"
+      ]
+    },
+    "bookede01": {
+      "player_id": "bookede01",
+      "name": "Devin Booker",
+      "team": "PHO",
+      "positions": [
+        "SG"
+      ],
+      "adp": 12.9,
+      "rookie": false,
+      "bucket": "5",
+      "bucket_rank": 10,
+      "flags": []
+    },
+    "youngtr01": {
+      "player_id": "youngtr01",
+      "name": "Trae Young",
+      "team": "ATL",
+      "positions": [
+        "PG"
+      ],
+      "adp": 12.2,
+      "rookie": false,
+      "bucket": "6",
+      "bucket_rank": 14,
+      "flags": [
+        "TO"
+      ]
+    },
+    "herroty01": {
+      "player_id": "herroty01",
+      "name": "Tyler Herro",
+      "team": "MIA",
+      "positions": [
+        "SG"
+      ],
+      "adp": 66,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 87,
+      "flags": [
+        "IL"
+      ]
+    },
+    "cunnica01": {
+      "player_id": "cunnica01",
+      "name": "Cade Cunningham",
+      "team": "DET",
+      "positions": [
+        "PG"
+      ],
+      "adp": 8.1,
+      "rookie": false,
+      "bucket": "4",
+      "bucket_rank": 9,
+      "flags": [
+        "TO"
+      ]
+    },
+    "hardeja01": {
+      "player_id": "hardeja01",
+      "name": "James Harden",
+      "team": "LAC",
+      "positions": [
+        "PG"
+      ],
+      "adp": 15.3,
+      "rookie": false,
+      "bucket": "4",
+      "bucket_rank": 8,
+      "flags": [
+        "TO"
+      ]
+    },
+    "townska01": {
+      "player_id": "townska01",
+      "name": "Karl-Anthony Towns",
+      "team": "NYK",
+      "positions": [
+        "C"
+      ],
+      "adp": 10.8,
+      "rookie": false,
+      "bucket": "6",
+      "bucket_rank": 13,
+      "flags": []
+    },
+    "lavinza01": {
+      "player_id": "lavinza01",
+      "name": "Zach LaVine",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ],
+      "adp": 62.8,
+      "rookie": false,
+      "bucket": "16",
+      "bucket_rank": 53,
+      "flags": []
+    },
+    "greenja05": {
+      "player_id": "greenja05",
+      "name": "Jalen Green",
+      "team": "HOU",
+      "positions": [
+        "SG"
+      ],
+      "adp": 70.4,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 97,
+      "flags": [
+        "FG",
+        "IL"
+      ]
+    },
+    "curryst01": {
+      "player_id": "curryst01",
+      "name": "Stephen Curry",
+      "team": "GSW",
+      "positions": [
+        "PG"
+      ],
+      "adp": 17.3,
+      "rookie": false,
+      "bucket": "5",
+      "bucket_rank": 11,
+      "flags": []
+    },
+    "derozde01": {
+      "player_id": "derozde01",
+      "name": "DeMar DeRozan",
+      "team": "SAC",
+      "positions": [
+        "SF"
+      ],
+      "adp": 64.7,
+      "rookie": false,
+      "bucket": "19",
+      "bucket_rank": 65,
+      "flags": []
+    },
+    "jamesle01": {
+      "player_id": "jamesle01",
+      "name": "LeBron James",
+      "team": "LAL",
+      "positions": [
+        "SF"
+      ],
+      "adp": 21.3,
+      "rookie": false,
+      "bucket": "12",
+      "bucket_rank": 35,
+      "flags": [
+        "IL"
+      ]
+    },
+    "mitchdo01": {
+      "player_id": "mitchdo01",
+      "name": "Donovan Mitchell",
+      "team": "CLE",
+      "positions": [
+        "SG"
+      ],
+      "adp": 20.7,
+      "rookie": false,
+      "bucket": "8",
+      "bucket_rank": 17,
+      "flags": []
+    },
+    "brunsja01": {
+      "player_id": "brunsja01",
+      "name": "Jalen Brunson",
+      "team": "NYK",
+      "positions": [
+        "PG"
+      ],
+      "adp": 22.9,
+      "rookie": false,
+      "bucket": "13",
+      "bucket_rank": 39,
+      "flags": []
+    },
+    "duranke01": {
+      "player_id": "duranke01",
+      "name": "Kevin Durant",
+      "team": "PHO",
+      "positions": [
+        "PF"
+      ],
+      "adp": 19.2,
+      "rookie": false,
+      "bucket": "5",
+      "bucket_rank": 12,
+      "flags": []
+    },
+    "jacksja02": {
+      "player_id": "jacksja02",
+      "name": "Jaren Jackson Jr.",
+      "team": "MEM",
+      "positions": [
+        "C"
+      ],
+      "adp": 40.3,
+      "rookie": false,
+      "bucket": "12",
+      "bucket_rank": 34,
+      "flags": []
+    },
+    "siakapa01": {
+      "player_id": "siakapa01",
+      "name": "Pascal Siakam",
+      "team": "IND",
+      "positions": [
+        "PF"
+      ],
+      "adp": 30.5,
+      "rookie": false,
+      "bucket": "11",
+      "bucket_rank": 27,
+      "flags": []
+    },
+    "garlada01": {
+      "player_id": "garlada01",
+      "name": "Darius Garland",
+      "team": "CLE",
+      "positions": [
+        "PG"
+      ],
+      "adp": 68.7,
+      "rookie": false,
+      "bucket": "18",
+      "bucket_rank": 60,
+      "flags": [
+        "IL"
+      ]
+    },
+    "whiteco01": {
+      "player_id": "whiteco01",
+      "name": "Coby White",
+      "team": "CHI",
+      "positions": [
+        "SG"
+      ],
+      "adp": 61.1,
+      "rookie": false,
+      "bucket": "15",
+      "bucket_rank": 49,
+      "flags": []
+    },
+    "willija06": {
+      "player_id": "willija06",
+      "name": "Jalen Williams",
+      "team": "OKC",
+      "positions": [
+        "SG"
+      ],
+      "adp": 22.6,
+      "rookie": false,
+      "bucket": "9",
+      "bucket_rank": 23,
+      "flags": []
+    },
+    "reaveau01": {
+      "player_id": "reaveau01",
+      "name": "Austin Reaves",
+      "team": "LAL",
+      "positions": [
+        "SG"
+      ],
+      "adp": 51.3,
+      "rookie": false,
+      "bucket": "11",
+      "bucket_rank": 29,
+      "flags": []
+    },
+    "foxde01": {
+      "player_id": "foxde01",
+      "name": "De'Aaron Fox",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ],
+      "adp": 32.9,
+      "rookie": false,
+      "bucket": "13",
+      "bucket_rank": 37,
+      "flags": [
+        "IL"
+      ]
+    },
+    "sengual01": {
+      "player_id": "sengual01",
+      "name": "Alperen Şengün",
+      "team": "HOU",
+      "positions": [
+        "C"
+      ],
+      "adp": 19.2,
+      "rookie": false,
+      "bucket": "13",
+      "bucket_rank": 38,
+      "flags": [
+        "FT"
+      ]
+    },
+    "wagnefr01": {
+      "player_id": "wagnefr01",
+      "name": "Franz Wagner",
+      "team": "ORL",
+      "positions": [
+        "SF"
+      ],
+      "adp": 35.5,
+      "rookie": false,
+      "bucket": "13",
+      "bucket_rank": 40,
+      "flags": []
+    },
+    "lillada01": {
+      "player_id": "lillada01",
+      "name": "Damian Lillard",
+      "team": "MIL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "bridgmi01": {
+      "player_id": "bridgmi01",
+      "name": "Mikal Bridges",
+      "team": "NYK",
+      "positions": [
+        "SF"
+      ],
+      "adp": 80.5,
+      "rookie": false,
+      "bucket": "23",
+      "bucket_rank": 102,
+      "flags": []
+    },
+    "murraja01": {
+      "player_id": "murraja01",
+      "name": "Jamal Murray",
+      "team": "DEN",
+      "positions": [
+        "PG"
+      ],
+      "adp": 40.3,
+      "rookie": false,
+      "bucket": "10",
+      "bucket_rank": 24,
+      "flags": []
+    },
+    "adebaba01": {
+      "player_id": "adebaba01",
+      "name": "Bam Adebayo",
+      "team": "MIA",
+      "positions": [
+        "C"
+      ],
+      "adp": 32.6,
+      "rookie": false,
+      "bucket": "11",
+      "bucket_rank": 28,
+      "flags": []
+    },
+    "doncilu01": {
+      "player_id": "doncilu01",
+      "name": "Luka Dončić",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ],
+      "adp": 4.9,
+      "rookie": false,
+      "bucket": "3",
+      "bucket_rank": 4,
+      "flags": []
+    },
+    "brownja02": {
+      "player_id": "brownja02",
+      "name": "Jaylen Brown",
+      "team": "BOS",
+      "positions": [
+        "SF"
+      ],
+      "adp": 30.7,
+      "rookie": false,
+      "bucket": "14",
+      "bucket_rank": 45,
+      "flags": []
+    },
+    "portemi01": {
+      "player_id": "portemi01",
+      "name": "Michael Porter Jr.",
+      "team": "DEN",
+      "positions": [
+        "SF"
+      ],
+      "adp": 65.9,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 88,
+      "flags": [
+        "Tank"
+      ]
+    },
+    "poolejo01": {
+      "player_id": "poolejo01",
+      "name": "Jordan Poole",
+      "team": "WAS",
+      "positions": [
+        "SG"
+      ],
+      "adp": 72.6,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 86,
+      "flags": []
+    },
+    "maxeyty01": {
+      "player_id": "maxeyty01",
+      "name": "Tyrese Maxey",
+      "team": "PHI",
+      "positions": [
+        "PG"
+      ],
+      "adp": 20,
+      "rookie": false,
+      "bucket": "7",
+      "bucket_rank": 16,
+      "flags": []
+    },
+    "halibty01": {
+      "player_id": "halibty01",
+      "name": "Tyrese Haliburton",
+      "team": "IND",
+      "positions": [
+        "PG"
+      ]
+    },
+    "vucevni01": {
+      "player_id": "vucevni01",
+      "name": "Nikola Vučević",
+      "team": "CHI",
+      "positions": [
+        "C"
+      ],
+      "adp": 53.2,
+      "rookie": false,
+      "bucket": "19",
+      "bucket_rank": 61,
+      "flags": []
+    },
+    "simonan01": {
+      "player_id": "simonan01",
+      "name": "Anfernee Simons",
+      "team": "POR",
+      "positions": [
+        "SG"
+      ],
+      "adp": 88.8,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 89,
+      "flags": [
+        "FG"
+      ]
+    },
+    "zubaciv01": {
+      "player_id": "zubaciv01",
+      "name": "Ivica Zubac",
+      "team": "LAC",
+      "positions": [
+        "C"
+      ],
+      "adp": 36.6,
+      "rookie": false,
+      "bucket": "13",
+      "bucket_rank": 42,
+      "flags": []
+    },
+    "sabondo01": {
+      "player_id": "sabondo01",
+      "name": "Domantas Sabonis",
+      "team": "SAC",
+      "positions": [
+        "C"
+      ],
+      "adp": 11.9,
+      "rookie": false,
+      "bucket": "6",
+      "bucket_rank": 15,
+      "flags": []
+    },
+    "beaslma01": {
+      "player_id": "beaslma01",
+      "name": "Malik Beasley",
+      "team": "DET",
+      "positions": [
+        "SG"
+      ]
+    },
+    "sharpsh01": {
+      "player_id": "sharpsh01",
+      "name": "Shaedon Sharpe",
+      "team": "POR",
+      "positions": [
+        "SG"
+      ],
+      "adp": 97,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 148,
+      "flags": []
+    },
+    "anunoog01": {
+      "player_id": "anunoog01",
+      "name": "OG Anunoby",
+      "team": "NYK",
+      "positions": [
+        "PF"
+      ],
+      "adp": 65.5,
+      "rookie": false,
+      "bucket": "17",
+      "bucket_rank": 57,
+      "flags": []
+    },
+    "banede01": {
+      "player_id": "banede01",
+      "name": "Desmond Bane",
+      "team": "MEM",
+      "positions": [
+        "SG"
+      ],
+      "adp": 42.8,
+      "rookie": false,
+      "bucket": "14",
+      "bucket_rank": 44,
+      "flags": []
+    },
+    "mobleev01": {
+      "player_id": "mobleev01",
+      "name": "Evan Mobley",
+      "team": "CLE",
+      "positions": [
+        "PF"
+      ],
+      "adp": 20.3,
+      "rookie": false,
+      "bucket": "8",
+      "bucket_rank": 18,
+      "flags": []
+    },
+    "powelno01": {
+      "player_id": "powelno01",
+      "name": "Norman Powell",
+      "team": "LAC",
+      "positions": [
+        "SG"
+      ],
+      "adp": 90.4,
+      "rookie": false,
+      "bucket": "23",
+      "bucket_rank": 100,
+      "flags": [
+        "Burger"
+      ]
+    },
+    "bridgmi02": {
+      "player_id": "bridgmi02",
+      "name": "Miles Bridges",
+      "team": "CHO",
+      "positions": [
+        "PF"
+      ],
+      "adp": 66.6,
+      "rookie": false,
+      "bucket": "20",
+      "bucket_rank": 73,
+      "flags": []
+    },
+    "randlju01": {
+      "player_id": "randlju01",
+      "name": "Julius Randle",
+      "team": "MIN",
+      "positions": [
+        "PF"
+      ],
+      "adp": 64.2,
+      "rookie": false,
+      "bucket": "23",
+      "bucket_rank": 99,
+      "flags": []
+    },
+    "davisan02": {
+      "player_id": "davisan02",
+      "name": "Anthony Davis",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ],
+      "adp": 9.4,
+      "rookie": false,
+      "bucket": "4",
+      "bucket_rank": 6,
+      "flags": [
+        "Health"
+      ]
+    },
+    "barnesc01": {
+      "player_id": "barnesc01",
+      "name": "Scottie Barnes",
+      "team": "TOR",
+      "positions": [
+        "PF"
+      ],
+      "adp": 26.1,
+      "rookie": false,
+      "bucket": "11",
+      "bucket_rank": 30,
+      "flags": []
+    },
+    "whitede01": {
+      "player_id": "whitede01",
+      "name": "Derrick White",
+      "team": "BOS",
+      "positions": [
+        "SG"
+      ],
+      "adp": 37.5,
+      "rookie": false,
+      "bucket": "10",
+      "bucket_rank": 25,
+      "flags": []
+    },
+    "irvinky01": {
+      "player_id": "irvinky01",
+      "name": "Kyrie Irving",
+      "team": "DAL",
+      "positions": [
+        "SG"
+      ],
+      "adp": 127.3,
+      "rookie": false
+    },
+    "barrerj01": {
+      "player_id": "barrerj01",
+      "name": "RJ Barrett",
+      "team": "TOR",
+      "positions": [
+        "SF"
+      ],
+      "adp": 83.8,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 146,
+      "flags": [
+        "FT"
+      ]
+    },
+    "avdijde01": {
+      "player_id": "avdijde01",
+      "name": "Deni Avdija",
+      "team": "POR",
+      "positions": [
+        "SF"
+      ],
+      "adp": 53.3,
+      "rookie": false,
+      "bucket": "12",
+      "bucket_rank": 36,
+      "flags": []
+    },
+    "braunch01": {
+      "player_id": "braunch01",
+      "name": "Christian Braun",
+      "team": "DEN",
+      "positions": [
+        "SG"
+      ],
+      "adp": 93.7,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 76,
+      "flags": []
+    },
+    "banchpa01": {
+      "player_id": "banchpa01",
+      "name": "Paolo Banchero",
+      "team": "ORL",
+      "positions": [
+        "PF"
+      ],
+      "adp": 22,
+      "rookie": false,
+      "bucket": "20",
+      "bucket_rank": 66,
+      "flags": [
+        "TO",
+        "FT"
+      ]
+    },
+    "castlst01": {
+      "player_id": "castlst01",
+      "name": "Stephon Castle",
+      "team": "SAS",
+      "positions": [
+        "PG"
+      ],
+      "adp": 115.1,
+      "rookie": false,
+      "bucket": "Flier 4",
+      "bucket_rank": 143,
+      "flags": []
+    },
+    "ballla01": {
+      "player_id": "ballla01",
+      "name": "LaMelo Ball",
+      "team": "CHO",
+      "positions": [
+        "PG"
+      ],
+      "adp": 29.8,
+      "rookie": false,
+      "bucket": "12",
+      "bucket_rank": 31,
+      "flags": [
+        "Health"
+      ]
+    },
+    "mccolcj01": {
+      "player_id": "mccolcj01",
+      "name": "CJ McCollum",
+      "team": "NOP",
+      "positions": [
+        "PG"
+      ],
+      "adp": 100.6,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 150,
+      "flags": []
+    },
+    "moranja01": {
+      "player_id": "moranja01",
+      "name": "Ja Morant",
+      "team": "MEM",
+      "positions": [
+        "PG"
+      ],
+      "adp": 41.1,
+      "rookie": false,
+      "bucket": "15",
+      "bucket_rank": 50,
+      "flags": [
+        "TO"
+      ]
+    },
+    "sextoco01": {
+      "player_id": "sextoco01",
+      "name": "Collin Sexton",
+      "team": "UTA",
+      "positions": [
+        "SG"
+      ],
+      "bucket": "Spillage",
+      "bucket_rank": 165,
+      "flags": []
+    },
+    "mathube01": {
+      "player_id": "mathube01",
+      "name": "Bennedict Mathurin",
+      "team": "IND",
+      "positions": [
+        "SF"
+      ],
+      "adp": 93.4,
+      "rookie": false,
+      "bucket": "24",
+      "bucket_rank": 105,
+      "flags": []
+    },
+    "pritcpa01": {
+      "player_id": "pritcpa01",
+      "name": "Payton Pritchard",
+      "team": "BOS",
+      "positions": [
+        "PG"
+      ],
+      "adp": 72.5,
+      "rookie": false,
+      "bucket": "18",
+      "bucket_rank": 58,
+      "flags": []
+    },
+    "reidna01": {
+      "player_id": "reidna01",
+      "name": "Naz Reid",
+      "team": "MIN",
+      "positions": [
+        "C"
+      ],
+      "adp": 90.6,
+      "rookie": false,
+      "bucket": "24",
+      "bucket_rank": 109,
+      "flags": []
+    },
+    "georgke01": {
+      "player_id": "georgke01",
+      "name": "Keyonte George",
+      "team": "UTA",
+      "positions": [
+        "PG"
+      ],
+      "adp": 117.6,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 158,
+      "flags": []
+    },
+    "murphtr02": {
+      "player_id": "murphtr02",
+      "name": "Trey Murphy III",
+      "team": "NOP",
+      "positions": [
+        "SF"
+      ],
+      "adp": 44.5,
+      "rookie": false,
+      "bucket": "12",
+      "bucket_rank": 32,
+      "flags": []
+    },
+    "turnemy01": {
+      "player_id": "turnemy01",
+      "name": "Myles Turner",
+      "team": "IND",
+      "positions": [
+        "C"
+      ],
+      "adp": 49,
+      "rookie": false,
+      "bucket": "13",
+      "bucket_rank": 41,
+      "flags": []
+    },
+    "monkma01": {
+      "player_id": "monkma01",
+      "name": "Malik Monk",
+      "team": "SAC",
+      "positions": [
+        "SG"
+      ],
+      "adp": 119.7,
+      "rookie": false,
+      "bucket": "Flier 4",
+      "bucket_rank": 141,
+      "flags": []
+    },
+    "wembavi01": {
+      "player_id": "wembavi01",
+      "name": "Victor Wembanyama",
+      "team": "SAS",
+      "positions": [
+        "C"
+      ],
+      "adp": 3.3,
+      "rookie": false,
+      "bucket": "2",
+      "bucket_rank": 2,
+      "flags": []
+    },
+    "allenja01": {
+      "player_id": "allenja01",
+      "name": "Jarrett Allen",
+      "team": "CLE",
+      "positions": [
+        "C"
+      ],
+      "adp": 55.3,
+      "rookie": false,
+      "bucket": "16",
+      "bucket_rank": 55,
+      "flags": []
+    },
+    "grimequ01": {
+      "player_id": "grimequ01",
+      "name": "Quentin Grimes",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ],
+      "adp": 136.8,
+      "rookie": false,
+      "bucket": "Flier 3",
+      "bucket_rank": 127,
+      "flags": []
+    },
+    "huntede01": {
+      "player_id": "huntede01",
+      "name": "De'Andre Hunter",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ],
+      "adp": 135,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 166,
+      "flags": []
+    },
+    "wiggian01": {
+      "player_id": "wiggian01",
+      "name": "Andrew Wiggins",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ],
+      "adp": 103.7,
+      "rookie": false,
+      "bucket": "23",
+      "bucket_rank": 103,
+      "flags": []
+    },
+    "daniedy01": {
+      "player_id": "daniedy01",
+      "name": "Dyson Daniels",
+      "team": "ATL",
+      "positions": [
+        "SG"
+      ],
+      "adp": 37.1,
+      "rookie": false,
+      "bucket": "14",
+      "bucket_rank": 46,
+      "flags": []
+    },
+    "johnsca02": {
+      "player_id": "johnsca02",
+      "name": "Cameron Johnson",
+      "team": "BRK",
+      "positions": [
+        "PF"
+      ],
+      "adp": 85,
+      "rookie": false,
+      "bucket": "19",
+      "bucket_rank": 64,
+      "flags": []
+    },
+    "brookdi01": {
+      "player_id": "brookdi01",
+      "name": "Dillon Brooks",
+      "team": "HOU",
+      "positions": [
+        "SF"
+      ]
+    },
+    "hartjo01": {
+      "player_id": "hartjo01",
+      "name": "Josh Hart",
+      "team": "NYK",
+      "positions": [
+        "SG"
+      ],
+      "adp": 53.6,
+      "rookie": false,
+      "bucket": "20",
+      "bucket_rank": 74,
+      "flags": []
+    },
+    "lopezbr01": {
+      "player_id": "lopezbr01",
+      "name": "Brook Lopez",
+      "team": "MIL",
+      "positions": [
+        "C"
+      ],
+      "bucket": "Spillage",
+      "bucket_rank": 157,
+      "flags": []
+    },
+    "vassede01": {
+      "player_id": "vassede01",
+      "name": "Devin Vassell",
+      "team": "SAS",
+      "positions": [
+        "SG"
+      ],
+      "adp": 101.8,
+      "rookie": false,
+      "bucket": "24",
+      "bucket_rank": 108,
+      "flags": []
+    },
+    "giddejo01": {
+      "player_id": "giddejo01",
+      "name": "Josh Giddey",
+      "team": "CHI",
+      "positions": [
+        "PG"
+      ],
+      "adp": 30.7,
+      "rookie": false,
+      "bucket": "9",
+      "bucket_rank": 21,
+      "flags": []
+    },
+    "barneha02": {
+      "player_id": "barneha02",
+      "name": "Harrison Barnes",
+      "team": "SAS",
+      "positions": [
+        "PF"
+      ]
+    },
+    "thompkl01": {
+      "player_id": "thompkl01",
+      "name": "Klay Thompson",
+      "team": "DAL",
+      "positions": [
+        "SF"
+      ],
+      "adp": 126.3,
+      "rookie": false,
+      "bucket": "Flier 4",
+      "bucket_rank": 140,
+      "flags": []
+    },
+    "harrito02": {
+      "player_id": "harrito02",
+      "name": "Tobias Harris",
+      "team": "DET",
+      "positions": [
+        "PF"
+      ],
+      "adp": 112.8,
+      "rookie": false,
+      "bucket": "25",
+      "bucket_rank": 114,
+      "flags": []
+    },
+    "mcdanja02": {
+      "player_id": "mcdanja02",
+      "name": "Jaden McDaniels",
+      "team": "MIN",
+      "positions": [
+        "PF"
+      ],
+      "adp": 109.6,
+      "rookie": false,
+      "bucket": "25",
+      "bucket_rank": 111,
+      "flags": []
+    },
+    "westbru01": {
+      "player_id": "westbru01",
+      "name": "Russell Westbrook",
+      "team": "DEN",
+      "positions": [
+        "PG"
+      ]
+    },
+    "okongon01": {
+      "player_id": "okongon01",
+      "name": "Onyeka Okongwu",
+      "team": "ATL",
+      "positions": [
+        "C"
+      ],
+      "adp": 92.3,
+      "rookie": false,
+      "bucket": "20",
+      "bucket_rank": 71,
+      "flags": []
+    },
+    "schrode01": {
+      "player_id": "schrode01",
+      "name": "Dennis Schröder",
+      "team": "3TM",
+      "positions": [
+        "PG"
+      ],
+      "adp": 130.7,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 156,
+      "flags": []
+    },
+    "johnske04": {
+      "player_id": "johnske04",
+      "name": "Keldon Johnson",
+      "team": "SAS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "thompam01": {
+      "player_id": "thompam01",
+      "name": "Amen Thompson",
+      "team": "HOU",
+      "positions": [
+        "SF"
+      ],
+      "adp": 25.4,
+      "rookie": false,
+      "bucket": "8",
+      "bucket_rank": 19,
+      "flags": []
+    },
+    "butleji01": {
+      "player_id": "butleji01",
+      "name": "Jimmy Butler",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ],
+      "adp": 51.1,
+      "rookie": false,
+      "bucket": "14",
+      "bucket_rank": 47,
+      "flags": []
+    },
+    "kuzmaky01": {
+      "player_id": "kuzmaky01",
+      "name": "Kyle Kuzma",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ],
+      "adp": 135.6,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 155,
+      "flags": []
+    },
+    "murrake02": {
+      "player_id": "murrake02",
+      "name": "Keegan Murray",
+      "team": "SAC",
+      "positions": [
+        "PF"
+      ],
+      "adp": 105.5,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 91,
+      "flags": [
+        "IL"
+      ]
+    },
+    "risacza01": {
+      "player_id": "risacza01",
+      "name": "Zaccharie Risacher",
+      "team": "ATL",
+      "positions": [
+        "SF"
+      ],
+      "adp": 131,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 159,
+      "flags": []
+    },
+    "durenja01": {
+      "player_id": "durenja01",
+      "name": "Jalen Duren",
+      "team": "DET",
+      "positions": [
+        "C"
+      ],
+      "adp": 55.5,
+      "rookie": false,
+      "bucket": "15",
+      "bucket_rank": 48,
+      "flags": []
+    },
+    "marshna01": {
+      "player_id": "marshna01",
+      "name": "Naji Marshall",
+      "team": "DAL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "wiggiaa01": {
+      "player_id": "wiggiaa01",
+      "name": "Aaron Wiggins",
+      "team": "OKC",
+      "positions": [
+        "SG"
+      ]
+    },
+    "hieldbu01": {
+      "player_id": "hieldbu01",
+      "name": "Buddy Hield",
+      "team": "GSW",
+      "positions": [
+        "SG"
+      ]
+    },
+    "oubreke01": {
+      "player_id": "oubreke01",
+      "name": "Kelly Oubre Jr.",
+      "team": "PHI",
+      "positions": [
+        "SF"
+      ],
+      "bucket": "Flier 4",
+      "bucket_rank": 136,
+      "flags": []
+    },
+    "bealbr01": {
+      "player_id": "bealbr01",
+      "name": "Bradley Beal",
+      "team": "PHO",
+      "positions": [
+        "SG"
+      ],
+      "adp": 102.7,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 95,
+      "flags": []
+    },
+    "markkla01": {
+      "player_id": "markkla01",
+      "name": "Lauri Markkanen",
+      "team": "UTA",
+      "positions": [
+        "PF"
+      ],
+      "adp": 50,
+      "rookie": false,
+      "bucket": "20",
+      "bucket_rank": 68,
+      "flags": []
+    },
+    "camarto01": {
+      "player_id": "camarto01",
+      "name": "Toumani Camara",
+      "team": "POR",
+      "positions": [
+        "PF"
+      ],
+      "adp": 106.6,
+      "rookie": false,
+      "bucket": "20",
+      "bucket_rank": 72,
+      "flags": []
+    },
+    "jeromty01": {
+      "player_id": "jeromty01",
+      "name": "Ty Jerome",
+      "team": "CLE",
+      "positions": [
+        "SG"
+      ],
+      "bucket": "Spillage",
+      "bucket_rank": 168,
+      "flags": []
+    },
+    "dinwisp01": {
+      "player_id": "dinwisp01",
+      "name": "Spencer Dinwiddie",
+      "team": "DAL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "sarral01": {
+      "player_id": "sarral01",
+      "name": "Alex Sarr",
+      "team": "WAS",
+      "positions": [
+        "C"
+      ],
+      "adp": 79.6,
+      "rookie": false,
+      "bucket": "25",
+      "bucket_rank": 112,
+      "flags": []
+    },
+    "goberru01": {
+      "player_id": "goberru01",
+      "name": "Rudy Gobert",
+      "team": "MIN",
+      "positions": [
+        "C"
+      ],
+      "adp": 66.8,
+      "rookie": false,
+      "bucket": "18",
+      "bucket_rank": 59,
+      "flags": []
+    },
+    "hardati02": {
+      "player_id": "hardati02",
+      "name": "Tim Hardaway Jr.",
+      "team": "DET",
+      "positions": [
+        "SG"
+      ]
+    },
+    "vanvlfr01": {
+      "player_id": "vanvlfr01",
+      "name": "Fred VanVleet",
+      "team": "HOU",
+      "positions": [
+        "PG"
+      ],
+      "adp": 92.1,
+      "rookie": false
+    },
+    "valanjo01": {
+      "player_id": "valanjo01",
+      "name": "Jonas Valančiūnas",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "johnske07": {
+      "player_id": "johnske07",
+      "name": "Keon Johnson",
+      "team": "BRK",
+      "positions": [
+        "SG"
+      ]
+    },
+    "hendesc01": {
+      "player_id": "hendesc01",
+      "name": "Scoot Henderson",
+      "team": "POR",
+      "positions": [
+        "PG"
+      ],
+      "adp": 134.5,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 160,
+      "flags": []
+    },
+    "washipj01": {
+      "player_id": "washipj01",
+      "name": "P.J. Washington",
+      "team": "DAL",
+      "positions": [
+        "PF"
+      ],
+      "adp": 134.9,
+      "rookie": false,
+      "bucket": "Flier 4",
+      "bucket_rank": 131,
+      "flags": []
+    },
+    "toppiob01": {
+      "player_id": "toppiob01",
+      "name": "Obi Toppin",
+      "team": "IND",
+      "positions": [
+        "PF"
+      ]
+    },
+    "jonesty01": {
+      "player_id": "jonesty01",
+      "name": "Tyus Jones",
+      "team": "PHO",
+      "positions": [
+        "PG"
+      ]
+    },
+    "poeltja01": {
+      "player_id": "poeltja01",
+      "name": "Jakob Poeltl",
+      "team": "TOR",
+      "positions": [
+        "C"
+      ],
+      "adp": 80.3,
+      "rookie": false,
+      "bucket": "19",
+      "bucket_rank": 63,
+      "flags": []
+    },
+    "trentga02": {
+      "player_id": "trentga02",
+      "name": "Gary Trent Jr.",
+      "team": "MIL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "wellsja01": {
+      "player_id": "wellsja01",
+      "name": "Jaylen Wells",
+      "team": "MEM",
+      "positions": [
+        "SG"
+      ],
+      "bucket": "Flier 4",
+      "bucket_rank": 137,
+      "flags": []
+    },
+    "porzikr01": {
+      "player_id": "porzikr01",
+      "name": "Kristaps Porziņģis",
+      "team": "BOS",
+      "positions": [
+        "C"
+      ],
+      "adp": 54.9,
+      "rookie": false,
+      "bucket": "16",
+      "bucket_rank": 51,
+      "flags": [
+        "Health"
+      ]
+    },
+    "robindu01": {
+      "player_id": "robindu01",
+      "name": "Duncan Robinson",
+      "team": "MIA",
+      "positions": [
+        "SF"
+      ]
+    },
+    "champju02": {
+      "player_id": "champju02",
+      "name": "Julian Champagnie",
+      "team": "SAS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "aldamsa01": {
+      "player_id": "aldamsa01",
+      "name": "Santi Aldama",
+      "team": "MEM",
+      "positions": [
+        "PF"
+      ],
+      "adp": 110.6,
+      "rookie": false,
+      "bucket": "24",
+      "bucket_rank": 110,
+      "flags": []
+    },
+    "carrica01": {
+      "player_id": "carrica01",
+      "name": "Bub Carrington",
+      "team": "WAS",
+      "positions": [
+        "PG"
+      ]
+    },
+    "leonaka01": {
+      "player_id": "leonaka01",
+      "name": "Kawhi Leonard",
+      "team": "LAC",
+      "positions": [
+        "SF"
+      ],
+      "adp": 45.5,
+      "rookie": false,
+      "bucket": "12",
+      "bucket_rank": 33,
+      "flags": [
+        "Rest"
+      ]
+    },
+    "niangge01": {
+      "player_id": "niangge01",
+      "name": "Georges Niang",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "jonesde02": {
+      "player_id": "jonesde02",
+      "name": "Derrick Jones Jr.",
+      "team": "LAC",
+      "positions": [
+        "SF"
+      ]
+    },
+    "pippesc02": {
+      "player_id": "pippesc02",
+      "name": "Scotty Pippen Jr.",
+      "team": "MEM",
+      "positions": [
+        "PG"
+      ],
+      "bucket": "Flier 4",
+      "bucket_rank": 145,
+      "flags": [
+        "Burger"
+      ]
+    },
+    "dickgr01": {
+      "player_id": "dickgr01",
+      "name": "Gradey Dick",
+      "team": "TOR",
+      "positions": [
+        "SG"
+      ]
+    },
+    "leverca01": {
+      "player_id": "leverca01",
+      "name": "Caris LeVert",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "hachiru01": {
+      "player_id": "hachiru01",
+      "name": "Rui Hachimura",
+      "team": "LAL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "alexani01": {
+      "player_id": "alexani01",
+      "name": "Nickeil Alexander-Walker",
+      "team": "MIN",
+      "positions": [
+        "SG"
+      ],
+      "bucket": "Spillage",
+      "bucket_rank": 154,
+      "flags": []
+    },
+    "sensabr01": {
+      "player_id": "sensabr01",
+      "name": "Brice Sensabaugh",
+      "team": "UTA",
+      "positions": [
+        "SF"
+      ]
+    },
+    "porteke02": {
+      "player_id": "porteke02",
+      "name": "Kevin Porter Jr.",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ],
+      "adp": 119.2,
+      "rookie": false,
+      "bucket": "Flier 2",
+      "bucket_rank": 121,
+      "flags": []
+    },
+    "yabusgu01": {
+      "player_id": "yabusgu01",
+      "name": "Guerschon Yabusele",
+      "team": "PHI",
+      "positions": [
+        "C"
+      ]
+    },
+    "collijo01": {
+      "player_id": "collijo01",
+      "name": "John Collins",
+      "team": "UTA",
+      "positions": [
+        "PF"
+      ],
+      "adp": 91,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 79,
+      "flags": []
+    },
+    "joeis01": {
+      "player_id": "joeis01",
+      "name": "Isaiah Joe",
+      "team": "OKC",
+      "positions": [
+        "SG"
+      ]
+    },
+    "wilsoja03": {
+      "player_id": "wilsoja03",
+      "name": "Jalen Wilson",
+      "team": "BRK",
+      "positions": [
+        "PF"
+      ]
+    },
+    "chrisma02": {
+      "player_id": "chrisma02",
+      "name": "Max Christie",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "gordoaa01": {
+      "player_id": "gordoaa01",
+      "name": "Aaron Gordon",
+      "team": "DEN",
+      "positions": [
+        "PF"
+      ],
+      "adp": 110.7,
+      "rookie": false,
+      "bucket": "Flier 4",
+      "bucket_rank": 139,
+      "flags": []
+    },
+    "podzibr01": {
+      "player_id": "podzibr01",
+      "name": "Brandin Podziemski",
+      "team": "GSW",
+      "positions": [
+        "SG"
+      ],
+      "adp": 121.1,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 93,
+      "flags": []
+    },
+    "willizi01": {
+      "player_id": "willizi01",
+      "name": "Zion Williamson",
+      "team": "NOP",
+      "positions": [
+        "PF"
+      ],
+      "adp": 45.6,
+      "rookie": false,
+      "bucket": "9",
+      "bucket_rank": 22,
+      "flags": [
+        "FT"
+      ]
+    },
+    "blackan01": {
+      "player_id": "blackan01",
+      "name": "Anthony Black",
+      "team": "ORL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "russeda01": {
+      "player_id": "russeda01",
+      "name": "D'Angelo Russell",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ],
+      "adp": 110,
+      "rookie": false,
+      "bucket": "25",
+      "bucket_rank": 113,
+      "flags": [
+        "Half"
+      ]
+    },
+    "coulibi01": {
+      "player_id": "coulibi01",
+      "name": "Bilal Coulibaly",
+      "team": "WAS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "claxtni01": {
+      "player_id": "claxtni01",
+      "name": "Nic Claxton",
+      "team": "BRK",
+      "positions": [
+        "C"
+      ],
+      "adp": 103,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 90,
+      "flags": [
+        "FT",
+        "Tank"
+      ]
+    },
+    "moodymo01": {
+      "player_id": "moodymo01",
+      "name": "Moses Moody",
+      "team": "GSW",
+      "positions": [
+        "SG"
+      ]
+    },
+    "divindo01": {
+      "player_id": "divindo01",
+      "name": "Donte DiVincenzo",
+      "team": "MIN",
+      "positions": [
+        "SG"
+      ],
+      "adp": 122.4,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 81,
+      "flags": []
+    },
+    "paulch01": {
+      "player_id": "paulch01",
+      "name": "Chris Paul",
+      "team": "SAS",
+      "positions": [
+        "PG"
+      ],
+      "bucket": "Spillage",
+      "bucket_rank": 147,
+      "flags": []
+    },
+    "mccontj01": {
+      "player_id": "mccontj01",
+      "name": "T.J. McConnell",
+      "team": "IND",
+      "positions": [
+        "PG"
+      ],
+      "adp": 131,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 167,
+      "flags": [
+        "IL"
+      ]
+    },
+    "dortlu01": {
+      "player_id": "dortlu01",
+      "name": "Luguentz Dort",
+      "team": "OKC",
+      "positions": [
+        "SF"
+      ]
+    },
+    "kuminjo01": {
+      "player_id": "kuminjo01",
+      "name": "Jonathan Kuminga",
+      "team": "GSW",
+      "positions": [
+        "PF"
+      ],
+      "adp": 130.8,
+      "rookie": false,
+      "bucket": "Flier 4",
+      "bucket_rank": 142,
+      "flags": []
+    },
+    "knechda01": {
+      "player_id": "knechda01",
+      "name": "Dalton Knecht",
+      "team": "LAL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "kispeco01": {
+      "player_id": "kispeco01",
+      "name": "Corey Kispert",
+      "team": "WAS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "gaffoda01": {
+      "player_id": "gaffoda01",
+      "name": "Daniel Gafford",
+      "team": "DAL",
+      "positions": [
+        "C"
+      ],
+      "adp": 131.9,
+      "rookie": false,
+      "bucket": "Flier 4",
+      "bucket_rank": 130,
+      "flags": []
+    },
+    "smithja05": {
+      "player_id": "smithja05",
+      "name": "Jabari Smith Jr.",
+      "team": "HOU",
+      "positions": [
+        "PF"
+      ],
+      "adp": 121.7,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 151,
+      "flags": []
+    },
+    "coffeam01": {
+      "player_id": "coffeam01",
+      "name": "Amir Coffey",
+      "team": "LAC",
+      "positions": [
+        "SG"
+      ]
+    },
+    "filipky01": {
+      "player_id": "filipky01",
+      "name": "Kyle Filipowski",
+      "team": "UTA",
+      "positions": [
+        "C"
+      ],
+      "bucket": "Flier 4",
+      "bucket_rank": 132,
+      "flags": []
+    },
+    "buzelma01": {
+      "player_id": "buzelma01",
+      "name": "Matas Buzelis",
+      "team": "CHI",
+      "positions": [
+        "SF"
+      ],
+      "adp": 93.6,
+      "rookie": false,
+      "bucket": "23",
+      "bucket_rank": 101,
+      "flags": []
+    },
+    "easonta01": {
+      "player_id": "easonta01",
+      "name": "Tari Eason",
+      "team": "HOU",
+      "positions": [
+        "PF"
+      ],
+      "adp": 123.1,
+      "rookie": false,
+      "bucket": "24",
+      "bucket_rank": 107,
+      "flags": []
+    },
+    "holidjr01": {
+      "player_id": "holidjr01",
+      "name": "Jrue Holiday",
+      "team": "BOS",
+      "positions": [
+        "PG"
+      ],
+      "adp": 116.1,
+      "rookie": false,
+      "bucket": "23",
+      "bucket_rank": 104,
+      "flags": []
+    },
+    "huertke01": {
+      "player_id": "huertke01",
+      "name": "Kevin Huerter",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "allengr01": {
+      "player_id": "allengr01",
+      "name": "Grayson Allen",
+      "team": "PHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "johnsja05": {
+      "player_id": "johnsja05",
+      "name": "Jalen Johnson",
+      "team": "ATL",
+      "positions": [
+        "SF"
+      ],
+      "adp": 26.6,
+      "rookie": false,
+      "bucket": "8",
+      "bucket_rank": 20,
+      "flags": []
+    },
+    "onealro01": {
+      "player_id": "onealro01",
+      "name": "Royce O'Neale",
+      "team": "PHO",
+      "positions": [
+        "SF"
+      ]
+    },
+    "portibo01": {
+      "player_id": "portibo01",
+      "name": "Bobby Portis",
+      "team": "MIL",
+      "positions": [
+        "PF"
+      ],
+      "adp": 118.2,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 82,
+      "flags": []
+    },
+    "roziete01": {
+      "player_id": "roziete01",
+      "name": "Terry Rozier",
+      "team": "MIA",
+      "positions": [
+        "PG"
+      ]
+    },
+    "grantje01": {
+      "player_id": "grantje01",
+      "name": "Jerami Grant",
+      "team": "POR",
+      "positions": [
+        "PF"
+      ],
+      "bucket": "Spillage",
+      "bucket_rank": 163,
+      "flags": []
+    },
+    "caldwke01": {
+      "player_id": "caldwke01",
+      "name": "Kentavious Caldwell-Pope",
+      "team": "ORL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "willima07": {
+      "player_id": "willima07",
+      "name": "Mark Williams",
+      "team": "CHO",
+      "positions": [
+        "C"
+      ],
+      "adp": 83.8,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 84,
+      "flags": []
+    },
+    "agbajoc01": {
+      "player_id": "agbajoc01",
+      "name": "Ochai Agbaji",
+      "team": "TOR",
+      "positions": [
+        "SG"
+      ]
+    },
+    "elliske01": {
+      "player_id": "elliske01",
+      "name": "Keon Ellis",
+      "team": "SAC",
+      "positions": [
+        "SG"
+      ]
+    },
+    "georgpa01": {
+      "player_id": "georgpa01",
+      "name": "Paul George",
+      "team": "PHI",
+      "positions": [
+        "PF"
+      ],
+      "adp": 77.5,
+      "rookie": false,
+      "bucket": "23",
+      "bucket_rank": 98,
+      "flags": [
+        "Health"
+      ]
+    },
+    "missiyv01": {
+      "player_id": "missiyv01",
+      "name": "Yves Missi",
+      "team": "NOP",
+      "positions": [
+        "C"
+      ],
+      "bucket": "Spillage",
+      "bucket_rank": 153,
+      "flags": []
+    },
+    "princta02": {
+      "player_id": "princta02",
+      "name": "Taurean Prince",
+      "team": "MIL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "nembhan01": {
+      "player_id": "nembhan01",
+      "name": "Andrew Nembhard",
+      "team": "IND",
+      "positions": [
+        "SG"
+      ],
+      "adp": 75.5,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 77,
+      "flags": []
+    },
+    "kesslwa01": {
+      "player_id": "kesslwa01",
+      "name": "Walker Kessler",
+      "team": "UTA",
+      "positions": [
+        "C"
+      ],
+      "adp": 55.5,
+      "rookie": false,
+      "bucket": "19",
+      "bucket_rank": 62,
+      "flags": [
+        "Tank"
+      ]
+    },
+    "harteis01": {
+      "player_id": "harteis01",
+      "name": "Isaiah Hartenstein",
+      "team": "OKC",
+      "positions": [
+        "C"
+      ],
+      "adp": 79.6,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 75,
+      "flags": []
+    },
+    "willizi02": {
+      "player_id": "willizi02",
+      "name": "Ziaire Williams",
+      "team": "BRK",
+      "positions": [
+        "SF"
+      ]
+    },
+    "anthoco01": {
+      "player_id": "anthoco01",
+      "name": "Cole Anthony",
+      "team": "ORL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "cartewe01": {
+      "player_id": "cartewe01",
+      "name": "Wendell Carter Jr.",
+      "team": "ORL",
+      "positions": [
+        "C"
+      ],
+      "bucket": "Flier 4",
+      "bucket_rank": 144,
+      "flags": []
+    },
+    "sochaje01": {
+      "player_id": "sochaje01",
+      "name": "Jeremy Sochan",
+      "team": "SAS",
+      "positions": [
+        "PF"
+      ],
+      "bucket": "Spillage",
+      "bucket_rank": 149,
+      "flags": []
+    },
+    "colliis01": {
+      "player_id": "colliis01",
+      "name": "Isaiah Collier",
+      "team": "UTA",
+      "positions": [
+        "PG"
+      ],
+      "bucket": "Flier 4",
+      "bucket_rank": 133,
+      "flags": []
+    },
+    "greendr01": {
+      "player_id": "greendr01",
+      "name": "Draymond Green",
+      "team": "GSW",
+      "positions": [
+        "PF"
+      ],
+      "adp": 106.9,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 78,
+      "flags": [
+        "Points"
+      ]
+    },
+    "mcbrimi01": {
+      "player_id": "mcbrimi01",
+      "name": "Miles McBride",
+      "team": "NYK",
+      "positions": [
+        "PG"
+      ]
+    },
+    "edeyza01": {
+      "player_id": "edeyza01",
+      "name": "Zach Edey",
+      "team": "MEM",
+      "positions": [
+        "C"
+      ],
+      "adp": 116.3,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 96,
+      "flags": [
+        "IL"
+      ]
+    },
+    "hausesa01": {
+      "player_id": "hausesa01",
+      "name": "Sam Hauser",
+      "team": "BOS",
+      "positions": [
+        "PF"
+      ],
+      "adp": 136.6,
+      "rookie": false,
+      "bucket": "Flier 3",
+      "bucket_rank": 122,
+      "flags": []
+    },
+    "hawkijo01": {
+      "player_id": "hawkijo01",
+      "name": "Jordan Hawkins",
+      "team": "NOP",
+      "positions": [
+        "SG"
+      ]
+    },
+    "clarkjo01": {
+      "player_id": "clarkjo01",
+      "name": "Jordan Clarkson",
+      "team": "UTA",
+      "positions": [
+        "SG"
+      ]
+    },
+    "thomaca02": {
+      "player_id": "thomaca02",
+      "name": "Cam Thomas",
+      "team": "BRK",
+      "positions": [
+        "SG"
+      ],
+      "adp": 80.6,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 80,
+      "flags": [
+        "FG"
+      ]
+    },
+    "wareke01": {
+      "player_id": "wareke01",
+      "name": "Kel'el Ware",
+      "team": "MIA",
+      "positions": [
+        "C"
+      ],
+      "adp": 85.9,
+      "rookie": false,
+      "bucket": "24",
+      "bucket_rank": 106,
+      "flags": []
+    },
+    "thompau01": {
+      "player_id": "thompau01",
+      "name": "Ausar Thompson",
+      "team": "DET",
+      "positions": [
+        "SF"
+      ],
+      "adp": 85.7,
+      "rookie": false,
+      "bucket": "20",
+      "bucket_rank": 70,
+      "flags": []
+    },
+    "smithni01": {
+      "player_id": "smithni01",
+      "name": "Nick Smith Jr.",
+      "team": "CHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "georgky01": {
+      "player_id": "georgky01",
+      "name": "Kyshawn George",
+      "team": "WAS",
+      "positions": [
+        "SG"
+      ],
+      "bucket": "Flier 3",
+      "bucket_rank": 128,
+      "flags": []
+    },
+    "strawju01": {
+      "player_id": "strawju01",
+      "name": "Julian Strawther",
+      "team": "DEN",
+      "positions": [
+        "SG"
+      ]
+    },
+    "mitchda01": {
+      "player_id": "mitchda01",
+      "name": "Davion Mitchell",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ],
+      "bucket": "Flier 3",
+      "bucket_rank": 126,
+      "flags": []
+    },
+    "bogdabo01": {
+      "player_id": "bogdabo01",
+      "name": "Bogdan Bogdanović",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "conlemi01": {
+      "player_id": "conlemi01",
+      "name": "Mike Conley",
+      "team": "MIN",
+      "positions": [
+        "PG"
+      ]
+    },
+    "alvarjo01": {
+      "player_id": "alvarjo01",
+      "name": "Jose Alvarado",
+      "team": "NOP",
+      "positions": [
+        "PG"
+      ]
+    },
+    "aytonde01": {
+      "player_id": "aytonde01",
+      "name": "Deandre Ayton",
+      "team": "POR",
+      "positions": [
+        "C"
+      ],
+      "adp": 68.6,
+      "rookie": false,
+      "bucket": "17",
+      "bucket_rank": 56,
+      "flags": []
+    },
+    "kennalu01": {
+      "player_id": "kennalu01",
+      "name": "Luke Kennard",
+      "team": "MEM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "juzanjo01": {
+      "player_id": "juzanjo01",
+      "name": "Johnny Juzang",
+      "team": "UTA",
+      "positions": [
+        "SG"
+      ]
+    },
+    "jaqueja01": {
+      "player_id": "jaqueja01",
+      "name": "Jaime Jaquez Jr.",
+      "team": "MIA",
+      "positions": [
+        "SF"
+      ]
+    },
+    "millebr02": {
+      "player_id": "millebr02",
+      "name": "Brandon Miller",
+      "team": "CHO",
+      "positions": [
+        "SF"
+      ],
+      "adp": 53.8,
+      "rookie": false,
+      "bucket": "16",
+      "bucket_rank": 52,
+      "flags": []
+    },
+    "wallaca01": {
+      "player_id": "wallaca01",
+      "name": "Cason Wallace",
+      "team": "OKC",
+      "positions": [
+        "SG"
+      ],
+      "adp": 125,
+      "rookie": false,
+      "bucket": "Flier 2",
+      "bucket_rank": 116,
+      "flags": []
+    },
+    "suggsja01": {
+      "player_id": "suggsja01",
+      "name": "Jalen Suggs",
+      "team": "ORL",
+      "positions": [
+        "PG"
+      ],
+      "adp": 102.5,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 94,
+      "flags": []
+    },
+    "dosunay01": {
+      "player_id": "dosunay01",
+      "name": "Ayo Dosunmu",
+      "team": "CHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "willipa01": {
+      "player_id": "willipa01",
+      "name": "Patrick Williams",
+      "team": "CHI",
+      "positions": [
+        "PF"
+      ]
+    },
+    "quickim01": {
+      "player_id": "quickim01",
+      "name": "Immanuel Quickley",
+      "team": "TOR",
+      "positions": [
+        "PG"
+      ],
+      "adp": 78.7,
+      "rookie": false,
+      "bucket": "22",
+      "bucket_rank": 85,
+      "flags": []
+    },
+    "bantoda01": {
+      "player_id": "bantoda01",
+      "name": "Dalano Banton",
+      "team": "POR",
+      "positions": [
+        "PG"
+      ]
+    },
+    "watsope01": {
+      "player_id": "watsope01",
+      "name": "Peyton Watson",
+      "team": "DEN",
+      "positions": [
+        "SF"
+      ]
+    },
+    "finnedo01": {
+      "player_id": "finnedo01",
+      "name": "Dorian Finney-Smith",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "champju01": {
+      "player_id": "champju01",
+      "name": "Justin Champagnie",
+      "team": "WAS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "murrade01": {
+      "player_id": "murrade01",
+      "name": "Dejounte Murray",
+      "team": "NOP",
+      "positions": [
+        "PG"
+      ],
+      "adp": 131.9,
+      "rookie": false
+    },
+    "greenaj01": {
+      "player_id": "greenaj01",
+      "name": "A.J. Green",
+      "team": "MIL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "nesmiaa01": {
+      "player_id": "nesmiaa01",
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "positions": [
+        "SF"
+      ],
+      "adp": 135.7,
+      "rookie": false,
+      "bucket": "Flier 2",
+      "bucket_rank": 120,
+      "flags": []
+    },
+    "butleja02": {
+      "player_id": "butleja02",
+      "name": "Jared Butler",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "horfoal01": {
+      "player_id": "horfoal01",
+      "name": "Al Horford",
+      "team": "BOS",
+      "positions": [
+        "C"
+      ],
+      "bucket": "Flier 3",
+      "bucket_rank": 123,
+      "flags": [
+        "Rest"
+      ]
+    },
+    "clarkbr01": {
+      "player_id": "clarkbr01",
+      "name": "Brandon Clarke",
+      "team": "MEM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "dasiltr01": {
+      "player_id": "dasiltr01",
+      "name": "Tristan Da Silva",
+      "team": "ORL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "sheadja01": {
+      "player_id": "sheadja01",
+      "name": "Jamal Shead",
+      "team": "TOR",
+      "positions": [
+        "PG"
+      ]
+    },
+    "councri01": {
+      "player_id": "councri01",
+      "name": "Ricky Council IV",
+      "team": "PHI",
+      "positions": [
+        "SF"
+      ]
+    },
+    "richani01": {
+      "player_id": "richani01",
+      "name": "Nick Richards",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "iveyja01": {
+      "player_id": "iveyja01",
+      "name": "Jaden Ivey",
+      "team": "DET",
+      "positions": [
+        "SG"
+      ],
+      "adp": 113.2,
+      "rookie": false,
+      "bucket": "Spillage",
+      "bucket_rank": 152,
+      "flags": []
+    },
+    "smithja04": {
+      "player_id": "smithja04",
+      "name": "Jalen Smith",
+      "team": "CHI",
+      "positions": [
+        "C"
+      ]
+    },
+    "martity01": {
+      "player_id": "martity01",
+      "name": "Tyrese Martin",
+      "team": "BRK",
+      "positions": [
+        "SG"
+      ]
+    },
+    "hollaro01": {
+      "player_id": "hollaro01",
+      "name": "Ron Holland",
+      "team": "DET",
+      "positions": [
+        "SF"
+      ]
+    },
+    "mannte01": {
+      "player_id": "mannte01",
+      "name": "Terance Mann",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "dunnry01": {
+      "player_id": "dunnry01",
+      "name": "Ryan Dunn",
+      "team": "PHO",
+      "positions": [
+        "SF"
+      ]
+    },
+    "merrisa01": {
+      "player_id": "merrisa01",
+      "name": "Sam Merrill",
+      "team": "CLE",
+      "positions": [
+        "SG"
+      ]
+    },
+    "greenjo02": {
+      "player_id": "greenjo02",
+      "name": "Josh Green",
+      "team": "CHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "bitadgo01": {
+      "player_id": "bitadgo01",
+      "name": "Goga Bitadze",
+      "team": "ORL",
+      "positions": [
+        "C"
+      ]
+    },
+    "bouchch01": {
+      "player_id": "bouchch01",
+      "name": "Chris Boucher",
+      "team": "TOR",
+      "positions": [
+        "PF"
+      ]
+    },
+    "payneca01": {
+      "player_id": "payneca01",
+      "name": "Cameron Payne",
+      "team": "NYK",
+      "positions": [
+        "PG"
+      ]
+    },
+    "hardyja02": {
+      "player_id": "hardyja02",
+      "name": "Jaden Hardy",
+      "team": "DAL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "jovicni01": {
+      "player_id": "jovicni01",
+      "name": "Nikola Jović",
+      "team": "MIA",
+      "positions": [
+        "PF"
+      ],
+      "bucket": "Flier 3",
+      "bucket_rank": 125,
+      "flags": []
+    },
+    "capelca01": {
+      "player_id": "capelca01",
+      "name": "Clint Capela",
+      "team": "ATL",
+      "positions": [
+        "C"
+      ]
+    },
+    "holmgch01": {
+      "player_id": "holmgch01",
+      "name": "Chet Holmgren",
+      "team": "OKC",
+      "positions": [
+        "C"
+      ],
+      "adp": 24.9,
+      "rookie": false,
+      "bucket": "10",
+      "bucket_rank": 26,
+      "flags": []
+    },
+    "highsha01": {
+      "player_id": "highsha01",
+      "name": "Haywood Highsmith",
+      "team": "MIA",
+      "positions": [
+        "SF"
+      ]
+    },
+    "whitmca01": {
+      "player_id": "whitmca01",
+      "name": "Cam Whitmore",
+      "team": "HOU",
+      "positions": [
+        "SF"
+      ],
+      "bucket": "Flier 2",
+      "bucket_rank": 117,
+      "flags": []
+    },
+    "dunnkr01": {
+      "player_id": "dunnkr01",
+      "name": "Kris Dunn",
+      "team": "LAC",
+      "positions": [
+        "PG"
+      ]
+    },
+    "strusma01": {
+      "player_id": "strusma01",
+      "name": "Max Strus",
+      "team": "CLE",
+      "positions": [
+        "SF"
+      ]
+    },
+    "walkeja02": {
+      "player_id": "walkeja02",
+      "name": "Jarace Walker",
+      "team": "IND",
+      "positions": [
+        "PF"
+      ]
+    },
+    "vincega01": {
+      "player_id": "vincega01",
+      "name": "Gabe Vincent",
+      "team": "LAL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "laravja01": {
+      "player_id": "laravja01",
+      "name": "Jake LaRavia",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "nurkiju01": {
+      "player_id": "nurkiju01",
+      "name": "Jusuf Nurkić",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "embiijo01": {
+      "player_id": "embiijo01",
+      "name": "Joel Embiid",
+      "team": "PHI",
+      "positions": [
+        "C"
+      ],
+      "adp": 50.6,
+      "rookie": false,
+      "bucket": "16",
+      "bucket_rank": 54,
+      "flags": [
+        "Health"
+      ]
+    },
+    "lylestr01": {
+      "player_id": "lylestr01",
+      "name": "Trey Lyles",
+      "team": "SAC",
+      "positions": [
+        "PF"
+      ]
+    },
+    "watfotr01": {
+      "player_id": "watfotr01",
+      "name": "Trendon Watford",
+      "team": "BRK",
+      "positions": [
+        "PF"
+      ]
+    },
+    "walteja01": {
+      "player_id": "walteja01",
+      "name": "Ja'Kobe Walter",
+      "team": "TOR",
+      "positions": [
+        "SG"
+      ]
+    },
+    "bostobr01": {
+      "player_id": "bostobr01",
+      "name": "Brandon Boston Jr.",
+      "team": "NOP",
+      "positions": [
+        "SG"
+      ]
+    },
+    "fontesi01": {
+      "player_id": "fontesi01",
+      "name": "Simone Fontecchio",
+      "team": "DET",
+      "positions": [
+        "SF"
+      ]
+    },
+    "edwarju01": {
+      "player_id": "edwarju01",
+      "name": "Justin Edwards",
+      "team": "PHI",
+      "positions": [
+        "SF"
+      ]
+    },
+    "curryse01": {
+      "player_id": "curryse01",
+      "name": "Seth Curry",
+      "team": "CHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "kornelu01": {
+      "player_id": "kornelu01",
+      "name": "Luke Kornet",
+      "team": "BOS",
+      "positions": [
+        "C"
+      ]
+    },
+    "middlkh01": {
+      "player_id": "middlkh01",
+      "name": "Khris Middleton",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "huffja01": {
+      "player_id": "huffja01",
+      "name": "Jay Huff",
+      "team": "MEM",
+      "positions": [
+        "C"
+      ],
+      "bucket": "Flier 4",
+      "bucket_rank": 134,
+      "flags": []
+    },
+    "clingdo01": {
+      "player_id": "clingdo01",
+      "name": "Donovan Clingan",
+      "team": "POR",
+      "positions": [
+        "C"
+      ],
+      "adp": 87.2,
+      "rookie": false,
+      "bucket": "20",
+      "bucket_rank": 69,
+      "flags": []
+    },
+    "willike04": {
+      "player_id": "willike04",
+      "name": "Kenrich Williams",
+      "team": "OKC",
+      "positions": [
+        "PF"
+      ]
+    },
+    "stewais01": {
+      "player_id": "stewais01",
+      "name": "Isaiah Stewart",
+      "team": "DET",
+      "positions": [
+        "C"
+      ]
+    },
+    "bryanth01": {
+      "player_id": "bryanth01",
+      "name": "Thomas Bryant",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "clownno01": {
+      "player_id": "clownno01",
+      "name": "Noah Clowney",
+      "team": "BRK",
+      "positions": [
+        "PF"
+      ]
+    },
+    "battlja01": {
+      "player_id": "battlja01",
+      "name": "Jamison Battle",
+      "team": "TOR",
+      "positions": [
+        "SF"
+      ]
+    },
+    "robinje02": {
+      "player_id": "robinje02",
+      "name": "Jeremiah Robinson-Earl",
+      "team": "NOP",
+      "positions": [
+        "PF"
+      ]
+    },
+    "krejcvi01": {
+      "player_id": "krejcvi01",
+      "name": "Vit Krejci",
+      "team": "ATL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "jackstr02": {
+      "player_id": "jackstr02",
+      "name": "Trayce Jackson-Davis",
+      "team": "GSW",
+      "positions": [
+        "C"
+      ]
+    },
+    "colliza01": {
+      "player_id": "colliza01",
+      "name": "Zach Collins",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "diabamo01": {
+      "player_id": "diabamo01",
+      "name": "Moussa Diabaté",
+      "team": "CHO",
+      "positions": [
+        "C"
+      ]
+    },
+    "ingrabr01": {
+      "player_id": "ingrabr01",
+      "name": "Brandon Ingram",
+      "team": "NOP",
+      "positions": [
+        "SF"
+      ],
+      "adp": 76.3,
+      "rookie": false,
+      "bucket": "20",
+      "bucket_rank": 67,
+      "flags": []
+    },
+    "paytoga02": {
+      "player_id": "paytoga02",
+      "name": "Gary Payton II",
+      "team": "GSW",
+      "positions": [
+        "SG"
+      ]
+    },
+    "sharpda01": {
+      "player_id": "sharpda01",
+      "name": "Day'Ron Sharpe",
+      "team": "BRK",
+      "positions": [
+        "C"
+      ]
+    },
+    "mogbojo01": {
+      "player_id": "mogbojo01",
+      "name": "Jonathan Mogbo",
+      "team": "TOR",
+      "positions": [
+        "PF"
+      ]
+    },
+    "wagnemo01": {
+      "player_id": "wagnemo01",
+      "name": "Moritz Wagner",
+      "team": "ORL",
+      "positions": [
+        "C"
+      ]
+    },
+    "mamuksa01": {
+      "player_id": "mamuksa01",
+      "name": "Sandro Mamukelashvili",
+      "team": "SAS",
+      "positions": [
+        "PF"
+      ]
+    },
+    "olynyke01": {
+      "player_id": "olynyke01",
+      "name": "Kelly Olynyk",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "hayesja02": {
+      "player_id": "hayesja02",
+      "name": "Jaxson Hayes",
+      "team": "LAL",
+      "positions": [
+        "C"
+      ]
+    },
+    "carusal01": {
+      "player_id": "carusal01",
+      "name": "Alex Caruso",
+      "team": "OKC",
+      "positions": [
+        "SG"
+      ],
+      "adp": 131.5,
+      "rookie": false,
+      "bucket": "Flier 4",
+      "bucket_rank": 135,
+      "flags": []
+    },
+    "isaacjo01": {
+      "player_id": "isaacjo01",
+      "name": "Jonathan Isaac",
+      "team": "ORL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "achiupr01": {
+      "player_id": "achiupr01",
+      "name": "Precious Achiuwa",
+      "team": "NYK",
+      "positions": [
+        "C"
+      ]
+    },
+    "hortota01": {
+      "player_id": "hortota01",
+      "name": "Talen Horton-Tucker",
+      "team": "CHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "sassema01": {
+      "player_id": "sassema01",
+      "name": "Marcus Sasser",
+      "team": "DET",
+      "positions": [
+        "PG"
+      ]
+    },
+    "phillju01": {
+      "player_id": "phillju01",
+      "name": "Julian Phillips",
+      "team": "CHI",
+      "positions": [
+        "SF"
+      ]
+    },
+    "martico01": {
+      "player_id": "martico01",
+      "name": "Cody Martin",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "anderky01": {
+      "player_id": "anderky01",
+      "name": "Kyle Anderson",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "burksal01": {
+      "player_id": "burksal01",
+      "name": "Alec Burks",
+      "team": "MIA",
+      "positions": [
+        "SG"
+      ]
+    },
+    "martica02": {
+      "player_id": "martica02",
+      "name": "Caleb Martin",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "mathega01": {
+      "player_id": "mathega01",
+      "name": "Garrison Mathews",
+      "team": "ATL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "salauti01": {
+      "player_id": "salauti01",
+      "name": "Tidjane Salaün",
+      "team": "CHO",
+      "positions": [
+        "PF"
+      ]
+    },
+    "mccaija01": {
+      "player_id": "mccaija01",
+      "name": "Jared McCain",
+      "team": "PHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "rolliry01": {
+      "player_id": "rolliry01",
+      "name": "Ryan Rollins",
+      "team": "MIL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "greenja02": {
+      "player_id": "greenja02",
+      "name": "Javonte Green",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "looneke01": {
+      "player_id": "looneke01",
+      "name": "Kevon Looney",
+      "team": "GSW",
+      "positions": [
+        "C"
+      ]
+    },
+    "holidaa01": {
+      "player_id": "holidaa01",
+      "name": "Aaron Holiday",
+      "team": "HOU",
+      "positions": [
+        "PG"
+      ]
+    },
+    "postqu01": {
+      "player_id": "postqu01",
+      "name": "Quinten Post",
+      "team": "GSW",
+      "positions": [
+        "PF"
+      ]
+    },
+    "brownbr01": {
+      "player_id": "brownbr01",
+      "name": "Bruce Brown",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "bonaad01": {
+      "player_id": "bonaad01",
+      "name": "Adem Bona",
+      "team": "PHI",
+      "positions": [
+        "C"
+      ],
+      "bucket": "Flier 3",
+      "bucket_rank": 124,
+      "flags": [
+        "Burger"
+      ]
+    },
+    "okorois01": {
+      "player_id": "okorois01",
+      "name": "Isaac Okoro",
+      "team": "CLE",
+      "positions": [
+        "SG"
+      ]
+    },
+    "mykhasv01": {
+      "player_id": "mykhasv01",
+      "name": "Svi Mykhailiuk",
+      "team": "UTA",
+      "positions": [
+        "SF"
+      ]
+    },
+    "plumlma01": {
+      "player_id": "plumlma01",
+      "name": "Mason Plumlee",
+      "team": "PHO",
+      "positions": [
+        "C"
+      ]
+    },
+    "sheppbe01": {
+      "player_id": "sheppbe01",
+      "name": "Ben Sheppard",
+      "team": "IND",
+      "positions": [
+        "SG"
+      ]
+    },
+    "vukcetr01": {
+      "player_id": "vukcetr01",
+      "name": "Tristan Vukcevic",
+      "team": "WAS",
+      "positions": [
+        "C"
+      ]
+    },
+    "jonestr01": {
+      "player_id": "jonestr01",
+      "name": "Tre Jones",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "terryda01": {
+      "player_id": "terryda01",
+      "name": "Dalen Terry",
+      "team": "CHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "matkoka01": {
+      "player_id": "matkoka01",
+      "name": "Karlo Matković",
+      "team": "NOP",
+      "positions": [
+        "PF"
+      ]
+    },
+    "wadede01": {
+      "player_id": "wadede01",
+      "name": "Dean Wade",
+      "team": "CLE",
+      "positions": [
+        "PF"
+      ]
+    },
+    "jeffrda01": {
+      "player_id": "jeffrda01",
+      "name": "DaQuan Jeffries",
+      "team": "CHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "miltosh01": {
+      "player_id": "miltosh01",
+      "name": "Shake Milton",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "livelde01": {
+      "player_id": "livelde01",
+      "name": "Dereck Lively II",
+      "team": "DAL",
+      "positions": [
+        "C"
+      ],
+      "adp": 116.6,
+      "rookie": false,
+      "bucket": "21",
+      "bucket_rank": 83,
+      "flags": []
+    },
+    "batumni01": {
+      "player_id": "batumni01",
+      "name": "Nicolas Batum",
+      "team": "LAC",
+      "positions": [
+        "PF"
+      ]
+    },
+    "walkeja01": {
+      "player_id": "walkeja01",
+      "name": "Jabari Walker",
+      "team": "POR",
+      "positions": [
+        "SF"
+      ]
+    },
+    "quetane01": {
+      "player_id": "quetane01",
+      "name": "Neemias Queta",
+      "team": "BOS",
+      "positions": [
+        "C"
+      ],
+      "bucket": "Flier 2",
+      "bucket_rank": 118,
+      "flags": []
+    },
+    "brogdma01": {
+      "player_id": "brogdma01",
+      "name": "Malcolm Brogdon",
+      "team": "WAS",
+      "positions": [
+        "PG"
+      ]
+    },
+    "reevean01": {
+      "player_id": "reevean01",
+      "name": "Antonio Reeves",
+      "team": "NOP",
+      "positions": [
+        "SG"
+      ]
+    },
+    "smartma01": {
+      "player_id": "smartma01",
+      "name": "Marcus Smart",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "robinor01": {
+      "player_id": "robinor01",
+      "name": "Orlando Robinson",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "drumman01": {
+      "player_id": "drumman01",
+      "name": "Andre Drummond",
+      "team": "PHI",
+      "positions": [
+        "C"
+      ]
+    },
+    "murrakr01": {
+      "player_id": "murrakr01",
+      "name": "Kris Murray",
+      "team": "POR",
+      "positions": [
+        "SF"
+      ]
+    },
+    "shamela01": {
+      "player_id": "shamela01",
+      "name": "Landry Shamet",
+      "team": "NYK",
+      "positions": [
+        "SG"
+      ]
+    },
+    "dowtije01": {
+      "player_id": "dowtije01",
+      "name": "Jeff Dowtin Jr.",
+      "team": "PHI",
+      "positions": [
+        "PG"
+      ]
+    },
+    "okogijo01": {
+      "player_id": "okogijo01",
+      "name": "Josh Okogie",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "simpskj01": {
+      "player_id": "simpskj01",
+      "name": "KJ Simpson",
+      "team": "CHO",
+      "positions": [
+        "PG"
+      ]
+    },
+    "eubandr01": {
+      "player_id": "eubandr01",
+      "name": "Drew Eubanks",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "willija07": {
+      "player_id": "willija07",
+      "name": "Jaylin Williams",
+      "team": "OKC",
+      "positions": [
+        "PF"
+      ]
+    },
+    "willibr03": {
+      "player_id": "willibr03",
+      "name": "Brandon Williams",
+      "team": "DAL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "martike04": {
+      "player_id": "martike04",
+      "name": "KJ Martin",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "micicva01": {
+      "player_id": "micicva01",
+      "name": "Vasilije Micić",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "balllo01": {
+      "player_id": "balllo01",
+      "name": "Lonzo Ball",
+      "team": "CHI",
+      "positions": [
+        "PG"
+      ],
+      "bucket": "Flier 4",
+      "bucket_rank": 138,
+      "flags": []
+    },
+    "evbuoto01": {
+      "player_id": "evbuoto01",
+      "name": "Tosan Evbuomwan",
+      "team": "BRK",
+      "positions": [
+        "SF"
+      ]
+    },
+    "howarje01": {
+      "player_id": "howarje01",
+      "name": "Jett Howard",
+      "team": "ORL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "gordoer01": {
+      "player_id": "gordoer01",
+      "name": "Eric Gordon",
+      "team": "PHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "waterli01": {
+      "player_id": "waterli01",
+      "name": "Lindy Waters III",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "simmobe01": {
+      "player_id": "simmobe01",
+      "name": "Ben Simmons",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "ighodos01": {
+      "player_id": "ighodos01",
+      "name": "Oso Ighodaro",
+      "team": "PHO",
+      "positions": [
+        "PF"
+      ]
+    },
+    "larsspe01": {
+      "player_id": "larsspe01",
+      "name": "Pelle Larsson",
+      "team": "MIA",
+      "positions": [
+        "SG"
+      ]
+    },
+    "walkelo01": {
+      "player_id": "walkelo01",
+      "name": "Lonnie Walker IV",
+      "team": "PHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "bolbo01": {
+      "player_id": "bolbo01",
+      "name": "Bol Bol",
+      "team": "PHO",
+      "positions": [
+        "PF"
+      ]
+    },
+    "houstca01": {
+      "player_id": "houstca01",
+      "name": "Caleb Houstan",
+      "team": "ORL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "lawsoaj01": {
+      "player_id": "lawsoaj01",
+      "name": "A.J. Lawson",
+      "team": "TOR",
+      "positions": [
+        "SG"
+      ]
+    },
+    "branhma01": {
+      "player_id": "branhma01",
+      "name": "Malaki Branham",
+      "team": "SAS",
+      "positions": [
+        "SG"
+      ]
+    },
+    "mitchaj01": {
+      "player_id": "mitchaj01",
+      "name": "Ajay Mitchell",
+      "team": "OKC",
+      "positions": [
+        "SG"
+      ]
+    },
+    "morrimo01": {
+      "player_id": "morrimo01",
+      "name": "Monte Morris",
+      "team": "PHO",
+      "positions": [
+        "PG"
+      ]
+    },
+    "holmeri01": {
+      "player_id": "holmeri01",
+      "name": "Richaun Holmes",
+      "team": "WAS",
+      "positions": [
+        "PF"
+      ]
+    },
+    "jacksan01": {
+      "player_id": "jacksan01",
+      "name": "Andre Jackson Jr.",
+      "team": "MIL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "willico04": {
+      "player_id": "willico04",
+      "name": "Cody Williams",
+      "team": "UTA",
+      "positions": [
+        "SG"
+      ]
+    },
+    "sheppre01": {
+      "player_id": "sheppre01",
+      "name": "Reed Sheppard",
+      "team": "HOU",
+      "positions": [
+        "PG"
+      ],
+      "adp": 123.5,
+      "rookie": false,
+      "bucket": "Flier 2",
+      "bucket_rank": 115,
+      "flags": []
+    },
+    "santogu01": {
+      "player_id": "santogu01",
+      "name": "Gui Santos",
+      "team": "GSW",
+      "positions": [
+        "PF"
+      ]
+    },
+    "adamsst01": {
+      "player_id": "adamsst01",
+      "name": "Steven Adams",
+      "team": "HOU",
+      "positions": [
+        "C"
+      ]
+    },
+    "johnsaj01": {
+      "player_id": "johnsaj01",
+      "name": "AJ Johnson",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "dilliro01": {
+      "player_id": "dilliro01",
+      "name": "Rob Dillingham",
+      "team": "MIN",
+      "positions": [
+        "PG"
+      ]
+    },
+    "weslebl01": {
+      "player_id": "weslebl01",
+      "name": "Blake Wesley",
+      "team": "SAS",
+      "positions": [
+        "SG"
+      ]
+    },
+    "connapa01": {
+      "player_id": "connapa01",
+      "name": "Pat Connaughton",
+      "team": "MIL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "jacksgg01": {
+      "player_id": "jacksgg01",
+      "name": "GG Jackson II",
+      "team": "MEM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "jordade01": {
+      "player_id": "jordade01",
+      "name": "DeAndre Jordan",
+      "team": "DEN",
+      "positions": [
+        "C"
+      ]
+    },
+    "joneshe01": {
+      "player_id": "joneshe01",
+      "name": "Herbert Jones",
+      "team": "NOP",
+      "positions": [
+        "SF"
+      ],
+      "bucket": "22",
+      "bucket_rank": 92,
+      "flags": []
+    },
+    "nancela02": {
+      "player_id": "nancela02",
+      "name": "Larry Nance Jr.",
+      "team": "ATL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "prospol01": {
+      "player_id": "prospol01",
+      "name": "Olivier-Maxence Prosper",
+      "team": "DAL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "landajo01": {
+      "player_id": "landajo01",
+      "name": "Jock Landale",
+      "team": "HOU",
+      "positions": [
+        "C"
+      ]
+    },
+    "pickeja02": {
+      "player_id": "pickeja02",
+      "name": "Jalen Pickett",
+      "team": "DEN",
+      "positions": [
+        "SG"
+      ]
+    },
+    "joneska01": {
+      "player_id": "joneska01",
+      "name": "Kai Jones",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "gueyemo02": {
+      "player_id": "gueyemo02",
+      "name": "Mouhamed Gueye",
+      "team": "ATL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "cainja01": {
+      "player_id": "cainja01",
+      "name": "Jamal Cain",
+      "team": "NOP",
+      "positions": [
+        "SF"
+      ]
+    },
+    "gilleco01": {
+      "player_id": "gilleco01",
+      "name": "Collin Gillespie",
+      "team": "PHO",
+      "positions": [
+        "PG"
+      ]
+    },
+    "reathdu01": {
+      "player_id": "reathdu01",
+      "name": "Duop Reath",
+      "team": "POR",
+      "positions": [
+        "C"
+      ]
+    },
+    "portecr01": {
+      "player_id": "portecr01",
+      "name": "Craig Porter Jr.",
+      "team": "CLE",
+      "positions": [
+        "PG"
+      ]
+    },
+    "tateja01": {
+      "player_id": "tateja01",
+      "name": "Jae'Sean Tate",
+      "team": "HOU",
+      "positions": [
+        "SF"
+      ]
+    },
+    "nnajize01": {
+      "player_id": "nnajize01",
+      "name": "Zeke Nnaji",
+      "team": "DEN",
+      "positions": [
+        "PF"
+      ]
+    },
+    "reedpa01": {
+      "player_id": "reedpa01",
+      "name": "Paul Reed",
+      "team": "DET",
+      "positions": [
+        "C"
+      ]
+    },
+    "willivi01": {
+      "player_id": "willivi01",
+      "name": "Vince Williams Jr.",
+      "team": "MEM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "josepco01": {
+      "player_id": "josepco01",
+      "name": "Cory Joseph",
+      "team": "ORL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "exumda01": {
+      "player_id": "exumda01",
+      "name": "Dante Exum",
+      "team": "DAL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "greenje02": {
+      "player_id": "greenje02",
+      "name": "Jeff Green",
+      "team": "HOU",
+      "positions": [
+        "PF"
+      ]
+    },
+    "edwarke02": {
+      "player_id": "edwarke02",
+      "name": "Kessler Edwards",
+      "team": "DAL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "wallake01": {
+      "player_id": "wallake01",
+      "name": "Keaton Wallace",
+      "team": "ATL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "tysonja01": {
+      "player_id": "tysonja01",
+      "name": "Jaylon Tyson",
+      "team": "CLE",
+      "positions": [
+        "SG"
+      ]
+    },
+    "willigr01": {
+      "player_id": "willigr01",
+      "name": "Grant Williams",
+      "team": "CHO",
+      "positions": [
+        "PF"
+      ]
+    },
+    "clarkja02": {
+      "player_id": "clarkja02",
+      "name": "Jaylen Clark",
+      "team": "MIN",
+      "positions": [
+        "SG"
+      ]
+    },
+    "jacksqu01": {
+      "player_id": "jacksqu01",
+      "name": "Quenton Jackson",
+      "team": "IND",
+      "positions": [
+        "PG"
+      ]
+    },
+    "pottemi01": {
+      "player_id": "pottemi01",
+      "name": "Micah Potter",
+      "team": "UTA",
+      "positions": [
+        "C"
+      ]
+    },
+    "theisda01": {
+      "player_id": "theisda01",
+      "name": "Daniel Theis",
+      "team": "NOP",
+      "positions": [
+        "C"
+      ]
+    },
+    "goodwjo01": {
+      "player_id": "goodwjo01",
+      "name": "Jordan Goodwin",
+      "team": "LAL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "bassech01": {
+      "player_id": "bassech01",
+      "name": "Charles Bassey",
+      "team": "SAS",
+      "positions": [
+        "C"
+      ]
+    },
+    "jonesco02": {
+      "player_id": "jonesco02",
+      "name": "Colby Jones",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "ruperra01": {
+      "player_id": "ruperra01",
+      "name": "Rayan Rupert",
+      "team": "POR",
+      "positions": [
+        "SG"
+      ]
+    },
+    "carteje01": {
+      "player_id": "carteje01",
+      "name": "Jevon Carter",
+      "team": "CHI",
+      "positions": [
+        "PG"
+      ]
+    },
+    "roddyda01": {
+      "player_id": "roddyda01",
+      "name": "David Roddy",
+      "team": "3TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "millejo02": {
+      "player_id": "millejo02",
+      "name": "Jordan Miller",
+      "team": "LAC",
+      "positions": [
+        "SF"
+      ]
+    },
+    "queentr01": {
+      "player_id": "queentr01",
+      "name": "Trevelin Queen",
+      "team": "ORL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "moorewe01": {
+      "player_id": "moorewe01",
+      "name": "Wendell Moore Jr.",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "hylanbo01": {
+      "player_id": "hylanbo01",
+      "name": "Bones Hyland",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "barlodo01": {
+      "player_id": "barlodo01",
+      "name": "Dominick Barlow",
+      "team": "ATL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "mcderdo01": {
+      "player_id": "mcderdo01",
+      "name": "Doug McDermott",
+      "team": "SAC",
+      "positions": [
+        "SF"
+      ]
+    },
+    "vandeja01": {
+      "player_id": "vandeja01",
+      "name": "Jarred Vanderbilt",
+      "team": "LAL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "harriga01": {
+      "player_id": "harriga01",
+      "name": "Gary Harris",
+      "team": "ORL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "biyombi01": {
+      "player_id": "biyombi01",
+      "name": "Bismack Biyombo",
+      "team": "SAS",
+      "positions": [
+        "C"
+      ]
+    },
+    "diengou01": {
+      "player_id": "diengou01",
+      "name": "Ousmane Dieng",
+      "team": "OKC",
+      "positions": [
+        "C"
+      ]
+    },
+    "cartede02": {
+      "player_id": "cartede02",
+      "name": "Devin Carter",
+      "team": "SAC",
+      "positions": [
+        "PG"
+      ]
+    },
+    "garzalu01": {
+      "player_id": "garzalu01",
+      "name": "Luka Garza",
+      "team": "MIN",
+      "positions": [
+        "C"
+      ]
+    },
+    "lowryky01": {
+      "player_id": "lowryky01",
+      "name": "Kyle Lowry",
+      "team": "PHI",
+      "positions": [
+        "PG"
+      ]
+    },
+    "shannte01": {
+      "player_id": "shannte01",
+      "name": "Terrence Shannon Jr.",
+      "team": "MIN",
+      "positions": [
+        "SG"
+      ]
+    },
+    "bambamo01": {
+      "player_id": "bambamo01",
+      "name": "Mo Bamba",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "jacksre01": {
+      "player_id": "jacksre01",
+      "name": "Reggie Jackson",
+      "team": "PHI",
+      "positions": [
+        "PG"
+      ]
+    },
+    "baglema01": {
+      "player_id": "baglema01",
+      "name": "Marvin Bagley III",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "jonesdi01": {
+      "player_id": "jonesdi01",
+      "name": "Dillon Jones",
+      "team": "OKC",
+      "positions": [
+        "SF"
+      ]
+    },
+    "jonesis01": {
+      "player_id": "jonesis01",
+      "name": "Isaac Jones",
+      "team": "SAC",
+      "positions": [
+        "PF"
+      ]
+    },
+    "tysonhu01": {
+      "player_id": "tysonhu01",
+      "name": "Hunter Tyson",
+      "team": "DEN",
+      "positions": [
+        "PF"
+      ]
+    },
+    "gillan01": {
+      "player_id": "gillan01",
+      "name": "Anthony Gill",
+      "team": "WAS",
+      "positions": [
+        "PF"
+      ]
+    },
+    "wrighde01": {
+      "player_id": "wrighde01",
+      "name": "Delon Wright",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "castlco01": {
+      "player_id": "castlco01",
+      "name": "Colin Castleton",
+      "team": "3TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "carlsbr01": {
+      "player_id": "carlsbr01",
+      "name": "Branden Carlson",
+      "team": "OKC",
+      "positions": [
+        "C"
+      ]
+    },
+    "loveke01": {
+      "player_id": "loveke01",
+      "name": "Kevin Love",
+      "team": "MIA",
+      "positions": [
+        "PF"
+      ]
+    },
+    "wongis01": {
+      "player_id": "wongis01",
+      "name": "Isaiah Wong",
+      "team": "CHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "minotjo01": {
+      "player_id": "minotjo01",
+      "name": "Josh Minott",
+      "team": "MIN",
+      "positions": [
+        "SF"
+      ]
+    },
+    "williro04": {
+      "player_id": "williro04",
+      "name": "Robert Williams",
+      "team": "POR",
+      "positions": [
+        "C"
+      ]
+    },
+    "lewisma05": {
+      "player_id": "lewisma05",
+      "name": "Maxwell Lewis",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "whiteda01": {
+      "player_id": "whiteda01",
+      "name": "Dariq Whitehead",
+      "team": "BRK",
+      "positions": [
+        "SF"
+      ]
+    },
+    "poweldw01": {
+      "player_id": "poweldw01",
+      "name": "Dwight Powell",
+      "team": "DAL",
+      "positions": [
+        "C"
+      ]
+    },
+    "scheiba01": {
+      "player_id": "scheiba01",
+      "name": "Baylor Scheierman",
+      "team": "BOS",
+      "positions": [
+        "SG"
+      ]
+    },
+    "konchjo01": {
+      "player_id": "konchjo01",
+      "name": "John Konchar",
+      "team": "MEM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "thybuma01": {
+      "player_id": "thybuma01",
+      "name": "Matisse Thybulle",
+      "team": "POR",
+      "positions": [
+        "SG"
+      ]
+    },
+    "millspa02": {
+      "player_id": "millspa02",
+      "name": "Patty Mills",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "baughda01": {
+      "player_id": "baughda01",
+      "name": "Damion Baugh",
+      "team": "CHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "sprinja01": {
+      "player_id": "sprinja01",
+      "name": "Jaden Springer",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "craigto01": {
+      "player_id": "craigto01",
+      "name": "Torrey Craig",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "gibsota01": {
+      "player_id": "gibsota01",
+      "name": "Taj Gibson",
+      "team": "CHO",
+      "positions": [
+        "C"
+      ]
+    },
+    "spencca01": {
+      "player_id": "spencca01",
+      "name": "Cam Spencer",
+      "team": "MEM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "hoodsja01": {
+      "player_id": "hoodsja01",
+      "name": "Jalen Hood-Schifino",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "reddica01": {
+      "player_id": "reddica01",
+      "name": "Cam Reddish",
+      "team": "LAL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "furphjo01": {
+      "player_id": "furphjo01",
+      "name": "Johnny Furphy",
+      "team": "IND",
+      "positions": [
+        "SG"
+      ]
+    },
+    "klebima01": {
+      "player_id": "klebima01",
+      "name": "Maxi Kleber",
+      "team": "DAL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "spencpa01": {
+      "player_id": "spencpa01",
+      "name": "Pat Spencer",
+      "team": "GSW",
+      "positions": [
+        "PG"
+      ]
+    },
+    "simsje01": {
+      "player_id": "simsje01",
+      "name": "Jericho Sims",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "mclaujo01": {
+      "player_id": "mclaujo01",
+      "name": "Jordan McLaughlin",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "jemistr01": {
+      "player_id": "jemistr01",
+      "name": "Trey Jemison",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "beekmre01": {
+      "player_id": "beekmre01",
+      "name": "Reece Beekman",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "kolokch01": {
+      "player_id": "kolokch01",
+      "name": "Christian Koloko",
+      "team": "LAL",
+      "positions": [
+        "C"
+      ]
+    },
+    "robinmi01": {
+      "player_id": "robinmi01",
+      "name": "Mitchell Robinson",
+      "team": "NYK",
+      "positions": [
+        "C"
+      ],
+      "adp": 136.6,
+      "rookie": false
+    },
+    "paytoel01": {
+      "player_id": "paytoel01",
+      "name": "Elfrid Payton",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "leeda03": {
+      "player_id": "leeda03",
+      "name": "Damion Lee",
+      "team": "PHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "walshjo01": {
+      "player_id": "walshjo01",
+      "name": "Jordan Walsh",
+      "team": "BOS",
+      "positions": [
+        "PF"
+      ]
+    },
+    "kolekty01": {
+      "player_id": "kolekty01",
+      "name": "Tyler Kolek",
+      "team": "NYK",
+      "positions": [
+        "PG"
+      ]
+    },
+    "davisjo06": {
+      "player_id": "davisjo06",
+      "name": "Johnny Davis",
+      "team": "WAS",
+      "positions": [
+        "SG"
+      ]
+    },
+    "beaucma01": {
+      "player_id": "beaucma01",
+      "name": "MarJon Beauchamp",
+      "team": "3TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "martija02": {
+      "player_id": "martija02",
+      "name": "Jaylen Martin",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "brownko01": {
+      "player_id": "brownko01",
+      "name": "Kobe Brown",
+      "team": "LAC",
+      "positions": [
+        "PF"
+      ]
+    },
+    "reeseal01": {
+      "player_id": "reeseal01",
+      "name": "Alex Reese",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "stevela01": {
+      "player_id": "stevela01",
+      "name": "Lamar Stevens",
+      "team": "MEM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "lenal01": {
+      "player_id": "lenal01",
+      "name": "Alex Len",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "thorjt01": {
+      "player_id": "thorjt01",
+      "name": "JT Thor",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "thomptr01": {
+      "player_id": "thomptr01",
+      "name": "Tristan Thompson",
+      "team": "CLE",
+      "positions": [
+        "C"
+      ]
+    },
+    "smithty02": {
+      "player_id": "smithty02",
+      "name": "Tyler Smith",
+      "team": "MIL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "flaglad01": {
+      "player_id": "flaglad01",
+      "name": "Adam Flagler",
+      "team": "OKC",
+      "positions": [
+        "SG"
+      ]
+    },
+    "willije02": {
+      "player_id": "willije02",
+      "name": "Jeenathan Williams",
+      "team": "HOU",
+      "positions": [
+        "SG"
+      ]
+    },
+    "jamesbr02": {
+      "player_id": "jamesbr02",
+      "name": "Bronny James",
+      "team": "LAL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "fultzma01": {
+      "player_id": "fultzma01",
+      "name": "Markelle Fultz",
+      "team": "SAC",
+      "positions": [
+        "PG"
+      ]
+    },
+    "fernabr01": {
+      "player_id": "fernabr01",
+      "name": "Bruno Fernando",
+      "team": "TOR",
+      "positions": [
+        "C"
+      ]
+    },
+    "saricda01": {
+      "player_id": "saricda01",
+      "name": "Dario Šarić",
+      "team": "DEN",
+      "positions": [
+        "C"
+      ]
+    },
+    "morrima02": {
+      "player_id": "morrima02",
+      "name": "Markieff Morris",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "peterdr01": {
+      "player_id": "peterdr01",
+      "name": "Drew Peterson",
+      "team": "BOS",
+      "positions": [
+        "PF"
+      ]
+    },
+    "templga01": {
+      "player_id": "templga01",
+      "name": "Garrett Temple",
+      "team": "TOR",
+      "positions": [
+        "SG"
+      ]
+    },
+    "baldwpa01": {
+      "player_id": "baldwpa01",
+      "name": "Patrick Baldwin Jr.",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "hukpoar01": {
+      "player_id": "hukpoar01",
+      "name": "Ariel Hukporti",
+      "team": "NYK",
+      "positions": [
+        "C"
+      ]
+    },
+    "freemen01": {
+      "player_id": "freemen01",
+      "name": "Enrique Freeman",
+      "team": "IND",
+      "positions": [
+        "PF"
+      ]
+    },
+    "johnske10": {
+      "player_id": "johnske10",
+      "name": "Keshad Johnson",
+      "team": "MIA",
+      "positions": [
+        "SF"
+      ]
+    },
+    "duartch01": {
+      "player_id": "duartch01",
+      "name": "Chris Duarte",
+      "team": "CHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "ducasal01": {
+      "player_id": "ducasal01",
+      "name": "Alex Ducas",
+      "team": "OKC",
+      "positions": [
+        "SG"
+      ]
+    },
+    "kawamyu01": {
+      "player_id": "kawamyu01",
+      "name": "Yuki Kawamura",
+      "team": "MEM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "washity02": {
+      "player_id": "washity02",
+      "name": "TyTy Washington Jr.",
+      "team": "PHO",
+      "positions": [
+        "PG"
+      ]
+    },
+    "tillmxa01": {
+      "player_id": "tillmxa01",
+      "name": "Xavier Tillman Sr.",
+      "team": "BOS",
+      "positions": [
+        "C"
+      ]
+    },
+    "davisjd01": {
+      "player_id": "davisjd01",
+      "name": "JD Davison",
+      "team": "BOS",
+      "positions": [
+        "PG"
+      ]
+    },
+    "hallpj01": {
+      "player_id": "hallpj01",
+      "name": "PJ Hall",
+      "team": "DEN",
+      "positions": [
+        "C"
+      ]
+    },
+    "alexatr01": {
+      "player_id": "alexatr01",
+      "name": "Trey Alexander",
+      "team": "DEN",
+      "positions": [
+        "SG"
+      ]
+    },
+    "cissosi01": {
+      "player_id": "cissosi01",
+      "name": "Sidy Cissoko",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "dadiepa01": {
+      "player_id": "dadiepa01",
+      "name": "Pacome Dadiet",
+      "team": "NYK",
+      "positions": [
+        "SG"
+      ]
+    },
+    "livinch01": {
+      "player_id": "livinch01",
+      "name": "Chris Livingston",
+      "team": "MIL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "ryanma01": {
+      "player_id": "ryanma01",
+      "name": "Matt Ryan",
+      "team": "NYK",
+      "positions": [
+        "SF"
+      ]
+    },
+    "jonessp01": {
+      "player_id": "jonessp01",
+      "name": "Spencer Jones",
+      "team": "DEN",
+      "positions": [
+        "SF"
+      ]
+    },
+    "gortmja01": {
+      "player_id": "gortmja01",
+      "name": "Jazian Gortman",
+      "team": "DAL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "toppija01": {
+      "player_id": "toppija01",
+      "name": "Jacob Toppin",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "minayju01": {
+      "player_id": "minayju01",
+      "name": "Justin Minaya",
+      "team": "POR",
+      "positions": [
+        "SF"
+      ]
+    },
+    "inglejo01": {
+      "player_id": "inglejo01",
+      "name": "Joe Ingles",
+      "team": "MIN",
+      "positions": [
+        "SF"
+      ]
+    },
+    "umudest01": {
+      "player_id": "umudest01",
+      "name": "Stanley Umude",
+      "team": "MIL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "crawfis01": {
+      "player_id": "crawfis01",
+      "name": "Isaiah Crawford",
+      "team": "SAC",
+      "positions": [
+        "SF"
+      ]
+    },
+    "bogdabo02": {
+      "player_id": "bogdabo02",
+      "name": "Bojan Bogdanović",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "beysa01": {
+      "player_id": "beysa01",
+      "name": "Saddiq Bey",
+      "team": "ATL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "haywago01": {
+      "player_id": "haywago01",
+      "name": "Gordon Hayward",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "osmande01": {
+      "player_id": "osmande01",
+      "name": "Cedi Osman",
+      "team": "SAS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "beverpa01": {
+      "player_id": "beverpa01",
+      "name": "Patrick Beverley",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "wisemja01": {
+      "player_id": "wisemja01",
+      "name": "James Wiseman",
+      "team": "DET",
+      "positions": [
+        "C"
+      ]
+    },
+    "richajo01": {
+      "player_id": "richajo01",
+      "name": "Josh Richardson",
+      "team": "MIA",
+      "positions": [
+        "SG"
+      ]
+    },
+    "meltode01": {
+      "player_id": "meltode01",
+      "name": "De'Anthony Melton",
+      "team": "PHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "jacksis01": {
+      "player_id": "jacksis01",
+      "name": "Isaiah Jackson",
+      "team": "IND",
+      "positions": [
+        "C"
+      ],
+      "bucket": "Flier 2",
+      "bucket_rank": 119,
+      "flags": []
+    },
+    "manntr01": {
+      "player_id": "manntr01",
+      "name": "Tre Mann",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "flynnma01": {
+      "player_id": "flynnma01",
+      "name": "Malachi Flynn",
+      "team": "3TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "smithde03": {
+      "player_id": "smithde03",
+      "name": "Dennis Smith Jr.",
+      "team": "BRK",
+      "positions": [
+        "PG"
+      ]
+    },
+    "nworajo01": {
+      "player_id": "nworajo01",
+      "name": "Jordan Nwora",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "woodch01": {
+      "player_id": "woodch01",
+      "name": "Christian Wood",
+      "team": "LAL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "metuch01": {
+      "player_id": "metuch01",
+      "name": "Chimezie Metu",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "morrima03": {
+      "player_id": "morrima03",
+      "name": "Marcus Morris",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "crowdja01": {
+      "player_id": "crowdja01",
+      "name": "Jae Crowder",
+      "team": "MIL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "mcgowbr01": {
+      "player_id": "mcgowbr01",
+      "name": "Bryce McGowens",
+      "team": "CHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "hendrta01": {
+      "player_id": "hendrta01",
+      "name": "Taylor Hendricks",
+      "team": "UTA",
+      "positions": [
+        "PF"
+      ],
+      "bucket": "Flier 3",
+      "bucket_rank": 129,
+      "flags": []
+    },
+    "bertada01": {
+      "player_id": "bertada01",
+      "name": "Dāvis Bertāns",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "hayeski01": {
+      "player_id": "hayeski01",
+      "name": "Killian Hayes",
+      "team": "DET",
+      "positions": [
+        "PG"
+      ]
+    },
+    "gallida01": {
+      "player_id": "gallida01",
+      "name": "Danilo Gallinari",
+      "team": "3TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "browntr01": {
+      "player_id": "browntr01",
+      "name": "Troy Brown Jr.",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "holidju01": {
+      "player_id": "holidju01",
+      "name": "Justin Holiday",
+      "team": "DEN",
+      "positions": [
+        "SG"
+      ]
+    },
+    "vezenal01": {
+      "player_id": "vezenal01",
+      "name": "Sasha Vezenkov",
+      "team": "SAC",
+      "positions": [
+        "PF"
+      ]
+    },
+    "knoxke01": {
+      "player_id": "knoxke01",
+      "name": "Kevin Knox",
+      "team": "DET",
+      "positions": [
+        "SF"
+      ]
+    },
+    "yurtsom01": {
+      "player_id": "yurtsom01",
+      "name": "Omer Yurtseven",
+      "team": "UTA",
+      "positions": [
+        "C"
+      ]
+    },
+    "fournev01": {
+      "player_id": "fournev01",
+      "name": "Evan Fournier",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "omorueu01": {
+      "player_id": "omorueu01",
+      "name": "Eugene Omoruyi",
+      "team": "WAS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "brissos01": {
+      "player_id": "brissos01",
+      "name": "Oshae Brissett",
+      "team": "BOS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "bateske01": {
+      "player_id": "bateske01",
+      "name": "Keita Bates-Diop",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "rosede01": {
+      "player_id": "rosede01",
+      "name": "Derrick Rose",
+      "team": "MEM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "mcgeeja01": {
+      "player_id": "mcgeeja01",
+      "name": "JaVale McGee",
+      "team": "SAC",
+      "positions": [
+        "C"
+      ]
+    },
+    "samanlu01": {
+      "player_id": "samanlu01",
+      "name": "Luka Šamanić",
+      "team": "UTA",
+      "positions": [
+        "PF"
+      ]
+    },
+    "gilyaja01": {
+      "player_id": "gilyaja01",
+      "name": "Jacob Gilyard",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "mcdanja01": {
+      "player_id": "mcdanja01",
+      "name": "Jalen McDaniels",
+      "team": "TOR",
+      "positions": [
+        "SF"
+      ]
+    },
+    "quinole01": {
+      "player_id": "quinole01",
+      "name": "Lester Quiñones",
+      "team": "GSW",
+      "positions": [
+        "SG"
+      ]
+    },
+    "muscami01": {
+      "player_id": "muscami01",
+      "name": "Mike Muscala",
+      "team": "3TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "mayssk01": {
+      "player_id": "mayssk01",
+      "name": "Skylar Mays",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "freemja01": {
+      "player_id": "freemja01",
+      "name": "Javon Freeman-Liberty",
+      "team": "TOR",
+      "positions": [
+        "PG"
+      ]
+    },
+    "littlna01": {
+      "player_id": "littlna01",
+      "name": "Nassir Little",
+      "team": "PHO",
+      "positions": [
+        "SF"
+      ]
+    },
+    "pokusal01": {
+      "player_id": "pokusal01",
+      "name": "Aleksej Pokusevski",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "houseda01": {
+      "player_id": "houseda01",
+      "name": "Danuel House Jr.",
+      "team": "PHI",
+      "positions": [
+        "SF"
+      ]
+    },
+    "smithis01": {
+      "player_id": "smithis01",
+      "name": "Ish Smith",
+      "team": "CHO",
+      "positions": [
+        "PG"
+      ]
+    },
+    "youngth01": {
+      "player_id": "youngth01",
+      "name": "Thaddeus Young",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "covinro01": {
+      "player_id": "covinro01",
+      "name": "Robert Covington",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "watanyu01": {
+      "player_id": "watanyu01",
+      "name": "Yuta Watanabe",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "portejo01": {
+      "player_id": "portejo01",
+      "name": "Jontay Porter",
+      "team": "TOR",
+      "positions": [
+        "PF"
+      ]
+    },
+    "grahade01": {
+      "player_id": "grahade01",
+      "name": "Devonte' Graham",
+      "team": "SAS",
+      "positions": [
+        "PG"
+      ]
+    },
+    "liveris01": {
+      "player_id": "liveris01",
+      "name": "Isaiah Livers",
+      "team": "DET",
+      "positions": [
+        "PF"
+      ]
+    },
+    "matthwe02": {
+      "player_id": "matthwe02",
+      "name": "Wesley Matthews",
+      "team": "ATL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "jonesda03": {
+      "player_id": "jonesda03",
+      "name": "Damian Jones",
+      "team": "CLE",
+      "positions": [
+        "C"
+      ]
+    },
+    "okekech01": {
+      "player_id": "okekech01",
+      "name": "Chuma Okeke",
+      "team": "ORL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "bullore01": {
+      "player_id": "bullore01",
+      "name": "Reggie Bullock",
+      "team": "HOU",
+      "positions": [
+        "SF"
+      ]
+    },
+    "loftoke01": {
+      "player_id": "loftoke01",
+      "name": "Kenneth Lofton Jr.",
+      "team": "3TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "lewiski01": {
+      "player_id": "lewiski01",
+      "name": "Kira Lewis Jr.",
+      "team": "3TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "korkmfu01": {
+      "player_id": "korkmfu01",
+      "name": "Furkan Korkmaz",
+      "team": "PHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "forretr01": {
+      "player_id": "forretr01",
+      "name": "Trent Forrest",
+      "team": "ATL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "rhodeja01": {
+      "player_id": "rhodeja01",
+      "name": "Jared Rhoden",
+      "team": "DET",
+      "positions": [
+        "SG"
+      ]
+    },
+    "bufkiko01": {
+      "player_id": "bufkiko01",
+      "name": "Kobe Bufkin",
+      "team": "ATL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "bitimon01": {
+      "player_id": "bitimon01",
+      "name": "Onuralp Bitim",
+      "team": "CHI",
+      "positions": [
+        "SG"
+      ]
+    },
+    "haganas01": {
+      "player_id": "haganas01",
+      "name": "Ashton Hagans",
+      "team": "POR",
+      "positions": [
+        "PG"
+      ]
+    },
+    "zelleco01": {
+      "player_id": "zelleco01",
+      "name": "Cody Zeller",
+      "team": "NOP",
+      "positions": [
+        "C"
+      ]
+    },
+    "brownmo01": {
+      "player_id": "brownmo01",
+      "name": "Moses Brown",
+      "team": "POR",
+      "positions": [
+        "C"
+      ]
+    },
+    "bernaju01": {
+      "player_id": "bernaju01",
+      "name": "Jules Bernard",
+      "team": "WAS",
+      "positions": [
+        "SG"
+      ]
+    },
+    "leesa01": {
+      "player_id": "leesa01",
+      "name": "Saben Lee",
+      "team": "PHO",
+      "positions": [
+        "PG"
+      ]
+    },
+    "blackle01": {
+      "player_id": "blackle01",
+      "name": "Leaky Black",
+      "team": "CHO",
+      "positions": [
+        "SF"
+      ]
+    },
+    "maledth01": {
+      "player_id": "maledth01",
+      "name": "Théo Maledon",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "gilesha01": {
+      "player_id": "gilesha01",
+      "name": "Harry Giles",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "smithte01": {
+      "player_id": "smithte01",
+      "name": "Terquavion Smith",
+      "team": "PHI",
+      "positions": [
+        "PG"
+      ]
+    },
+    "tuckepj01": {
+      "player_id": "tuckepj01",
+      "name": "P.J. Tucker",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "griffaj01": {
+      "player_id": "griffaj01",
+      "name": "AJ Griffin",
+      "team": "ATL",
+      "positions": [
+        "SF"
+      ]
+    },
+    "taylote01": {
+      "player_id": "taylote01",
+      "name": "Terry Taylor",
+      "team": "CHI",
+      "positions": [
+        "PF"
+      ]
+    },
+    "windldy01": {
+      "player_id": "windldy01",
+      "name": "Dylan Windler",
+      "team": "3TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "swideco01": {
+      "player_id": "swideco01",
+      "name": "Cole Swider",
+      "team": "MIA",
+      "positions": [
+        "SF"
+      ]
+    },
+    "batesem01": {
+      "player_id": "batesem01",
+      "name": "Emoni Bates",
+      "team": "CLE",
+      "positions": [
+        "SF"
+      ]
+    },
+    "harrijo01": {
+      "player_id": "harrijo01",
+      "name": "Joe Harris",
+      "team": "DET",
+      "positions": [
+        "SG"
+      ]
+    },
+    "porteot01": {
+      "player_id": "porteot01",
+      "name": "Otto Porter Jr.",
+      "team": "TOR",
+      "positions": [
+        "SF"
+      ]
+    },
+    "azubuud01": {
+      "player_id": "azubuud01",
+      "name": "Udoka Azubuike",
+      "team": "PHO",
+      "positions": [
+        "C"
+      ]
+    },
+    "badjiib01": {
+      "player_id": "badjiib01",
+      "name": "Ibou Badji",
+      "team": "POR",
+      "positions": [
+        "C"
+      ]
+    },
+    "sarrol01": {
+      "player_id": "sarrol01",
+      "name": "Olivier Sarr",
+      "team": "OKC",
+      "positions": [
+        "C"
+      ]
+    },
+    "hintona01": {
+      "player_id": "hintona01",
+      "name": "Nate Hinton",
+      "team": "HOU",
+      "positions": [
+        "SG"
+      ]
+    },
+    "mensana01": {
+      "player_id": "mensana01",
+      "name": "Nathan Mensah",
+      "team": "CHO",
+      "positions": [
+        "C"
+      ]
+    },
+    "antetth01": {
+      "player_id": "antetth01",
+      "name": "Thanasis Antetokounmpo",
+      "team": "MIL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "robinje01": {
+      "player_id": "robinje01",
+      "name": "Jerome Robinson",
+      "team": "GSW",
+      "positions": [
+        "SG"
+      ]
+    },
+    "millele01": {
+      "player_id": "millele01",
+      "name": "Leonard Miller",
+      "team": "MIN",
+      "positions": [
+        "SF"
+      ]
+    },
+    "nixda01": {
+      "player_id": "nixda01",
+      "name": "Daishen Nix",
+      "team": "MIN",
+      "positions": [
+        "PG"
+      ]
+    },
+    "schofad01": {
+      "player_id": "schofad01",
+      "name": "Admiral Schofield",
+      "team": "ORL",
+      "positions": [
+        "PF"
+      ]
+    },
+    "keybr01": {
+      "player_id": "keybr01",
+      "name": "Braxton Key",
+      "team": "DEN",
+      "positions": [
+        "SF"
+      ]
+    },
+    "brownke03": {
+      "player_id": "brownke03",
+      "name": "Kendall Brown",
+      "team": "IND",
+      "positions": [
+        "SG"
+      ]
+    },
+    "lopezro01": {
+      "player_id": "lopezro01",
+      "name": "Robin Lopez",
+      "team": "MIL",
+      "positions": [
+        "C"
+      ]
+    },
+    "arcidry01": {
+      "player_id": "arcidry01",
+      "name": "Ryan Arcidiacono",
+      "team": "NYK",
+      "positions": [
+        "PG"
+      ]
+    },
+    "nowelja01": {
+      "player_id": "nowelja01",
+      "name": "Jaylen Nowell",
+      "team": "MIN",
+      "positions": [
+        "SG"
+      ]
+    },
+    "diallha01": {
+      "player_id": "diallha01",
+      "name": "Hamidou Diallo",
+      "team": "DET",
+      "positions": [
+        "SF"
+      ]
+    },
+    "rosste01": {
+      "player_id": "rosste01",
+      "name": "Terrence Ross",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "nunnke01": {
+      "player_id": "nunnke01",
+      "name": "Kendrick Nunn",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "oladivi01": {
+      "player_id": "oladivi01",
+      "name": "Victor Oladipo",
+      "team": "MIA",
+      "positions": [
+        "SG"
+      ]
+    },
+    "daviste02": {
+      "player_id": "daviste02",
+      "name": "Terence Davis",
+      "team": "SAC",
+      "positions": [
+        "SG"
+      ]
+    },
+    "lamban01": {
+      "player_id": "lamban01",
+      "name": "Anthony Lamb",
+      "team": "GSW",
+      "positions": [
+        "SF"
+      ]
+    },
+    "walljo01": {
+      "player_id": "walljo01",
+      "name": "John Wall",
+      "team": "LAC",
+      "positions": [
+        "PG"
+      ]
+    },
+    "bartowi01": {
+      "player_id": "bartowi01",
+      "name": "Will Barton",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "sumneed01": {
+      "player_id": "sumneed01",
+      "name": "Edmond Sumner",
+      "team": "BRK",
+      "positions": [
+        "SG"
+      ]
+    },
+    "chrisjo01": {
+      "player_id": "chrisjo01",
+      "name": "Josh Christopher",
+      "team": "HOU",
+      "positions": [
+        "SG"
+      ]
+    },
+    "gabriwe01": {
+      "player_id": "gabriwe01",
+      "name": "Wenyen Gabriel",
+      "team": "LAL",
+      "positions": [
+        "C"
+      ]
+    },
+    "greenja01": {
+      "player_id": "greenja01",
+      "name": "JaMychal Green",
+      "team": "GSW",
+      "positions": [
+        "PF"
+      ]
+    },
+    "dragigo01": {
+      "player_id": "dragigo01",
+      "name": "Goran Dragić",
+      "team": "2TM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "harremo01": {
+      "player_id": "harremo01",
+      "name": "Montrezl Harrell",
+      "team": "PHI",
+      "positions": [
+        "C"
+      ]
+    },
+    "warretj01": {
+      "player_id": "warretj01",
+      "name": "T.J. Warren",
+      "team": "2TM",
+      "positions": [
+        "PF"
+      ]
+    },
+    "hamptrj01": {
+      "player_id": "hamptrj01",
+      "name": "R.J. Hampton",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "cancavl01": {
+      "player_id": "cancavl01",
+      "name": "Vlatko Čančar",
+      "team": "DEN",
+      "positions": [
+        "PF"
+      ]
+    },
+    "langfro01": {
+      "player_id": "langfro01",
+      "name": "Romeo Langford",
+      "team": "SAS",
+      "positions": [
+        "SG"
+      ]
+    },
+    "gayru01": {
+      "player_id": "gayru01",
+      "name": "Rudy Gay",
+      "team": "UTA",
+      "positions": [
+        "PF"
+      ]
+    },
+    "hernawi01": {
+      "player_id": "hernawi01",
+      "name": "Willy Hernangómez",
+      "team": "NOP",
+      "positions": [
+        "C"
+      ]
+    },
+    "riverau01": {
+      "player_id": "riverau01",
+      "name": "Austin Rivers",
+      "team": "MIN",
+      "positions": [
+        "SG"
+      ]
+    },
+    "wainris01": {
+      "player_id": "wainris01",
+      "name": "Ish Wainright",
+      "team": "PHO",
+      "positions": [
+        "SF"
+      ]
+    },
+    "washidu02": {
+      "player_id": "washidu02",
+      "name": "Duane Washington Jr.",
+      "team": "PHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "hillge01": {
+      "player_id": "hillge01",
+      "name": "George Hill",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "garubus01": {
+      "player_id": "garubus01",
+      "name": "Usman Garuba",
+      "team": "HOU",
+      "positions": [
+        "C"
+      ]
+    },
+    "bazleda01": {
+      "player_id": "bazleda01",
+      "name": "Darius Bazley",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "dedmode01": {
+      "player_id": "dedmode01",
+      "name": "Dewayne Dedmon",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "winslju01": {
+      "player_id": "winslju01",
+      "name": "Justise Winslow",
+      "team": "POR",
+      "positions": [
+        "PF"
+      ]
+    },
+    "bouknja01": {
+      "player_id": "bouknja01",
+      "name": "James Bouknight",
+      "team": "CHO",
+      "positions": [
+        "SG"
+      ]
+    },
+    "mcgruro01": {
+      "player_id": "mcgruro01",
+      "name": "Rodney McGruder",
+      "team": "DET",
+      "positions": [
+        "SG"
+      ]
+    },
+    "johnsst04": {
+      "player_id": "johnsst04",
+      "name": "Stanley Johnson",
+      "team": "SAS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "robyis01": {
+      "player_id": "robyis01",
+      "name": "Isaiah Roby",
+      "team": "SAS",
+      "positions": [
+        "PF"
+      ]
+    },
+    "rubiori01": {
+      "player_id": "rubiori01",
+      "name": "Ricky Rubio",
+      "team": "CLE",
+      "positions": [
+        "PG"
+      ]
+    },
+    "griffbl01": {
+      "player_id": "griffbl01",
+      "name": "Blake Griffin",
+      "team": "BOS",
+      "positions": [
+        "C"
+      ]
+    },
+    "netora01": {
+      "player_id": "netora01",
+      "name": "Raul Neto",
+      "team": "CLE",
+      "positions": [
+        "PG"
+      ]
+    },
+    "toscaju01": {
+      "player_id": "toscaju01",
+      "name": "Juan Toscano-Anderson",
+      "team": "2TM",
+      "positions": [
+        "SF"
+      ]
+    },
+    "harrike01": {
+      "player_id": "harrike01",
+      "name": "Kevon Harris",
+      "team": "ORL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "knighna01": {
+      "player_id": "knighna01",
+      "name": "Nathan Knight",
+      "team": "MIN",
+      "positions": [
+        "C"
+      ]
+    },
+    "ntilila01": {
+      "player_id": "ntilila01",
+      "name": "Frank Ntilikina",
+      "team": "DAL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "hernaju01": {
+      "player_id": "hernaju01",
+      "name": "Juancho Hernangómez",
+      "team": "TOR",
+      "positions": [
+        "PF"
+      ]
+    },
+    "dienggo01": {
+      "player_id": "dienggo01",
+      "name": "Gorgui Dieng",
+      "team": "SAS",
+      "positions": [
+        "C"
+      ]
+    },
+    "wrighmc01": {
+      "player_id": "wrighmc01",
+      "name": "McKinley Wright IV",
+      "team": "DAL",
+      "positions": [
+        "PG"
+      ]
+    },
+    "marjabo01": {
+      "player_id": "marjabo01",
+      "name": "Boban Marjanović",
+      "team": "HOU",
+      "positions": [
+        "C"
+      ]
+    },
+    "pinsoth01": {
+      "player_id": "pinsoth01",
+      "name": "Theo Pinson",
+      "team": "DAL",
+      "positions": [
+        "SG"
+      ]
+    },
+    "forbebr01": {
+      "player_id": "forbebr01",
+      "name": "Bryn Forbes",
+      "team": "MIN",
+      "positions": [
+        "SG"
+      ]
+    },
+    "reedda01": {
+      "player_id": "reedda01",
+      "name": "Davon Reed",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "kaminfr01": {
+      "player_id": "kaminfr01",
+      "name": "Frank Kaminsky",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "dukeda01": {
+      "player_id": "dukeda01",
+      "name": "David Duke Jr.",
+      "team": "BRK",
+      "positions": [
+        "SG"
+      ]
+    },
+    "chandke01": {
+      "player_id": "chandke01",
+      "name": "Kennedy Chandler",
+      "team": "MEM",
+      "positions": [
+        "PG"
+      ]
+    },
+    "ibakase01": {
+      "player_id": "ibakase01",
+      "name": "Serge Ibaka",
+      "team": "MIL",
+      "positions": [
+        "C"
+      ]
+    },
+    "diakima01": {
+      "player_id": "diakima01",
+      "name": "Mamadi Diakite",
+      "team": "CLE",
+      "positions": [
+        "C"
+      ]
+    },
+    "johnsja01": {
+      "player_id": "johnsja01",
+      "name": "James Johnson",
+      "team": "IND",
+      "positions": [
+        "PF"
+      ]
+    },
+    "dellama01": {
+      "player_id": "dellama01",
+      "name": "Matthew Dellavedova",
+      "team": "SAC",
+      "positions": [
+        "PG"
+      ]
+    },
+    "okpalkz01": {
+      "player_id": "okpalkz01",
+      "name": "KZ Okpala",
+      "team": "SAC",
+      "positions": [
+        "PF"
+      ]
+    },
+    "butlejo01": {
+      "player_id": "butlejo01",
+      "name": "John Butler",
+      "team": "POR",
+      "positions": [
+        "C"
+      ]
+    },
+    "smithdr01": {
+      "player_id": "smithdr01",
+      "name": "Dru Smith",
+      "team": "2TM",
+      "positions": [
+        "SG"
+      ]
+    },
+    "birchkh01": {
+      "player_id": "birchkh01",
+      "name": "Khem Birch",
+      "team": "TOR",
+      "positions": [
+        "C"
+      ]
+    },
+    "noelne01": {
+      "player_id": "noelne01",
+      "name": "Nerlens Noel",
+      "team": "2TM",
+      "positions": [
+        "C"
+      ]
+    },
+    "browngr01": {
+      "player_id": "browngr01",
+      "name": "Greg Brown III",
+      "team": "POR",
+      "positions": [
+        "PF"
+      ]
+    },
+    "vonleno01": {
+      "player_id": "vonleno01",
+      "name": "Noah Vonleh",
+      "team": "BOS",
+      "positions": [
+        "C"
+      ]
+    },
+    "doziepj01": {
+      "player_id": "doziepj01",
+      "name": "PJ Dozier",
+      "team": "SAC",
+      "positions": [
+        "SF"
+      ]
+    },
+    "whiteja03": {
+      "player_id": "whiteja03",
+      "name": "Jack White",
+      "team": "DEN",
+      "positions": [
+        "SF"
+      ]
+    },
+    "jacksju01": {
+      "player_id": "jacksju01",
+      "name": "Justin Jackson",
+      "team": "BOS",
+      "positions": [
+        "SF"
+      ]
+    },
+    "ROOK_cooper_flagg": {
+      "player_id": "ROOK_cooper_flagg",
+      "name": "Cooper Flagg",
+      "team": "TBD",
+      "positions": [
+        "TBD"
+      ],
+      "adp": 43.9,
+      "rookie": true,
+      "bucket": "13",
+      "bucket_rank": 43,
+      "flags": []
+    }
+  }
+}

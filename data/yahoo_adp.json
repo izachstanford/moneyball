@@ -1,0 +1,1003 @@
+{
+  "jokicni01": {
+    "player_id": "jokicni01",
+    "player": "Nikola Jokic",
+    "adp": 1.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "wembavi01": {
+    "player_id": "wembavi01",
+    "player": "Victor Wembanyama",
+    "adp": 3.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "gilgesh01": {
+    "player_id": "gilgesh01",
+    "player": "Shai Gilgeous-Alexander",
+    "adp": 3.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "doncilu01": {
+    "player_id": "doncilu01",
+    "player": "Luka Doncic",
+    "adp": 4.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "antetgi01": {
+    "player_id": "antetgi01",
+    "player": "Giannis Antetokounmpo",
+    "adp": 5.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "edwaran01": {
+    "player_id": "edwaran01",
+    "player": "Anthony Edwards",
+    "adp": 7.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "cunnica01": {
+    "player_id": "cunnica01",
+    "player": "Cade Cunningham",
+    "adp": 8.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "davisan02": {
+    "player_id": "davisan02",
+    "player": "Anthony Davis",
+    "adp": 9.4,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "townska01": {
+    "player_id": "townska01",
+    "player": "Karl-Anthony Towns",
+    "adp": 10.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "sabondo01": {
+    "player_id": "sabondo01",
+    "player": "Domantas Sabonis",
+    "adp": 11.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "youngtr01": {
+    "player_id": "youngtr01",
+    "player": "Trae Young",
+    "adp": 12.2,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "bookede01": {
+    "player_id": "bookede01",
+    "player": "Devin Booker",
+    "adp": 12.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "hardeja01": {
+    "player_id": "hardeja01",
+    "player": "James Harden",
+    "adp": 15.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "curryst01": {
+    "player_id": "curryst01",
+    "player": "Steph Curry",
+    "adp": 17.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "duranke01": {
+    "player_id": "duranke01",
+    "player": "Kevin Durant",
+    "adp": 19.2,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "sengual01": {
+    "player_id": "sengual01",
+    "player": "Alperen Sengun",
+    "adp": 19.2,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "maxeyty01": {
+    "player_id": "maxeyty01",
+    "player": "Tyrese Maxey",
+    "adp": 20.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "mobleev01": {
+    "player_id": "mobleev01",
+    "player": "Evan Mobley",
+    "adp": 20.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "mitchdo01": {
+    "player_id": "mitchdo01",
+    "player": "Donovan Mitchell",
+    "adp": 20.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "jamesle01": {
+    "player_id": "jamesle01",
+    "player": "LeBron James",
+    "adp": 21.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "banchpa01": {
+    "player_id": "banchpa01",
+    "player": "Paolo Banchero",
+    "adp": 22.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "willija06": {
+    "player_id": "willija06",
+    "player": "Jalen Williams",
+    "adp": 22.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "brunsja01": {
+    "player_id": "brunsja01",
+    "player": "Jalen Brunson",
+    "adp": 22.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "holmgch01": {
+    "player_id": "holmgch01",
+    "player": "Chet Holmgren",
+    "adp": 24.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "thompam01": {
+    "player_id": "thompam01",
+    "player": "Amen Thompson",
+    "adp": 25.4,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "barnesc01": {
+    "player_id": "barnesc01",
+    "player": "Scottie Barnes",
+    "adp": 26.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "johnsja05": {
+    "player_id": "johnsja05",
+    "player": "Jalen Johnson",
+    "adp": 26.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "ballla01": {
+    "player_id": "ballla01",
+    "player": "LaMelo Ball",
+    "adp": 29.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "siakapa01": {
+    "player_id": "siakapa01",
+    "player": "Pascal Siakam",
+    "adp": 30.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "giddejo01": {
+    "player_id": "giddejo01",
+    "player": "Josh Giddey",
+    "adp": 30.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "brownja02": {
+    "player_id": "brownja02",
+    "player": "Jaylen Brown",
+    "adp": 30.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "adebaba01": {
+    "player_id": "adebaba01",
+    "player": "Bam Adebayo",
+    "adp": 32.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "foxde01": {
+    "player_id": "foxde01",
+    "player": "De'Aaron Fox",
+    "adp": 32.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "wagnefr01": {
+    "player_id": "wagnefr01",
+    "player": "Franz Wagner",
+    "adp": 35.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "zubaciv01": {
+    "player_id": "zubaciv01",
+    "player": "Ivica Zubac",
+    "adp": 36.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "daniedy01": {
+    "player_id": "daniedy01",
+    "player": "Dyson Daniels",
+    "adp": 37.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "whitede01": {
+    "player_id": "whitede01",
+    "player": "Derrick White",
+    "adp": 37.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "murraja01": {
+    "player_id": "murraja01",
+    "player": "Jamal Murray",
+    "adp": 40.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "jacksja02": {
+    "player_id": "jacksja02",
+    "player": "Jaren Jackson Jr",
+    "adp": 40.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "moranja01": {
+    "player_id": "moranja01",
+    "player": "Ja Morant",
+    "adp": 41.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "banede01": {
+    "player_id": "banede01",
+    "player": "Desmond Bane",
+    "adp": 42.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "ROOK_cooper_flagg": {
+    "player_id": "ROOK_cooper_flagg",
+    "player": "Cooper Flagg",
+    "adp": 43.9,
+    "adp_date": "2025-10-08",
+    "rookie": true
+  },
+  "murphtr02": {
+    "player_id": "murphtr02",
+    "player": "Trey Murphy III",
+    "adp": 44.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "leonaka01": {
+    "player_id": "leonaka01",
+    "player": "Kawhi Leonard",
+    "adp": 45.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "willizi01": {
+    "player_id": "willizi01",
+    "player": "Zion Williamson",
+    "adp": 45.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "turnemy01": {
+    "player_id": "turnemy01",
+    "player": "Myles Turner",
+    "adp": 49.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "markkla01": {
+    "player_id": "markkla01",
+    "player": "Lauri Markkanen",
+    "adp": 50.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "embiijo01": {
+    "player_id": "embiijo01",
+    "player": "Joel Embiid",
+    "adp": 50.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "butleji01": {
+    "player_id": "butleji01",
+    "player": "Jimmy Butler",
+    "adp": 51.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "reaveau01": {
+    "player_id": "reaveau01",
+    "player": "Austin Reaves",
+    "adp": 51.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "vucevni01": {
+    "player_id": "vucevni01",
+    "player": "Nikola Vucevic",
+    "adp": 53.2,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "avdijde01": {
+    "player_id": "avdijde01",
+    "player": "Deni Avdija",
+    "adp": 53.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "hartjo01": {
+    "player_id": "hartjo01",
+    "player": "Josh Hart",
+    "adp": 53.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "millebr02": {
+    "player_id": "millebr02",
+    "player": "Brandon Miller",
+    "adp": 53.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "porzikr01": {
+    "player_id": "porzikr01",
+    "player": "Kristaps Porzingis",
+    "adp": 54.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "allenja01": {
+    "player_id": "allenja01",
+    "player": "Jarrett Allen",
+    "adp": 55.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "kesslwa01": {
+    "player_id": "kesslwa01",
+    "player": "Walker Kessler",
+    "adp": 55.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "durenja01": {
+    "player_id": "durenja01",
+    "player": "Jalen Duren",
+    "adp": 55.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "whiteco01": {
+    "player_id": "whiteco01",
+    "player": "Coby White",
+    "adp": 61.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "lavinza01": {
+    "player_id": "lavinza01",
+    "player": "Zach LaVine",
+    "adp": 62.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "randlju01": {
+    "player_id": "randlju01",
+    "player": "Julius Randle",
+    "adp": 64.2,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "derozde01": {
+    "player_id": "derozde01",
+    "player": "DeMar DeRozan",
+    "adp": 64.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "anunoog01": {
+    "player_id": "anunoog01",
+    "player": "OG Anunoby",
+    "adp": 65.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "portemi01": {
+    "player_id": "portemi01",
+    "player": "Michael Porter Jr",
+    "adp": 65.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "herroty01": {
+    "player_id": "herroty01",
+    "player": "Tyler Herro",
+    "adp": 66.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "bridgmi02": {
+    "player_id": "bridgmi02",
+    "player": "Miles Bridges",
+    "adp": 66.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "goberru01": {
+    "player_id": "goberru01",
+    "player": "Rudy Gobert",
+    "adp": 66.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "aytonde01": {
+    "player_id": "aytonde01",
+    "player": "Deandre Ayton",
+    "adp": 68.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "garlada01": {
+    "player_id": "garlada01",
+    "player": "Darius Garland",
+    "adp": 68.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "greenja05": {
+    "player_id": "greenja05",
+    "player": "Jalen Green",
+    "adp": 70.4,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "pritcpa01": {
+    "player_id": "pritcpa01",
+    "player": "Payton Pritchard",
+    "adp": 72.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "poolejo01": {
+    "player_id": "poolejo01",
+    "player": "Jordan Poole",
+    "adp": 72.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "nembhan01": {
+    "player_id": "nembhan01",
+    "player": "Andrew Nembhard",
+    "adp": 75.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "ingrabr01": {
+    "player_id": "ingrabr01",
+    "player": "Brandon Ingram",
+    "adp": 76.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "georgpa01": {
+    "player_id": "georgpa01",
+    "player": "Paul George",
+    "adp": 77.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "quickim01": {
+    "player_id": "quickim01",
+    "player": "Immanuel Quickley",
+    "adp": 78.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "harteis01": {
+    "player_id": "harteis01",
+    "player": "Isaiah Hartenstein",
+    "adp": 79.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "sarral01": {
+    "player_id": "sarral01",
+    "player": "Alex Sarr",
+    "adp": 79.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "poeltja01": {
+    "player_id": "poeltja01",
+    "player": "Jakob Poeltl",
+    "adp": 80.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "bridgmi01": {
+    "player_id": "bridgmi01",
+    "player": "Mikal Bridges",
+    "adp": 80.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "thomaca02": {
+    "player_id": "thomaca02",
+    "player": "Cam Thomas",
+    "adp": 80.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "barrerj01": {
+    "player_id": "barrerj01",
+    "player": "RJ Barrett",
+    "adp": 83.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "willima07": {
+    "player_id": "willima07",
+    "player": "Mark Williams",
+    "adp": 83.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "johnsca02": {
+    "player_id": "johnsca02",
+    "player": "Cam Johnson",
+    "adp": 85.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "thompau01": {
+    "player_id": "thompau01",
+    "player": "Ausar Thompson",
+    "adp": 85.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "wareke01": {
+    "player_id": "wareke01",
+    "player": "Kel'el Ware",
+    "adp": 85.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "clingdo01": {
+    "player_id": "clingdo01",
+    "player": "Donovan Clingan",
+    "adp": 87.2,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "simonan01": {
+    "player_id": "simonan01",
+    "player": "Anfernee Simons",
+    "adp": 88.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "powelno01": {
+    "player_id": "powelno01",
+    "player": "Norman Powell",
+    "adp": 90.4,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "reidna01": {
+    "player_id": "reidna01",
+    "player": "Naz Reid",
+    "adp": 90.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "collijo01": {
+    "player_id": "collijo01",
+    "player": "John Collins",
+    "adp": 91.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "vanvlfr01": {
+    "player_id": "vanvlfr01",
+    "player": "Fred VanVleet",
+    "adp": 92.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "okongon01": {
+    "player_id": "okongon01",
+    "player": "Onyeka Okongwu",
+    "adp": 92.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "mathube01": {
+    "player_id": "mathube01",
+    "player": "Bennedict Mathurin",
+    "adp": 93.4,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "buzelma01": {
+    "player_id": "buzelma01",
+    "player": "Matas Buzelis",
+    "adp": 93.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "braunch01": {
+    "player_id": "braunch01",
+    "player": "Christian Braun",
+    "adp": 93.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "sharpsh01": {
+    "player_id": "sharpsh01",
+    "player": "Shaedon Sharpe",
+    "adp": 97.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "mccolcj01": {
+    "player_id": "mccolcj01",
+    "player": "CJ McCollum",
+    "adp": 100.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "vassede01": {
+    "player_id": "vassede01",
+    "player": "Devin Vassell",
+    "adp": 101.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "suggsja01": {
+    "player_id": "suggsja01",
+    "player": "Jalen Suggs",
+    "adp": 102.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "bealbr01": {
+    "player_id": "bealbr01",
+    "player": "Bradley Beal",
+    "adp": 102.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "claxtni01": {
+    "player_id": "claxtni01",
+    "player": "Nic Claxton",
+    "adp": 103.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "wiggian01": {
+    "player_id": "wiggian01",
+    "player": "Andrew Wiggins",
+    "adp": 103.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "murrake02": {
+    "player_id": "murrake02",
+    "player": "Keegan Murray",
+    "adp": 105.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "camarto01": {
+    "player_id": "camarto01",
+    "player": "Toumani Camara",
+    "adp": 106.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "greendr01": {
+    "player_id": "greendr01",
+    "player": "Draymond Green",
+    "adp": 106.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "mcdanja02": {
+    "player_id": "mcdanja02",
+    "player": "Jaden McDaniels",
+    "adp": 109.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "russeda01": {
+    "player_id": "russeda01",
+    "player": "D'Angelo Russell",
+    "adp": 110.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "aldamsa01": {
+    "player_id": "aldamsa01",
+    "player": "Santi Aldama",
+    "adp": 110.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "gordoaa01": {
+    "player_id": "gordoaa01",
+    "player": "Aaron Gordon",
+    "adp": 110.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "harrito02": {
+    "player_id": "harrito02",
+    "player": "Tobias Harris",
+    "adp": 112.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "iveyja01": {
+    "player_id": "iveyja01",
+    "player": "Jaden Ivey",
+    "adp": 113.2,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "castlst01": {
+    "player_id": "castlst01",
+    "player": "Stephon Castle",
+    "adp": 115.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "holidjr01": {
+    "player_id": "holidjr01",
+    "player": "Jrue Holiday",
+    "adp": 116.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "edeyza01": {
+    "player_id": "edeyza01",
+    "player": "Zach Edey",
+    "adp": 116.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "livelde01": {
+    "player_id": "livelde01",
+    "player": "Dereck Lively II",
+    "adp": 116.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "georgke01": {
+    "player_id": "georgke01",
+    "player": "Keyonte George",
+    "adp": 117.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "portibo01": {
+    "player_id": "portibo01",
+    "player": "Bobby Portis",
+    "adp": 118.2,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "porteke02": {
+    "player_id": "porteke02",
+    "player": "Kevin Porter Jr",
+    "adp": 119.2,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "monkma01": {
+    "player_id": "monkma01",
+    "player": "Malik Monk",
+    "adp": 119.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "podzibr01": {
+    "player_id": "podzibr01",
+    "player": "Brandin Podziemski",
+    "adp": 121.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "smithja05": {
+    "player_id": "smithja05",
+    "player": "Jabari Smith Jr",
+    "adp": 121.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "divindo01": {
+    "player_id": "divindo01",
+    "player": "Donte DiVincenzo",
+    "adp": 122.4,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "easonta01": {
+    "player_id": "easonta01",
+    "player": "Tari Eason",
+    "adp": 123.1,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "sheppre01": {
+    "player_id": "sheppre01",
+    "player": "Reed Sheppard",
+    "adp": 123.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "wallaca01": {
+    "player_id": "wallaca01",
+    "player": "Cason Wallace",
+    "adp": 125.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "thompkl01": {
+    "player_id": "thompkl01",
+    "player": "Klay Thompson",
+    "adp": 126.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "irvinky01": {
+    "player_id": "irvinky01",
+    "player": "Kyrie Irving",
+    "adp": 127.3,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "schrode01": {
+    "player_id": "schrode01",
+    "player": "Dennis Schroder",
+    "adp": 130.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "kuminjo01": {
+    "player_id": "kuminjo01",
+    "player": "Jonathan Kuminga",
+    "adp": 130.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "mccontj01": {
+    "player_id": "mccontj01",
+    "player": "TJ McConnell",
+    "adp": 131.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "risacza01": {
+    "player_id": "risacza01",
+    "player": "Zaccharie Risacher",
+    "adp": 131.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "carusal01": {
+    "player_id": "carusal01",
+    "player": "Alex Caruso",
+    "adp": 131.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "murrade01": {
+    "player_id": "murrade01",
+    "player": "Dejounte Murray",
+    "adp": 131.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "gaffoda01": {
+    "player_id": "gaffoda01",
+    "player": "Daniel Gafford",
+    "adp": 131.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "hendesc01": {
+    "player_id": "hendesc01",
+    "player": "Scoot Henderson",
+    "adp": 134.5,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "washipj01": {
+    "player_id": "washipj01",
+    "player": "PJ Washington",
+    "adp": 134.9,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "huntede01": {
+    "player_id": "huntede01",
+    "player": "De'Andre Hunter",
+    "adp": 135.0,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "kuzmaky01": {
+    "player_id": "kuzmaky01",
+    "player": "Kyle Kuzma",
+    "adp": 135.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "nesmiaa01": {
+    "player_id": "nesmiaa01",
+    "player": "Aaron Nesmith",
+    "adp": 135.7,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "robinmi01": {
+    "player_id": "robinmi01",
+    "player": "Mitchell Robinson",
+    "adp": 136.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "hausesa01": {
+    "player_id": "hausesa01",
+    "player": "Sam Hauser",
+    "adp": 136.6,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  },
+  "grimequ01": {
+    "player_id": "grimequ01",
+    "player": "Quentin Grimes",
+    "adp": 136.8,
+    "adp_date": "2025-10-08",
+    "rookie": false
+  }
+}
