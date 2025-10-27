@@ -1271,3 +1271,50 @@ select option {
         padding: 16px;
     }
 }
+
+/* Additional chart styles */
+.sankey-chart .flow-line {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.sankey-chart .flow-line:hover {
+    opacity: 1 !important;
+    stroke-width: 3;
+}
+
+.radar-chart path {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.radar-chart path:hover {
+    opacity: 0.4 !important;
+}
+
+.bar-chart rect {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.bar-chart rect:hover {
+    opacity: 1 !important;
+}
+
+.heatmap-chart rect {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.heatmap-chart rect:hover {
+    opacity: 1 !important;
+    stroke: #fff;
+    stroke-width: 2;
+}
+
+.empty-state {
+    padding: 20px;
+    text-align: center;
+    color: #9ca3af;
+    font-style: italic;
+}

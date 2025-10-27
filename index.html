@@ -173,6 +173,72 @@
                     </div>
                     <div id="consistency-scatter-chart" class="chart-container"></div>
                 </div>
+
+                <!-- Chart 4: Rank Flow Sankey -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <h3>🌊 Rank Tier Flow</h3>
+                        <p class="chart-description">Top 20 players moving through rank tiers over the last 3 seasons - visualize stability vs volatility</p>
+                    </div>
+                    <div id="rank-flow-chart" class="chart-container"></div>
+                </div>
+
+                <!-- Chart 5: Category Leaders Radar -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <h3>🎯 Category Dominance Profiles</h3>
+                        <p class="chart-description">Top 5 players compared across all 9 categories (normalized z-scores) - see who dominates which stats</p>
+                    </div>
+                    <div class="chart-controls">
+                        <select id="radar-season-filter">
+                            <option value="2024-2025">2024-25</option>
+                            <option value="2023-2024">2023-24</option>
+                            <option value="2022-2023">2022-23</option>
+                        </select>
+                    </div>
+                    <div id="radar-chart" class="chart-container"></div>
+                </div>
+
+                <!-- Chart 6: Age Curve Performance -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <h3>📊 Age Curve Analysis</h3>
+                        <p class="chart-description">Average rank by age (22-35) - identify prime performance windows and see how individual players compare</p>
+                    </div>
+                    <div class="chart-controls">
+                        <div class="player-search" style="position: relative; flex: 1; max-width: 400px;">
+                            <input type="text" id="age-curve-search-input" placeholder="Add player to compare against curve..." />
+                            <div id="age-curve-search-results" class="search-results"></div>
+                        </div>
+                    </div>
+                    <div id="age-curve-selected-players" class="selected-players"></div>
+                    <div id="age-curve-chart" class="chart-container"></div>
+                </div>
+
+                <!-- Chart 7: Biggest Movers -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <h3>📉📈 Biggest Year-over-Year Movers</h3>
+                        <p class="chart-description">Top 20 rank improvements (green) and declines (red) from last season - spot breakouts and busts</p>
+                    </div>
+                    <div id="biggest-movers-chart" class="chart-container"></div>
+                </div>
+
+                <!-- Chart 8: Category Correlation Matrix -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <h3>🔗 Category Correlation Matrix</h3>
+                        <p class="chart-description">Understand statistical trade-offs - which categories correlate (build synergies) vs anti-correlate (punting strategies)</p>
+                    </div>
+                    <div class="chart-controls">
+                        <select id="correlation-season-filter">
+                            <option value="2024-2025">2024-25</option>
+                            <option value="2023-2024">2023-24</option>
+                            <option value="2022-2023">2022-23</option>
+                        </select>
+                    </div>
+                    <div id="correlation-matrix-chart" class="chart-container"></div>
+                </div>
             </div>
         </main>
     </div>

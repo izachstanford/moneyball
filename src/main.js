@@ -1153,6 +1153,41 @@ class MoneballApp {
         if (consistencyShowNames) {
             consistencyShowNames.addEventListener('change', () => this.renderConsistencyScatterChart());
         }
+        
+        // Radar chart season filter
+        const radarSeasonFilter = document.getElementById('radar-season-filter');
+        if (radarSeasonFilter) {
+            radarSeasonFilter.addEventListener('change', () => this.renderRadarChart());
+        }
+        
+        // Age curve player search
+        this.ageCurveSelectedPlayers = [];
+        const ageCurveSearchInput = document.getElementById('age-curve-search-input');
+        const ageCurveSearchResults = document.getElementById('age-curve-search-results');
+        
+        if (ageCurveSearchInput) {
+            ageCurveSearchInput.addEventListener('input', (e) => {
+                const query = e.target.value.trim();
+                if (query.length < 2) {
+                    ageCurveSearchResults.classList.remove('show');
+                    return;
+                }
+                const results = this.dataLoader.searchPlayers(query);
+                this.renderAgeCurveSearchResults(results);
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!ageCurveSearchInput.contains(e.target) && !ageCurveSearchResults.contains(e.target)) {
+                    ageCurveSearchResults.classList.remove('show');
+                }
+            });
+        }
+        
+        // Correlation matrix season filter
+        const correlationSeasonFilter = document.getElementById('correlation-season-filter');
+        if (correlationSeasonFilter) {
+            correlationSeasonFilter.addEventListener('change', () => this.renderCorrelationMatrix());
+        }
     }
 
     renderInsights() {
@@ -1160,6 +1195,11 @@ class MoneballApp {
         this.renderValueScatterChart();
         this.renderTrendsChart();
         this.renderConsistencyScatterChart();
+        this.renderRankFlowChart();
+        this.renderRadarChart();
+        this.renderAgeCurveChart();
+        this.renderBiggestMoversChart();
+        this.renderCorrelationMatrix();
     }
 
     // Chart 1: Value Scatter Plot (ADP vs Projected Rank)
@@ -1659,6 +1699,560 @@ class MoneballApp {
                 }
             });
         });
+    }
+
+    // Chart 4: Rank Flow Sankey
+    renderRankFlowChart() {
+        const container = document.getElementById('rank-flow-chart');
+        if (!container) return;
+        
+        // Get historical data for recent 3 seasons
+        const historicalData = this.dataLoader.getHistoricalAnalysis({ minSeasons: 3 });
+        const seasons = ['2022-2023', '2023-2024', '2024-2025'];
+        
+        // Get top 20 players by 2024-2025 rank
+        const topPlayers = historicalData
+            .filter(p => p.validSeasonData.length >= 3)
+            .slice(0, 20)
+            .map(p => {
+                const tiersByPeriod = seasons.map(season => {
+                    const seasonData = p.validSeasonData.find(s => s.season === season);
+                    if (!seasonData) return null;
+                    const rank = seasonData.rank;
+                    if (rank <= 10) return 'Top 10';
+                    if (rank <= 25) return '11-25';
+                    if (rank <= 50) return '26-50';
+                    return '51+';
+                });
+                return {
+                    name: p.player.name,
+                    tiers: tiersByPeriod
+                };
+            });
+        
+        const width = 900;
+        const height = 500;
+        const margin = { top: 40, right: 20, bottom: 40, left: 20 };
+        
+        const tiers = ['Top 10', '11-25', '26-50', '51+'];
+        const colors = { 'Top 10': '#22c55e', '11-25': '#60a5fa', '26-50': '#f59e0b', '51+': '#ef4444' };
+        
+        const columnWidth = (width - margin.left - margin.right) / 3;
+        const tierHeight = 80;
+        const tierSpacing = 20;
+        
+        // Create flows
+        const flows = [];
+        topPlayers.forEach(player => {
+            for (let i = 0; i < player.tiers.length - 1; i++) {
+                const fromTier = player.tiers[i];
+                const toTier = player.tiers[i + 1];
+                if (fromTier && toTier) {
+                    flows.push({
+                        player: player.name,
+                        from: { season: i, tier: fromTier },
+                        to: { season: i + 1, tier: toTier }
+                    });
+                }
+            }
+        });
+        
+        const svg = `
+            <svg width="${width}" height="${height}" class="sankey-chart">
+                <!-- Season labels -->
+                ${seasons.map((season, i) => `
+                    <text x="${margin.left + columnWidth * i + columnWidth / 2}" y="25" 
+                          text-anchor="middle" class="axis-label" font-size="14" font-weight="600">${season.split('-')[0].slice(2)}</text>
+                `).join('')}
+                
+                <!-- Tier boxes -->
+                ${seasons.map((season, seasonIdx) => tiers.map((tier, tierIdx) => {
+                    const x = margin.left + columnWidth * seasonIdx + columnWidth * 0.2;
+                    const y = margin.top + tierIdx * (tierHeight + tierSpacing);
+                    const count = topPlayers.filter(p => p.tiers[seasonIdx] === tier).length;
+                    
+                    return `
+                        <rect x="${x}" y="${y}" width="${columnWidth * 0.6}" height="${tierHeight}" 
+                              fill="${colors[tier]}" opacity="0.3" stroke="${colors[tier]}" stroke-width="2" rx="4"/>
+                        <text x="${x + columnWidth * 0.3}" y="${y + tierHeight / 2 - 5}" 
+                              text-anchor="middle" font-size="14" font-weight="600" fill="#fff">${tier}</text>
+                        <text x="${x + columnWidth * 0.3}" y="${y + tierHeight / 2 + 15}" 
+                              text-anchor="middle" font-size="12" fill="#9ca3af">${count} players</text>
+                    `;
+                }).join('')).join('')}
+                
+                <!-- Flow lines -->
+                ${flows.map(flow => {
+                    const fromTierIdx = tiers.indexOf(flow.from.tier);
+                    const toTierIdx = tiers.indexOf(flow.to.tier);
+                    const fromX = margin.left + columnWidth * flow.from.season + columnWidth * 0.8;
+                    const toX = margin.left + columnWidth * flow.to.season + columnWidth * 0.2;
+                    const fromY = margin.top + fromTierIdx * (tierHeight + tierSpacing) + tierHeight / 2;
+                    const toY = margin.top + toTierIdx * (tierHeight + tierSpacing) + tierHeight / 2;
+                    
+                    const color = fromTierIdx === toTierIdx ? colors[flow.from.tier] : 
+                                  fromTierIdx < toTierIdx ? '#ef4444' : '#22c55e';
+                    
+                    return `
+                        <line x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" 
+                              stroke="${color}" stroke-width="2" opacity="0.3" 
+                              class="flow-line" data-player="${flow.player}"/>
+                    `;
+                }).join('')}
+            </svg>
+        `;
+        
+        container.innerHTML = svg + `
+            <div class="chart-legend">
+                <div class="legend-item"><span class="legend-dot" style="background: #22c55e;"></span> Improving</div>
+                <div class="legend-item"><span class="legend-dot" style="background: #60a5fa;"></span> Stable</div>
+                <div class="legend-item"><span class="legend-dot" style="background: #ef4444;"></span> Declining</div>
+            </div>
+        `;
+    }
+
+    // Chart 5: Category Radar Chart
+    renderRadarChart() {
+        const container = document.getElementById('radar-chart');
+        if (!container) return;
+        
+        const season = document.getElementById('radar-season-filter')?.value || '2024-2025';
+        
+        // Get top 5 players for this season
+        const leaderboard = this.dataLoader.getLeaderboard({ season, rankType: 'per_game', minGames: 20 });
+        const topPlayers = leaderboard.slice(0, 5);
+        
+        if (topPlayers.length === 0) {
+            container.innerHTML = '<div class="chart-empty">No data available for this season</div>';
+            return;
+        }
+        
+        const categories = ['PTS', 'REB', 'AST', 'STL', 'BLK', '3PM', 'FG%', 'FT%', 'TOV'];
+        const width = 600;
+        const height = 600;
+        const centerX = width / 2;
+        const centerY = height / 2;
+        const maxRadius = 220;
+        
+        const colors = ['#3b82f6', '#22c55e', '#f59e0b', '#ef4444', '#8b5cf6'];
+        
+        // Function to get coordinates for a point on the radar
+        const getPoint = (categoryIndex, value) => {
+            const angle = (Math.PI * 2 * categoryIndex / categories.length) - Math.PI / 2;
+            const radius = maxRadius * value;
+            return {
+                x: centerX + radius * Math.cos(angle),
+                y: centerY + radius * Math.sin(angle)
+            };
+        };
+        
+        const svg = `
+            <svg width="${width}" height="${height}" class="radar-chart">
+                <!-- Grid circles -->
+                ${[0.2, 0.4, 0.6, 0.8, 1.0].map(scale => `
+                    <circle cx="${centerX}" cy="${centerY}" r="${maxRadius * scale}" 
+                            fill="none" stroke="#374151" stroke-width="1" opacity="0.3"/>
+                `).join('')}
+                
+                <!-- Axes -->
+                ${categories.map((cat, i) => {
+                    const point = getPoint(i, 1);
+                    return `
+                        <line x1="${centerX}" y1="${centerY}" x2="${point.x}" y2="${point.y}" 
+                              stroke="#374151" stroke-width="1" opacity="0.5"/>
+                        <text x="${point.x + (point.x - centerX) * 0.15}" y="${point.y + (point.y - centerY) * 0.15}" 
+                              text-anchor="middle" class="axis-label" font-size="13" font-weight="600">${cat}</text>
+                    `;
+                }).join('')}
+                
+                <!-- Player polygons -->
+                ${topPlayers.map((playerData, playerIdx) => {
+                    const player = playerData.player;
+                    const seasonData = playerData.seasonData;
+                    const zscores = seasonData.zscores || {};
+                    
+                    // Normalize z-scores to 0-1 range (assuming z-scores range from -3 to 3)
+                    const values = categories.map(cat => {
+                        let zScore = 0;
+                        if (cat === 'PTS') zScore = zscores.Z_PTS_G || 0;
+                        else if (cat === 'REB') zScore = zscores.Z_REB_G || 0;
+                        else if (cat === 'AST') zScore = zscores.Z_AST_G || 0;
+                        else if (cat === 'STL') zScore = zscores.Z_STL_G || 0;
+                        else if (cat === 'BLK') zScore = zscores.Z_BLK_G || 0;
+                        else if (cat === '3PM') zScore = zscores.Z_3PM_G || 0;
+                        else if (cat === 'FG%') zScore = zscores.Z_FG_PCT || 0;
+                        else if (cat === 'FT%') zScore = zscores.Z_FT_PCT || 0;
+                        else if (cat === 'TOV') zScore = -(zscores.Z_TOV_G || 0); // Invert TOV
+                        
+                        return Math.max(0, Math.min(1, (zScore + 3) / 6)); // Normalize -3 to 3 => 0 to 1
+                    });
+                    
+                    const points = categories.map((cat, i) => getPoint(i, values[i]));
+                    const pathData = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ') + ' Z';
+                    
+                    return `
+                        <path d="${pathData}" fill="${colors[playerIdx]}" opacity="0.15" 
+                              stroke="${colors[playerIdx]}" stroke-width="2"/>
+                        ${points.map(p => `
+                            <circle cx="${p.x}" cy="${p.y}" r="3" fill="${colors[playerIdx]}"/>
+                        `).join('')}
+                    `;
+                }).join('')}
+            </svg>
+        `;
+        
+        container.innerHTML = svg + `
+            <div class="chart-legend">
+                ${topPlayers.map((p, i) => `
+                    <div class="legend-item"><span class="legend-dot" style="background: ${colors[i]};"></span> ${p.player.name}</div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    // Chart 6: Age Curve
+    renderAgeCurveChart() {
+        const container = document.getElementById('age-curve-chart');
+        if (!container) return;
+        
+        // Calculate average rank by age
+        const allHistorical = this.dataLoader.getHistoricalAnalysis({ minSeasons: 1 });
+        const ageData = {};
+        
+        allHistorical.forEach(p => {
+            p.validSeasonData.forEach(s => {
+                if (s.age && s.age >= 22 && s.age <= 35) {
+                    if (!ageData[s.age]) ageData[s.age] = [];
+                    ageData[s.age].push(s.rank);
+                }
+            });
+        });
+        
+        const ageCurve = Object.keys(ageData)
+            .map(age => ({
+                age: parseInt(age),
+                avgRank: ageData[age].reduce((a, b) => a + b, 0) / ageData[age].length,
+                count: ageData[age].length
+            }))
+            .sort((a, b) => a.age - b.age);
+        
+        if (ageCurve.length === 0) {
+            container.innerHTML = '<div class="chart-empty">Insufficient age data</div>';
+            return;
+        }
+        
+        const width = 900;
+        const height = 500;
+        const margin = { top: 20, right: 20, bottom: 60, left: 60 };
+        const chartWidth = width - margin.left - margin.right;
+        const chartHeight = height - margin.top - margin.bottom;
+        
+        const minAge = Math.min(...ageCurve.map(d => d.age));
+        const maxAge = Math.max(...ageCurve.map(d => d.age));
+        const maxRank = Math.max(...ageCurve.map(d => d.avgRank));
+        
+        const xScale = (age) => margin.left + ((age - minAge) / (maxAge - minAge)) * chartWidth;
+        const yScale = (rank) => margin.top + ((maxRank - rank) / maxRank) * chartHeight;
+        
+        const pathData = ageCurve.map((d, i) => `${i === 0 ? 'M' : 'L'} ${xScale(d.age)} ${yScale(d.avgRank)}`).join(' ');
+        
+        const svg = `
+            <svg width="${width}" height="${height}" class="line-chart">
+                <!-- Grid -->
+                ${Array.from({length: 6}, (_, i) => {
+                    const y = margin.top + (chartHeight / 5) * i;
+                    return `<line x1="${margin.left}" y1="${y}" x2="${width - margin.right}" y2="${y}" 
+                                  stroke="#374151" stroke-width="1" opacity="0.2"/>`;
+                }).join('')}
+                
+                <!-- Axes -->
+                <line x1="${margin.left}" y1="${height - margin.bottom}" 
+                      x2="${width - margin.right}" y2="${height - margin.bottom}" 
+                      stroke="#9ca3af" stroke-width="2"/>
+                <line x1="${margin.left}" y1="${margin.top}" 
+                      x2="${margin.left}" y2="${height - margin.bottom}" 
+                      stroke="#9ca3af" stroke-width="2"/>
+                
+                <!-- Age labels -->
+                ${ageCurve.filter((d, i) => i % 2 === 0).map(d => `
+                    <text x="${xScale(d.age)}" y="${height - margin.bottom + 20}" 
+                          text-anchor="middle" class="axis-label">${d.age}</text>
+                `).join('')}
+                
+                <!-- Rank labels -->
+                ${Array.from({length: 6}, (_, i) => {
+                    const rank = Math.round(maxRank - (maxRank / 5) * i);
+                    const y = margin.top + (chartHeight / 5) * i;
+                    return `<text x="${margin.left - 10}" y="${y + 5}" text-anchor="end" class="axis-label">${rank}</text>`;
+                }).join('')}
+                
+                <!-- Axis titles -->
+                <text x="${width/2}" y="${height - 10}" text-anchor="middle" class="axis-label">Age</text>
+                <text x="20" y="${height/2}" text-anchor="middle" transform="rotate(-90 20 ${height/2})" 
+                      class="axis-label">Average Rank</text>
+                
+                <!-- Age curve line -->
+                <path d="${pathData}" fill="none" stroke="#60a5fa" stroke-width="3"/>
+                ${ageCurve.map(d => `
+                    <circle cx="${xScale(d.age)}" cy="${yScale(d.avgRank)}" r="4" 
+                            fill="#60a5fa" stroke="#1f2937" stroke-width="2"/>
+                `).join('')}
+            </svg>
+        `;
+        
+        container.innerHTML = svg + `
+            <div class="chart-legend">
+                <div class="legend-item"><span class="legend-dot" style="background: #60a5fa;"></span> League Average by Age</div>
+            </div>
+        `;
+    }
+
+    renderAgeCurveSearchResults(results) {
+        const container = document.getElementById('age-curve-search-results');
+        if (results.length === 0) {
+            container.innerHTML = '<div class="search-result">No players found</div>';
+            container.classList.add('show');
+            return;
+        }
+        
+        container.innerHTML = results.slice(0, 10).map(player => `
+            <div class="search-result" data-player-id="${player.player_id}">
+                <div class="player-name">${player.name}</div>
+                <div class="player-meta">${player.positions.join('/')} • ${player.latest_team}</div>
+            </div>
+        `).join('');
+        
+        container.classList.add('show');
+        
+        container.querySelectorAll('.search-result').forEach(result => {
+            result.addEventListener('click', (e) => {
+                const playerId = e.currentTarget.dataset.playerId;
+                this.addPlayerToAgeCurve(playerId);
+                container.classList.remove('show');
+                document.getElementById('age-curve-search-input').value = '';
+            });
+        });
+    }
+
+    addPlayerToAgeCurve(playerId) {
+        if (this.ageCurveSelectedPlayers.includes(playerId)) return;
+        this.ageCurveSelectedPlayers.push(playerId);
+        this.renderAgeCurveSelectedPlayers();
+        this.renderAgeCurveChart();
+    }
+
+    removePlayerFromAgeCurve(playerId) {
+        this.ageCurveSelectedPlayers = this.ageCurveSelectedPlayers.filter(id => id !== playerId);
+        this.renderAgeCurveSelectedPlayers();
+        this.renderAgeCurveChart();
+    }
+
+    renderAgeCurveSelectedPlayers() {
+        const container = document.getElementById('age-curve-selected-players');
+        if (!container) return;
+        
+        if (this.ageCurveSelectedPlayers.length === 0) {
+            container.innerHTML = '<div class="empty-state">Search and select players to overlay on the age curve</div>';
+            return;
+        }
+        
+        container.innerHTML = this.ageCurveSelectedPlayers.map(playerId => {
+            const player = this.dataLoader.getMasterPlayer(playerId);
+            return `
+                <div class="selected-player-tag">
+                    <span>${player.name}</span>
+                    <button class="remove-player" data-player-id="${playerId}">×</button>
+                </div>
+            `;
+        }).join('');
+        
+        container.querySelectorAll('.remove-player').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const playerId = e.target.dataset.playerId;
+                this.removePlayerFromAgeCurve(playerId);
+            });
+        });
+    }
+
+    // Chart 7: Biggest Movers
+    renderBiggestMoversChart() {
+        const container = document.getElementById('biggest-movers-chart');
+        if (!container) return;
+        
+        // Get players with data for both 2023-2024 and 2024-2025
+        const allHistorical = this.dataLoader.getHistoricalAnalysis({ minSeasons: 1 });
+        
+        const movers = allHistorical
+            .map(p => {
+                const prev = p.validSeasonData.find(s => s.season === '2023-2024');
+                const curr = p.validSeasonData.find(s => s.season === '2024-2025');
+                
+                if (!prev || !curr) return null;
+                
+                return {
+                    name: p.player.name,
+                    change: prev.rank - curr.rank, // Positive = improved (lower rank)
+                    prevRank: prev.rank,
+                    currRank: curr.rank
+                };
+            })
+            .filter(m => m)
+            .sort((a, b) => Math.abs(b.change) - Math.abs(a.change))
+            .slice(0, 20);
+        
+        if (movers.length === 0) {
+            container.innerHTML = '<div class="chart-empty">Insufficient data</div>';
+            return;
+        }
+        
+        const width = 900;
+        const height = 600;
+        const margin = { top: 20, right: 60, bottom: 40, left: 150 };
+        const chartWidth = width - margin.left - margin.right;
+        const chartHeight = height - margin.top - margin.bottom;
+        
+        const maxChange = Math.max(...movers.map(m => Math.abs(m.change)));
+        const barHeight = chartHeight / movers.length - 4;
+        
+        const svg = `
+            <svg width="${width}" height="${height}" class="bar-chart">
+                <!-- Center line -->
+                <line x1="${margin.left + chartWidth/2}" y1="${margin.top}" 
+                      x2="${margin.left + chartWidth/2}" y2="${height - margin.bottom}" 
+                      stroke="#9ca3af" stroke-width="2"/>
+                
+                <!-- Bars -->
+                ${movers.map((m, i) => {
+                    const barWidth = (Math.abs(m.change) / maxChange) * (chartWidth / 2);
+                    const x = m.change > 0 ? margin.left + chartWidth/2 : margin.left + chartWidth/2 - barWidth;
+                    const y = margin.top + i * (barHeight + 4);
+                    const color = m.change > 0 ? '#22c55e' : '#ef4444';
+                    
+                    return `
+                        <rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" 
+                              fill="${color}" opacity="0.8"/>
+                        <text x="${margin.left - 10}" y="${y + barHeight/2 + 4}" 
+                              text-anchor="end" class="axis-label" font-size="12">${m.name}</text>
+                        <text x="${x + barWidth + (m.change > 0 ? 5 : -5)}" y="${y + barHeight/2 + 4}" 
+                              text-anchor="${m.change > 0 ? 'start' : 'end'}" 
+                              class="axis-label" font-size="11" fill="${color}">
+                              ${m.change > 0 ? '+' : ''}${Math.round(m.change)}</text>
+                    `;
+                }).join('')}
+                
+                <!-- Axis labels -->
+                <text x="${width/2}" y="${height - 10}" text-anchor="middle" class="axis-label">Rank Change (2023-24 → 2024-25)</text>
+            </svg>
+        `;
+        
+        container.innerHTML = svg + `
+            <div class="chart-legend">
+                <div class="legend-item"><span class="legend-dot" style="background: #22c55e;"></span> Improved (Better Rank)</div>
+                <div class="legend-item"><span class="legend-dot" style="background: #ef4444;"></span> Declined (Worse Rank)</div>
+            </div>
+        `;
+    }
+
+    // Chart 8: Correlation Matrix
+    renderCorrelationMatrix() {
+        const container = document.getElementById('correlation-matrix-chart');
+        if (!container) return;
+        
+        const season = document.getElementById('correlation-season-filter')?.value || '2024-2025';
+        const leaderboard = this.dataLoader.getLeaderboard({ season, rankType: 'per_game', minGames: 20 });
+        
+        if (leaderboard.length < 50) {
+            container.innerHTML = '<div class="chart-empty">Insufficient data for correlation analysis</div>';
+            return;
+        }
+        
+        const categories = ['PTS', 'REB', 'AST', 'STL', 'BLK', '3PM', 'FG%', 'FT%', 'TOV'];
+        
+        // Extract z-scores for all players
+        const playerZScores = leaderboard.map(p => {
+            const z = p.seasonData.zscores || {};
+            return {
+                PTS: z.Z_PTS_G || 0,
+                REB: z.Z_REB_G || 0,
+                AST: z.Z_AST_G || 0,
+                STL: z.Z_STL_G || 0,
+                BLK: z.Z_BLK_G || 0,
+                '3PM': z.Z_3PM_G || 0,
+                'FG%': z.Z_FG_PCT || 0,
+                'FT%': z.Z_FT_PCT || 0,
+                TOV: z.Z_TOV_G || 0
+            };
+        });
+        
+        // Calculate correlation matrix
+        const correlations = {};
+        categories.forEach(cat1 => {
+            correlations[cat1] = {};
+            categories.forEach(cat2 => {
+                const values1 = playerZScores.map(p => p[cat1]);
+                const values2 = playerZScores.map(p => p[cat2]);
+                correlations[cat1][cat2] = this.calculateCorrelation(values1, values2);
+            });
+        });
+        
+        const cellSize = 65;
+        const width = cellSize * categories.length + 100;
+        const height = cellSize * categories.length + 100;
+        const margin = 50;
+        
+        const svg = `
+            <svg width="${width}" height="${height}" class="heatmap-chart">
+                <!-- Category labels (top) -->
+                ${categories.map((cat, i) => `
+                    <text x="${margin + i * cellSize + cellSize/2}" y="35" 
+                          text-anchor="middle" class="axis-label" font-size="13" font-weight="600">${cat}</text>
+                `).join('')}
+                
+                <!-- Category labels (left) -->
+                ${categories.map((cat, i) => `
+                    <text x="40" y="${margin + i * cellSize + cellSize/2 + 5}" 
+                          text-anchor="end" class="axis-label" font-size="13" font-weight="600">${cat}</text>
+                `).join('')}
+                
+                <!-- Heatmap cells -->
+                ${categories.map((cat1, i) => categories.map((cat2, j) => {
+                    const corr = correlations[cat1][cat2];
+                    const intensity = Math.abs(corr);
+                    const color = corr > 0 ? `rgba(34, 197, 94, ${intensity})` : `rgba(239, 68, 68, ${intensity})`;
+                    
+                    return `
+                        <rect x="${margin + j * cellSize}" y="${margin + i * cellSize}" 
+                              width="${cellSize}" height="${cellSize}" 
+                              fill="${color}" stroke="#374151" stroke-width="1"/>
+                        <text x="${margin + j * cellSize + cellSize/2}" y="${margin + i * cellSize + cellSize/2 + 5}" 
+                              text-anchor="middle" font-size="11" font-weight="600" fill="#fff">
+                              ${corr.toFixed(2)}</text>
+                    `;
+                }).join('')).join('')}
+            </svg>
+        `;
+        
+        container.innerHTML = svg + `
+            <div class="chart-legend">
+                <div class="legend-item"><span class="legend-dot" style="background: #22c55e;"></span> Positive Correlation (stats move together)</div>
+                <div class="legend-item"><span class="legend-dot" style="background: #ef4444;"></span> Negative Correlation (stats move opposite)</div>
+                <div class="legend-item">Darker = Stronger relationship</div>
+            </div>
+        `;
+    }
+
+    calculateCorrelation(x, y) {
+        const n = x.length;
+        const sumX = x.reduce((a, b) => a + b, 0);
+        const sumY = y.reduce((a, b) => a + b, 0);
+        const sumXY = x.reduce((sum, xi, i) => sum + xi * y[i], 0);
+        const sumX2 = x.reduce((sum, xi) => sum + xi * xi, 0);
+        const sumY2 = y.reduce((sum, yi) => sum + yi * yi, 0);
+        
+        const numerator = n * sumXY - sumX * sumY;
+        const denominator = Math.sqrt((n * sumX2 - sumX * sumX) * (n * sumY2 - sumY * sumY));
+        
+        return denominator === 0 ? 0 : numerator / denominator;
     }
 
     showError(message) {
