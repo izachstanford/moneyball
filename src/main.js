@@ -1156,6 +1156,7 @@ class MoneballApp {
     }
 
     renderInsights() {
+        console.log('Rendering Insights tab...');
         this.renderValueScatterChart();
         this.renderTrendsChart();
         this.renderConsistencyScatterChart();
@@ -1170,7 +1171,10 @@ class MoneballApp {
         const showNames = document.getElementById('value-show-names')?.checked ?? true;
         
         // Get all players with ADP and projected rank
-        const players = this.dataLoader.getAllMasterPlayers()
+        const allPlayers = this.dataLoader.getAllMasterPlayers();
+        console.log('All master players:', Object.keys(allPlayers).length);
+        
+        const players = Object.values(allPlayers)
             .filter(p => p.adp && p.bucket_rank)
             .filter(p => !positionFilter || p.positions.some(pos => pos === positionFilter))
             .map(p => ({
@@ -1181,6 +1185,8 @@ class MoneballApp {
                 positions: p.positions,
                 tier: p.bucket
             }));
+        
+        console.log(`Value scatter: ${players.length} players with ADP and bucket_rank`);
         
         if (players.length === 0) {
             container.innerHTML = '<div class="chart-empty">No data available</div>';
