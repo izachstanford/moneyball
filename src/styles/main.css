@@ -1116,6 +1116,7 @@ select option {
     overflow-x: auto;
     min-height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

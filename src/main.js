@@ -1210,14 +1210,14 @@ class MoneballApp {
         const svg = `
             <svg width="${width}" height="${height}" class="scatter-chart">
                 <!-- Background quadrants -->
-                <rect x="${margin.left}" y="${margin.top}" width="${chartWidth/2}" height="${chartHeight/2}" 
+                <rect x="${margin.left + chartWidth/2}" y="${margin.top}" width="${chartWidth/2}" height="${chartHeight/2}" 
                       fill="rgba(34, 197, 94, 0.05)" stroke="none"/>
-                <text x="${margin.left + chartWidth/4}" y="${margin.top + 20}" text-anchor="middle" 
+                <text x="${margin.left + 3*chartWidth/4}" y="${margin.top + 20}" text-anchor="middle" 
                       class="quadrant-label" fill="#22c55e">Steals</text>
                 
-                <rect x="${margin.left + chartWidth/2}" y="${margin.top + chartHeight/2}" width="${chartWidth/2}" height="${chartHeight/2}" 
+                <rect x="${margin.left}" y="${margin.top + chartHeight/2}" width="${chartWidth/2}" height="${chartHeight/2}" 
                       fill="rgba(239, 68, 68, 0.05)" stroke="none"/>
-                <text x="${margin.left + 3*chartWidth/4}" y="${height - margin.bottom - 20}" text-anchor="middle" 
+                <text x="${margin.left + chartWidth/4}" y="${height - margin.bottom - 20}" text-anchor="middle" 
                       class="quadrant-label" fill="#ef4444">Busts</text>
                 
                 <!-- Grid lines -->
@@ -1267,14 +1267,15 @@ class MoneballApp {
                     `;
                 }).join('')}
             </svg>
+        `;
+        
+        container.innerHTML = svg + `
             <div class="chart-legend">
                 <div class="legend-item"><span class="legend-dot" style="background: #22c55e;"></span> High Value (Proj Rank >> ADP)</div>
                 <div class="legend-item"><span class="legend-dot" style="background: #60a5fa;"></span> Fair Value</div>
                 <div class="legend-item"><span class="legend-dot" style="background: #ef4444;"></span> Overvalued (ADP >> Proj Rank)</div>
             </div>
         `;
-        
-        container.innerHTML = svg;
         
         // Add tooltips
         container.querySelectorAll('.data-point').forEach(point => {
@@ -1621,14 +1622,15 @@ class MoneballApp {
                     `;
                 }).join('')}
             </svg>
+        `;
+        
+        container.innerHTML = svg + `
             <div class="chart-legend">
                 <div class="legend-item"><span class="legend-dot" style="background: #22c55e;"></span> Safe High Performers</div>
                 <div class="legend-item"><span class="legend-dot" style="background: #fb923c;"></span> Risky Elites</div>
                 <div class="legend-item"><span class="legend-dot" style="background: #60a5fa;"></span> Mid-Tier Options</div>
             </div>
         `;
-        
-        container.innerHTML = svg;
         
         // Add tooltips
         container.querySelectorAll('.data-point').forEach(point => {
