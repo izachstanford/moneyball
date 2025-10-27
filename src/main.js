@@ -1706,109 +1706,184 @@ class MoneballApp {
         const container = document.getElementById('rank-flow-chart');
         if (!container) return;
         
-        // Get historical data for recent 3 seasons
-        const historicalData = this.dataLoader.getHistoricalAnalysis({ minSeasons: 3 });
         const seasons = ['2022-2023', '2023-2024', '2024-2025'];
         
-        // Get top 20 players by 2024-2025 rank
-        const topPlayers = historicalData
-            .filter(p => p.validSeasonData.length >= 3)
-            .slice(0, 20)
-            .map(p => {
-                const tiersByPeriod = seasons.map(season => {
-                    const seasonData = p.validSeasonData.find(s => s.season === season);
-                    if (!seasonData) return null;
-                    const rank = seasonData.rank;
-                    if (rank <= 10) return 'Top 10';
-                    if (rank <= 25) return '11-25';
-                    if (rank <= 50) return '26-50';
-                    return '51+';
-                });
-                return {
-                    name: p.player.name,
-                    tiers: tiersByPeriod
-                };
+        // Get top 10 players for EACH season
+        const topPlayersBySeason = seasons.map(season => {
+            const seasonLeaderboard = this.dataLoader.getLeaderboard({ 
+                season, 
+                rankType: 'per_game', 
+                minGames: 20 
             });
-        
-        const width = 900;
-        const height = 500;
-        const margin = { top: 40, right: 20, bottom: 40, left: 20 };
-        
-        const tiers = ['Top 10', '11-25', '26-50', '51+'];
-        const colors = { 'Top 10': '#22c55e', '11-25': '#60a5fa', '26-50': '#f59e0b', '51+': '#ef4444' };
-        
-        const columnWidth = (width - margin.left - margin.right) / 3;
-        const tierHeight = 80;
-        const tierSpacing = 20;
-        
-        // Create flows
-        const flows = [];
-        topPlayers.forEach(player => {
-            for (let i = 0; i < player.tiers.length - 1; i++) {
-                const fromTier = player.tiers[i];
-                const toTier = player.tiers[i + 1];
-                if (fromTier && toTier) {
-                    flows.push({
-                        player: player.name,
-                        from: { season: i, tier: fromTier },
-                        to: { season: i + 1, tier: toTier }
-                    });
-                }
-            }
+            return seasonLeaderboard.slice(0, 10).map((p, idx) => ({
+                playerId: p.playerId,
+                name: p.player.name,
+                rank: idx + 1,
+                season
+            }));
         });
+        
+        // Get all unique players who were top 10 in any season
+        const allTopPlayerIds = new Set();
+        topPlayersBySeason.forEach(seasonPlayers => {
+            seasonPlayers.forEach(p => allTopPlayerIds.add(p.playerId));
+        });
+        
+        // For each player, get their rank in all 3 seasons
+        const playerFlows = Array.from(allTopPlayerIds).map(playerId => {
+            const player = this.dataLoader.getMasterPlayer(playerId);
+            const ranks = seasons.map(season => {
+                const leaderboard = this.dataLoader.getLeaderboard({ 
+                    season, 
+                    rankType: 'per_game', 
+                    minGames: 20 
+                });
+                const playerEntry = leaderboard.find(p => p.playerId === playerId);
+                return playerEntry ? leaderboard.indexOf(playerEntry) + 1 : null;
+            });
+            
+            return {
+                playerId,
+                name: player.name,
+                ranks // [2022-2023 rank, 2023-2024 rank, 2024-2025 rank]
+            };
+        }).filter(p => p.ranks.some(r => r !== null));
+        
+        const width = 1000;
+        const height = 700;
+        const margin = { top: 50, right: 200, bottom: 40, left: 50 };
+        const chartWidth = width - margin.left - margin.right;
+        const chartHeight = height - margin.top - margin.bottom;
+        
+        const columnWidth = chartWidth / (seasons.length - 1);
+        const top10Height = chartHeight * 0.6; // 60% for top 10
+        const belowTop10Y = margin.top + top10Height + 40; // Below top 10 section
+        
+        const yScale = (rank, inTop10) => {
+            if (inTop10) {
+                return margin.top + ((rank - 1) / 9) * top10Height;
+            } else {
+                return belowTop10Y;
+            }
+        };
+        
+        const xScale = (seasonIdx) => margin.left + seasonIdx * columnWidth;
         
         const svg = `
             <svg width="${width}" height="${height}" class="sankey-chart">
                 <!-- Season labels -->
                 ${seasons.map((season, i) => `
-                    <text x="${margin.left + columnWidth * i + columnWidth / 2}" y="25" 
-                          text-anchor="middle" class="axis-label" font-size="14" font-weight="600">${season.split('-')[0].slice(2)}</text>
+                    <text x="${xScale(i)}" y="30" 
+                          text-anchor="middle" class="axis-label" font-size="14" font-weight="600">
+                          ${season.split('-')[0].slice(-2)}-${season.split('-')[1].slice(-2)}</text>
                 `).join('')}
                 
-                <!-- Tier boxes -->
-                ${seasons.map((season, seasonIdx) => tiers.map((tier, tierIdx) => {
-                    const x = margin.left + columnWidth * seasonIdx + columnWidth * 0.2;
-                    const y = margin.top + tierIdx * (tierHeight + tierSpacing);
-                    const count = topPlayers.filter(p => p.tiers[seasonIdx] === tier).length;
-                    
-                    return `
-                        <rect x="${x}" y="${y}" width="${columnWidth * 0.6}" height="${tierHeight}" 
-                              fill="${colors[tier]}" opacity="0.3" stroke="${colors[tier]}" stroke-width="2" rx="4"/>
-                        <text x="${x + columnWidth * 0.3}" y="${y + tierHeight / 2 - 5}" 
-                              text-anchor="middle" font-size="14" font-weight="600" fill="#fff">${tier}</text>
-                        <text x="${x + columnWidth * 0.3}" y="${y + tierHeight / 2 + 15}" 
-                              text-anchor="middle" font-size="12" fill="#9ca3af">${count} players</text>
-                    `;
-                }).join('')).join('')}
+                <!-- Top 10 boundary box -->
+                ${seasons.map((season, i) => `
+                    <rect x="${xScale(i) - 30}" y="${margin.top}" width="60" height="${top10Height}" 
+                          fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="4,4" opacity="0.3" rx="4"/>
+                    <text x="${xScale(i)}" y="${margin.top - 5}" 
+                          text-anchor="middle" font-size="11" fill="#22c55e" font-weight="600">Top 10</text>
+                `).join('')}
                 
-                <!-- Flow lines -->
-                ${flows.map(flow => {
-                    const fromTierIdx = tiers.indexOf(flow.from.tier);
-                    const toTierIdx = tiers.indexOf(flow.to.tier);
-                    const fromX = margin.left + columnWidth * flow.from.season + columnWidth * 0.8;
-                    const toX = margin.left + columnWidth * flow.to.season + columnWidth * 0.2;
-                    const fromY = margin.top + fromTierIdx * (tierHeight + tierSpacing) + tierHeight / 2;
-                    const toY = margin.top + toTierIdx * (tierHeight + tierSpacing) + tierHeight / 2;
+                <!-- Below Top 10 section -->
+                ${seasons.map((season, i) => `
+                    <rect x="${xScale(i) - 30}" y="${belowTop10Y}" width="60" height="40" 
+                          fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="1" rx="4"/>
+                    <text x="${xScale(i)}" y="${belowTop10Y + 25}" 
+                          text-anchor="middle" font-size="11" fill="#9ca3af">Below Top 10</text>
+                `).join('')}
+                
+                <!-- Player flow lines -->
+                ${playerFlows.map(player => {
+                    const points = player.ranks.map((rank, seasonIdx) => {
+                        if (rank === null) return null;
+                        const inTop10 = rank <= 10;
+                        return {
+                            x: xScale(seasonIdx),
+                            y: yScale(rank, inTop10),
+                            rank,
+                            inTop10
+                        };
+                    }).filter(p => p !== null);
                     
-                    const color = fromTierIdx === toTierIdx ? colors[flow.from.tier] : 
-                                  fromTierIdx < toTierIdx ? '#ef4444' : '#22c55e';
+                    if (points.length < 2) return '';
+                    
+                    // Determine color based on trajectory
+                    const firstTop10 = points[0].inTop10;
+                    const lastTop10 = points[points.length - 1].inTop10;
+                    let color = '#60a5fa'; // stable
+                    
+                    if (firstTop10 && !lastTop10) color = '#ef4444'; // fell out
+                    else if (!firstTop10 && lastTop10) color = '#22c55e'; // rose into
+                    else if (firstTop10 && lastTop10) {
+                        const rankChange = points[0].rank - points[points.length - 1].rank;
+                        if (rankChange > 2) color = '#22c55e'; // improved
+                        else if (rankChange < -2) color = '#ef4444'; // declined
+                    }
+                    
+                    const pathData = points.map((p, i) => {
+                        if (i === 0) return `M ${p.x} ${p.y}`;
+                        const prevP = points[i - 1];
+                        const midX = (prevP.x + p.x) / 2;
+                        return `C ${midX} ${prevP.y}, ${midX} ${p.y}, ${p.x} ${p.y}`;
+                    }).join(' ');
                     
                     return `
-                        <line x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" 
-                              stroke="${color}" stroke-width="2" opacity="0.3" 
-                              class="flow-line" data-player="${flow.player}"/>
+                        <path d="${pathData}" fill="none" stroke="${color}" stroke-width="2" opacity="0.4"
+                              class="flow-line" data-player="${player.name}"
+                              data-ranks="${player.ranks.join(',')}" />
+                        ${points.map(p => `
+                            <circle cx="${p.x}" cy="${p.y}" r="4" fill="${color}" stroke="#1f2937" stroke-width="2"
+                                    class="data-point" data-player="${player.name}" data-rank="${p.rank}"/>
+                        `).join('')}
                     `;
                 }).join('')}
+                
+                <!-- Rank labels for top 10 -->
+                ${Array.from({length: 10}, (_, i) => i + 1).map(rank => `
+                    <text x="${margin.left - 10}" y="${yScale(rank, true) + 4}" 
+                          text-anchor="end" font-size="10" fill="#9ca3af">${rank}</text>
+                `).join('')}
             </svg>
         `;
         
         container.innerHTML = svg + `
             <div class="chart-legend">
-                <div class="legend-item"><span class="legend-dot" style="background: #22c55e;"></span> Improving</div>
+                <div class="legend-item"><span class="legend-dot" style="background: #22c55e;"></span> Improved / Entered Top 10</div>
                 <div class="legend-item"><span class="legend-dot" style="background: #60a5fa;"></span> Stable</div>
-                <div class="legend-item"><span class="legend-dot" style="background: #ef4444;"></span> Declining</div>
+                <div class="legend-item"><span class="legend-dot" style="background: #ef4444;"></span> Declined / Fell Out</div>
             </div>
         `;
+        
+        // Add hover tooltips
+        container.querySelectorAll('.flow-line, .data-point').forEach(el => {
+            el.addEventListener('mouseenter', (e) => {
+                const playerName = e.target.dataset.player;
+                const ranks = e.target.dataset.ranks?.split(',') || [];
+                
+                const tooltip = document.createElement('div');
+                tooltip.className = 'chart-tooltip';
+                tooltip.innerHTML = `
+                    <strong>${playerName}</strong><br/>
+                    ${ranks.map((r, i) => {
+                        const rank = parseInt(r);
+                        const label = isNaN(rank) ? 'N/A' : `#${rank}`;
+                        return `${seasons[i].split('-')[0].slice(-2)}: ${label}`;
+                    }).join('<br/>')}
+                `;
+                tooltip.style.left = e.pageX + 10 + 'px';
+                tooltip.style.top = e.pageY - 10 + 'px';
+                document.body.appendChild(tooltip);
+                e.target._tooltip = tooltip;
+            });
+            
+            el.addEventListener('mouseleave', (e) => {
+                if (e.target._tooltip) {
+                    e.target._tooltip.remove();
+                }
+            });
+        });
     }
 
     // Chart 5: Category Radar Chart
