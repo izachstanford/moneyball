@@ -1210,15 +1210,15 @@ class MoneballApp {
         const svg = `
             <svg width="${width}" height="${height}" class="scatter-chart">
                 <!-- Background quadrants -->
-                <rect x="${margin.left + chartWidth/2}" y="${margin.top}" width="${chartWidth/2}" height="${chartHeight/2}" 
-                      fill="rgba(34, 197, 94, 0.05)" stroke="none"/>
-                <text x="${margin.left + 3*chartWidth/4}" y="${margin.top + 20}" text-anchor="middle" 
-                      class="quadrant-label" fill="#22c55e">Steals</text>
-                
-                <rect x="${margin.left}" y="${margin.top + chartHeight/2}" width="${chartWidth/2}" height="${chartHeight/2}" 
+                <rect x="${margin.left}" y="${margin.top}" width="${chartWidth/2}" height="${chartHeight/2}" 
                       fill="rgba(239, 68, 68, 0.05)" stroke="none"/>
-                <text x="${margin.left + chartWidth/4}" y="${height - margin.bottom - 20}" text-anchor="middle" 
+                <text x="${margin.left + chartWidth/4}" y="${margin.top + 20}" text-anchor="middle" 
                       class="quadrant-label" fill="#ef4444">Busts</text>
+                
+                <rect x="${margin.left + chartWidth/2}" y="${margin.top + chartHeight/2}" width="${chartWidth/2}" height="${chartHeight/2}" 
+                      fill="rgba(34, 197, 94, 0.05)" stroke="none"/>
+                <text x="${margin.left + 3*chartWidth/4}" y="${height - margin.bottom - 20}" text-anchor="middle" 
+                      class="quadrant-label" fill="#22c55e">Steals</text>
                 
                 <!-- Grid lines -->
                 ${Array.from({length: 5}, (_, i) => {
@@ -1393,13 +1393,13 @@ class MoneballApp {
         }
         
         // Get historical data for selected players
+        const allHistoricalData = this.dataLoader.getHistoricalAnalysis({ minSeasons: 1 });
         const playersData = this.trendsSelectedPlayers.map(playerId => {
-            const historical = this.dataLoader.getHistoricalAnalysis({ playerId })[0];
-            return historical ? {
-                ...historical,
-                playerId
-            } : null;
+            const historical = allHistoricalData.find(p => p.playerId === playerId);
+            return historical || null;
         }).filter(p => p);
+        
+        console.log(`Trends chart: ${playersData.length} players with historical data`);
         
         if (playersData.length === 0) {
             container.innerHTML = '<div class="chart-empty">No historical data available for selected players</div>';
@@ -1414,8 +1414,8 @@ class MoneballApp {
         const chartHeight = height - margin.top - margin.bottom;
         
         // Get all seasons and max rank
-        const allSeasons = [...new Set(playersData.flatMap(p => p.seasonRanks.map(s => s.season)))].sort();
-        const maxRank = Math.max(...playersData.flatMap(p => p.seasonRanks.map(s => s.rank)));
+        const allSeasons = [...new Set(playersData.flatMap(p => p.validSeasonData.map(s => s.season)))].sort();
+        const maxRank = Math.max(...playersData.flatMap(p => p.validSeasonData.map(s => s.rank)));
         
         // Scales
         const xScale = (seasonIndex) => margin.left + (seasonIndex / (allSeasons.length - 1)) * chartWidth;
@@ -1465,9 +1465,10 @@ class MoneballApp {
                       class="axis-label">Rank (Lower is Better)</text>
                 
                 <!-- Lines and points for each player -->
-                ${playersData.map((player, playerIndex) => {
+                ${playersData.map((playerData, playerIndex) => {
                     const color = colors[playerIndex % colors.length];
-                    const points = player.seasonRanks
+                    const playerName = playerData.player.name;
+                    const points = playerData.validSeasonData
                         .filter(s => allSeasons.includes(s.season))
                         .map(s => ({
                             x: xScale(allSeasons.indexOf(s.season)),
@@ -1482,10 +1483,10 @@ class MoneballApp {
                         <path d="${pathData}" fill="none" stroke="${color}" stroke-width="2.5" opacity="0.8"/>
                         ${points.map(p => `
                             <circle cx="${p.x}" cy="${p.y}" r="4" fill="${color}" stroke="#1f2937" stroke-width="2" 
-                                    class="data-point" data-name="${player.name}" data-season="${p.season}" data-rank="${p.rank}"/>
+                                    class="data-point" data-name="${playerName}" data-season="${p.season}" data-rank="${p.rank}"/>
                         `).join('')}
                         <text x="${width - margin.right + 10}" y="${points[points.length - 1]?.y || margin.top + playerIndex * 20}" 
-                              class="legend-label" fill="${color}">${player.name}</text>
+                              class="legend-label" fill="${color}">${playerName}</text>
                     `;
                 }).join('')}
             </svg>
@@ -1530,13 +1531,13 @@ class MoneballApp {
             minSeasons: 2,
             minGames: 20 
         })
-            .filter(p => !positionFilter || p.positions.some(pos => pos === positionFilter))
+            .filter(p => !positionFilter || p.player.positions.some(pos => pos === positionFilter))
             .map(p => ({
-                name: p.name,
+                name: p.player.name,
                 avgRank: p.avgRank,
                 consistency: p.consistency,
                 category: p.category,
-                positions: p.positions
+                positions: p.player.positions
             }));
         
         if (players.length === 0) {
